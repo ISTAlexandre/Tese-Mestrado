@@ -2387,6 +2387,11 @@
     <bcf:citekey order="8" intorder="1">Salam_2010</bcf:citekey>
     <bcf:citekey order="9" intorder="1">Cacciari_2008</bcf:citekey>
     <bcf:citekey order="10" intorder="1">Cacciari_2012</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Dokshitzer_1997</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">wobisch1999hadronizationcorrectionsjetcross</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Banfi_2006</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">caola2023flavouredjetsexactantikt</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Cacciari_2012</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

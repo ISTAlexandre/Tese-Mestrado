@@ -360,6 +360,215 @@
       \verb 1111.6097
       \endverb
     \endentry
+    \entry{Dokshitzer_1997}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=34e77053d916c8695d8d49d3a856026a}{%
+           family={Dokshitzer},
+           familyi={D\bibinitperiod},
+           given={Yu.L},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0d677a1fffdb46967ad27ab7b761fcfc}{%
+           family={Leder},
+           familyi={L\bibinitperiod},
+           given={G.D},
+           giveni={G\bibinitperiod}}}%
+        {{hash=cdf04ed3907aca50a6b25ca75808870c}{%
+           family={Moretti},
+           familyi={M\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fab4c5289b2146af0bcda20af58ba567}{%
+           family={Webber},
+           familyi={W\bibinitperiod},
+           given={B.R},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{a21b42b01f81eab76d3de64798a7327a}
+      \strng{fullhash}{bc479da46db95806b05bc1ccc68e2f41}
+      \strng{fullhashraw}{bc479da46db95806b05bc1ccc68e2f41}
+      \strng{bibnamehash}{bc479da46db95806b05bc1ccc68e2f41}
+      \strng{authorbibnamehash}{bc479da46db95806b05bc1ccc68e2f41}
+      \strng{authornamehash}{a21b42b01f81eab76d3de64798a7327a}
+      \strng{authorfullhash}{bc479da46db95806b05bc1ccc68e2f41}
+      \strng{authorfullhashraw}{bc479da46db95806b05bc1ccc68e2f41}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1029-8479}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{8}
+      \field{number}{08}
+      \field{title}{Better jet clustering algorithms}
+      \field{volume}{1997}
+      \field{year}{1997}
+      \field{pages}{001\bibrangedash 001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1126-6708/1997/08/001
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1088/1126-6708/1997/08/001
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1088/1126-6708/1997/08/001
+      \endverb
+    \endentry
+    \entry{wobisch1999hadronizationcorrectionsjetcross}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=f4cb0294e7a3a823b7b3aeb56276adba}{%
+           family={Wobisch},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0d06c73b166873033c8da993c8c44570}{%
+           family={Wengler},
+           familyi={W\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{afd84b66717dd38e28d600a5c0b0330f}
+      \strng{fullhash}{afd84b66717dd38e28d600a5c0b0330f}
+      \strng{fullhashraw}{afd84b66717dd38e28d600a5c0b0330f}
+      \strng{bibnamehash}{afd84b66717dd38e28d600a5c0b0330f}
+      \strng{authorbibnamehash}{afd84b66717dd38e28d600a5c0b0330f}
+      \strng{authornamehash}{afd84b66717dd38e28d600a5c0b0330f}
+      \strng{authorfullhash}{afd84b66717dd38e28d600a5c0b0330f}
+      \strng{authorfullhashraw}{afd84b66717dd38e28d600a5c0b0330f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Hadronization Corrections to Jet Cross Sections in Deep-Inelastic Scattering}
+      \field{year}{1999}
+      \verb{eprint}
+      \verb hep-ph/9907280
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/hep-ph/9907280
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/hep-ph/9907280
+      \endverb
+    \endentry
+    \entry{Banfi_2006}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=045fb41047655309758858f44659d96f}{%
+           family={Banfi},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ab3d0939bc00c479c4c3743051dfb6e1}{%
+           family={Salam},
+           familyi={S\bibinitperiod},
+           given={G.P.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=80570b016e9c134e440bbc85667755e0}{%
+           family={Zanderighi},
+           familyi={Z\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{d67b62ead40d1022738a4fa044db81c4}
+      \strng{fullhash}{36f23bed8d799cb4289763bf9a5b7dd7}
+      \strng{fullhashraw}{36f23bed8d799cb4289763bf9a5b7dd7}
+      \strng{bibnamehash}{36f23bed8d799cb4289763bf9a5b7dd7}
+      \strng{authorbibnamehash}{36f23bed8d799cb4289763bf9a5b7dd7}
+      \strng{authornamehash}{d67b62ead40d1022738a4fa044db81c4}
+      \strng{authorfullhash}{36f23bed8d799cb4289763bf9a5b7dd7}
+      \strng{authorfullhashraw}{36f23bed8d799cb4289763bf9a5b7dd7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1434-6052}
+      \field{journaltitle}{The European Physical Journal C}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{Infrared-safe definition of jet flavour}
+      \field{volume}{47}
+      \field{year}{2006}
+      \field{pages}{113\bibrangedash 124}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1140/epjc/s2006-02552-4
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1140/epjc/s2006-02552-4
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1140/epjc/s2006-02552-4
+      \endverb
+    \endentry
+    \entry{caola2023flavouredjetsexactantikt}{misc}{}{}
+      \name{author}{6}{}{%
+        {{hash=bbfb4ff95460567d636c0438543c5a5b}{%
+           family={Caola},
+           familyi={C\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=38db1e9b60a94c165cd97758bd1686c3}{%
+           family={Grabarczyk},
+           familyi={G\bibinitperiod},
+           given={Radosław},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a62d080d1dd5f3720746da183666cc6f}{%
+           family={Hutt},
+           familyi={H\bibinitperiod},
+           given={Maxwell\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=cdd9546b48e743df2da267f924c11cb4}{%
+           family={Salam},
+           familyi={S\bibinitperiod},
+           given={Gavin\bibnamedelima P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=c844ecf73096fa9b0622621521fd56a5}{%
+           family={Scyboz},
+           familyi={S\bibinitperiod},
+           given={Ludovic},
+           giveni={L\bibinitperiod}}}%
+        {{hash=90f102f9e580c8d97064f719874e0764}{%
+           family={Thaler},
+           familyi={T\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bc8eac157393802a148dfce252f0007}
+      \strng{fullhash}{aedf47dbad1c604925e9793b043c3e9d}
+      \strng{fullhashraw}{aedf47dbad1c604925e9793b043c3e9d}
+      \strng{bibnamehash}{aedf47dbad1c604925e9793b043c3e9d}
+      \strng{authorbibnamehash}{aedf47dbad1c604925e9793b043c3e9d}
+      \strng{authornamehash}{5bc8eac157393802a148dfce252f0007}
+      \strng{authorfullhash}{aedf47dbad1c604925e9793b043c3e9d}
+      \strng{authorfullhashraw}{aedf47dbad1c604925e9793b043c3e9d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Flavoured jets with exact anti-$k_t$ kinematics and tests of infrared and collinear safety}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2306.07314
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2306.07314
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2306.07314
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

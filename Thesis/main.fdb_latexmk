@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1785785833.24346 "main.bcf" "main.bbl" "main" 1785785839.0438 0
-  "main.bcf" 1785785838.88669 108699 2b6146fe272fb694443ed297f7b18916 "lualatex"
-  "referencias.bib" 1785785553.07922 3249 95bb3671761bdf6b4ade94dd7623ff9d ""
+["biber main"] 1788787713.08092 "main.bcf" "main.bbl" "main" 1788787731.5449 0
+  "main.bcf" 1788787731.36909 109093 b9273d110e9ac5a08875582089f9eed3 "lualatex"
+  "referencias.bib" 1788286232.82517 4913 bb42be417fa54708c127a9877512e41a ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["lualatex"] 1785785837.02091 "/Users/alexmendonca/Desktop/pic2/Thesis/main.tex" "main.pdf" "main" 1785785839.04407 0
+["lualatex"] 1788787729.17766 "/Users/alexmendonca/Desktop/pic2/Thesis/main.tex" "main.pdf" "main" 1788787731.54525 0
   "/System/Library/Fonts/Supplemental/Arial Bold.ttf" 1782354543 750984 142301adf4e0699237f9e11a77761d0d ""
   "/System/Library/Fonts/Supplemental/Arial Italic.ttf" 1782354543 553284 fc5a615cbac741096cb2f74d2551184e ""
   "/System/Library/Fonts/Supplemental/Arial.ttf" 1782354543 773236 07d53b5b4d43b671764d7075be494019 ""
@@ -205,23 +205,23 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1784123150 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/tex/generic/config/language.dat" 1774209518 6843 b47da19a8f71adfd0d5f143e53e45276 ""
   "/usr/local/texlive/2026/texmf-var/web2c/luahbtex/lualatex.fmt" 1784122969 5656741 c0acc1f80f9800fe9492a0acbc0071b7 ""
-  "capitulos/conclusoes.aux" 1785785838.80858 4400 024dcde029229b13caddc2f6d0cfc007 "lualatex"
+  "capitulos/conclusoes.aux" 1788787731.25896 4400 6f7f27c4531804d1400adb395ab97586 "lualatex"
   "capitulos/conclusoes.tex" 1785175837.01632 44 2d82ecc3838ece52c25967d7a540231f ""
-  "capitulos/estado-da-arte.aux" 1785785838.78973 6957 ac5a6bf998828e65d6b42e0d2199d77c "lualatex"
-  "capitulos/estado-da-arte.tex" 1785785830.777 19417 68aa1d7ea5947b7a3745504dfb640dc0 ""
-  "capitulos/introducao.aux" 1785785838.61476 4948 d4bd869c84c9345a9d6596e4d12ce694 "lualatex"
+  "capitulos/estado-da-arte.aux" 1788787731.23604 7283 01d279168d411d407143663781cb9638 "lualatex"
+  "capitulos/estado-da-arte.tex" 1788787709.88082 30319 0dfc3d574e29e703fed92dd1031effa3 ""
+  "capitulos/introducao.aux" 1788787730.94499 4948 d4bd869c84c9345a9d6596e4d12ce694 "lualatex"
   "capitulos/introducao.tex" 1785258176.57058 8804 ad210c95540ce7ea4df4cf520c0d6c91 ""
-  "capitulos/metodos.aux" 1785785838.79562 4386 052d09cdc97bacb17bf58136476d14f6 "lualatex"
+  "capitulos/metodos.aux" 1788787731.24266 4386 f03038479b42aae6495f12d71d773d96 "lualatex"
   "capitulos/metodos.tex" 1785175853.77962 37 eaf58a27e7eb4138aa36fbe3f0bd0083 ""
-  "capitulos/resultados.aux" 1785785838.80272 4422 ed385bb050788ba8dd0875a879e89288 "lualatex"
+  "capitulos/resultados.aux" 1788787731.25147 4422 8217f6790043bcc6446a094ceb75f802 "lualatex"
   "capitulos/resultados.tex" 1785175827.37693 55 748f5ca08898db4fdabfadec2d9a95ec ""
   "figuras/logo-tecnico-lisboa.png" 1784139593 14790 db4347ed097a7d6103d5789b1139baed ""
   "istdissertacao.cls" 1785184303.45548 5917 ab22cf5412fe87ce50cc0469d0c0b9cf ""
   "macros.tex" 1784139593 1215 d8319dad4ea6e96afdce7dd34c7811ce ""
-  "main.aux" 1785785838.86953 2604 31596a418cd1e2748b4cfc7bd624d1e1 "lualatex"
-  "main.bbl" 1785785834.90809 14127 1ff2b8fb85777dab0e5130e734cd79f7 "biber main"
-  "main.out" 1785785838.88568 3550 1fe7270eec52c7a7b400f029b60ed6cb "lualatex"
-  "main.run.xml" 1785785838.8873 2416 57038ccc8ecba5902b53364f2bc3c169 "lualatex"
+  "main.aux" 1788787731.35033 3406 650824665b73d0eaf23eb8fc6248fac3 "lualatex"
+  "main.bbl" 1788787726.68193 22118 51b04661a06c9bbe59ee9cbdca41617b "biber main"
+  "main.out" 1788787731.368 3807 1345b78c61fb9b62e02737b0298273b3 "lualatex"
+  "main.run.xml" 1788787731.36972 2416 57038ccc8ecba5902b53364f2bc3c169 "lualatex"
   "main.tex" 1785260090.83079 3657 55d1b531d236062642b64530cb9e8434 ""
   (generated)
   "capitulos/conclusoes.aux"

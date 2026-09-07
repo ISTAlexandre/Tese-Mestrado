@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  3 AUG 2026 20:37
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  7 SEP 2026 14:28
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/alexmendonca/Desktop/pic2/Thesis/main.tex
@@ -1042,7 +1042,7 @@ Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 51.
 Package biblatex Info: Reference segment=0 on input line 51.
-<figuras/logo-tecnico-lisboa.png, id=96, 737.75626pt x 299.1175pt>
+<figuras/logo-tecnico-lisboa.png, id=100, 737.75626pt x 299.1175pt>
 File: figuras/logo-tecnico-lisboa.png Graphic file (type png)
 <use figuras/logo-tecnico-lisboa.png>
 Package luatex.def Info: figuras/logo-tecnico-lisboa.png  used on input line 54.
@@ -1092,9 +1092,6 @@ Chapter 2.
 
 ] [5] [6]
 
-LaTeX Warning: Reference `sec:ifn' on page 7 undefined on input line 182.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 236.
 
@@ -1111,11 +1108,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 LaTeX Font Warning: Font shape `TU/Arial.ttf(0)/m/sc' undefined
 (Font)              using `TU/Arial.ttf(0)/m/n' instead on input line 299.
 
-[8]) [9]
+[8] [9] [10]) [11]
 \openout2 = capitulos/metodos.aux
  (./capitulos/metodos.tex
 Chapter 3.
-) [10
+) [12
 
 
 
@@ -1124,7 +1121,7 @@ Chapter 3.
 \openout2 = capitulos/resultados.aux
  (./capitulos/resultados.tex
 Chapter 4.
-) [11
+) [13
 
 
 
@@ -1133,7 +1130,7 @@ Chapter 4.
 \openout2 = capitulos/conclusoes.aux
  (./capitulos/conclusoes.tex
 Chapter 5.
-) [12
+) [14
 
 
 
@@ -1143,7 +1140,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [13
+ [15
 
 
 
@@ -1157,30 +1154,27 @@ L3 programming layer <2026-01-19>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1FE7270EEC52C7A7B400F029B60ED6CB;3550.
+(rerunfilecheck)             Checksum: 1345B78C61FB9B62E02737B0298273B3;3807.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 27179 strings out of 476076
+ 27202 strings out of 476076
  125081,1648299 words of node,token memory allocated
- 884 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 31 attribute, 105 glue_spec, 16 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:3,2:1171,3:350,4:43,5:221,6:50,7:9386,8:47,9:511,10:16,11:734
- 49017 multiletter control sequences out of 65536+600000
+ 944 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 43 attribute, 105 glue_spec, 22 attribute_list, 1 write, 5 pdf_action nodes
+   avail lists: 1:3,2:1639,3:559,4:59,5:223,6:56,7:9923,8:47,9:511,10:20,11:734,12:1
+ 49032 multiletter control sequences out of 65536+600000
  51 fonts using 10558911 bytes
  88i,12n,105p,1236b,1793s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></System/Library/Fonts/Supplemental/Arial Italic.ttf></System/Library/Fonts/Supplemental/Arial.ttf></System/Library/Fonts/Supplemental/Arial Bold.ttf></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (19 pages, 201884 bytes).
+Output written on main.pdf (21 pages, 219768 bytes).
 
-PDF statistics: 315 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 1048576)
- 185 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 373 PDF objects out of 1000 (max. 8388607)
+ 326 compressed objects within 4 object streams
+ 66 named destinations out of 1000 (max. 1048576)
+ 193 words of extra memory for PDF output out of 10000 (max. 100000000)
 

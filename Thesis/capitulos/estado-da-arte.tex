@@ -316,6 +316,161 @@ and it is the subject of the next subsection.
 \subsection{The Cambridge/Aachen algorithm}
 \label{sec:ca}
 
+By choosing $p=0$ in Eq. \ref{eq:dij} and Eq. \ref{eq:diB} the Cambridge/Aachen (C/A)
+algorithm is defined \cite{Dokshitzer_1997}-\cite{wobisch1999hadronizationcorrectionsjetcross}.
+With this value, the transverse momentum factors drop out of the distance measure
+entirely, which reduces to the purely angular form:
+
+\begin{equation}
+  d_{ij} = \frac{\dR_{ij}^2}{R^2}.
+  \label{eq:ca-distance}
+\end{equation}
+
+Clustering with this algorithm proceeds by repeatedly merging the pair of inputs
+closest in angle, irrespective of how hard or soft they are. Where the \antikt{}
+algorithm is driven by the hardest inputs, the C/A algorithm orders them by angular
+seperation alone. This means that the first merges are the most collinear and the 
+last the widest.
+
+This angular ordering is what makes the C/A algorithm the natural tool choice
+for resolving jet substructure. As set out in Section \ref{sec:qcd}, the 
+parton shower is ordered in angle, with the widest angle splittings occuring earliest
+in the physical branching sequence. A C/A clustering therefore mirrors, in reverse,
+the order in which the shower developed. Undoing the clustering one step at a time,
+retraces an approximation to the branching sequence from the widest splitting inwards,
+and each step exposes a single emmision, characterised by the angular seperation
+$\Delta R$ and the relative transverse momentum $k_t$ of the two branches it seperates.
+It is this correspondence between the C/A history and the physical shower that the
+Lund jet plane of Section \ref{sec:lund} is built to exploit, and it is the reason
+substructure observables are extracted from the C/A history rather than the
+\antikt{} one.
+
+The declustering procedure can be stated explicitly. Beginning from the single C/A
+object that contains the whole jet, one undoes the last recombination, splitting it
+into two subjets $a$ and $b$, labelled so that $p_{t,a} > p_{t,b}$.
+The softer branch $b$ is taken as the emission and then follows the harder branch $a$ and repeats,
+undoing its last recombination in turn. Iterating along the hard branch until it
+can no longer be declustered traces out the primary sequence of the jet. This is 
+a ordered list of emissions, from the widest and earliest to the most collinear
+and latest.
+
+Each splitting in this sequence is characterised by a small set of kinematic variables.
+The angular seperation of the two branches $\dR_{ab}$, and their relative transverse
+momentum $k_t = p_{t,b}\,\dR_{ab}$, together locate the emission on the two scales
+that matter. This is how wide and how hard it is. A third variable, the momentum fraction
+$z = p_{t,b}/(p_{t,a} + p_{t,b})$, measures how the momentum was shared between emitter and emission.
+These are the quantities from which the Lund jet plane of section \ref{sec:lund} is
+constructed, and computing them at every declustering step is the immediate goal of the C/A history.
+
+Following only the harder branch at each step captures the primary emissions, but
+it discards the structure within the softer branches. That structure is recovered
+by declustering recursively. Following a chosen primary emission, the softer branch $b$
+is itself declustered in the same way, exposing the emission within it and generating 
+a secondary sequence of emmissions associated with that primary splitting. The primary
+sequence records how the leading parton radiated and the secondary sequences record how
+those radiated partons radiated in turn. Both are needed for the observables of this work,
+which compare the orientation of a primary splitting with that of the secondary splitting it seeds.
+
+In practice, both the \antikt{} and C/A algorithms are applied in sucession. A jet
+is first defined with the \antikt{} algorithm, since it fixes its constituents and
+its regular boundary. Those constituents are then reclustered with the C/A algorithm,
+to obtain an angularly ordered history that can expose the emissions within the jet.
+The radius parameter of the C/A reclustering step was set to $R=1$, larger than the
+\antikt{} value of $R=0.8$, to ensure that all the constituents of the original jet
+are gathered into a single C/A object and that the declustering history is complete
+with no emmision lost at the edge. The kinematics of the jet are unchanged by
+this operation, meaning that the same constituents with the same momenta are involved,
+but they are now organised into a sequence from which the physical splittings can
+be read.
+
+The division of labour between the two algorithms is thus deliberate. The
+\antikt{} algorithm supplies a jet with a stable, regular boundary, well suited to
+the energy calibration and pile-up subtraction discussed in
+Section \ref{sec:antikt}. The C/A algorithm applied to that jet's constituents
+supplies a history that mirrors the physical showering sequence with angularly ordered
+branching history which substructure requires. Neither algorithm alone would suffice.
+The \antikt{} algorithm gives a clean jet but an unphysical history, while the
+C/A algorithm gives a physical history but an irregular, contamination-prone boundary.
+Using each where it is strong is what makes the substructure analysis of this work both
+experimentally robust and physically interpretable.
+
+\subsection{Flavoured jets and the IFN algorithm}
+\label{sec:ifn}
+
+The algorithm of the preceding subsections cluster inputs on the basis of their 
+kinematics alone, and for most purposes that is sufficient. However, for the measurement
+at the centre of this work, kinematics are not enough. As anticipated in Chapter
+\ref{cap:introducao}, the goal is to probe the spin correlations of gluon splitting,
+and that requires distinguishing the channels of Eqs. \eqref{eq:Pgg}, \eqref{eq:Pgq} and \eqref{eq:Pqq},
+which produce, respectively, a pair of gluons, a quark or anti quark with a gluon and a quark-antiquark pair.
+The channels differ not only in their rates but also their spin interference
+signal carries opposite signs. Extracting the effect at its true strength therefore
+requires separating the channels, and that requires flavour assigment to the splittings
+inside a jet. This raises a question the kinematic clustering algorithms leave
+unanswered. How can flavour be assigned to a jet, or to a branch within one, in a way
+that is theoretically well defined and experimentally robust?
+
+The obvious definition is to sum the flavours of a jet's constituents, counting
+a quark as $+1$ and an antiquark as $-1$ for each quark flavour seperatelly, so
+that the net flavour of a jet is that of the parton which initiated it. Simple as it
+is, this definition is not IRC safe and the source of the problem is precisely the
+$g \to q\bar{q}$ splitting. A gluon carries no net flavour, but it can split into
+a quark-antiquark pair that is soft or wide in angle or even both. Were the quark 
+and antiquark then assigned to different jets, or to different branches of the 
+same jet, each would acquire a net flavour that the gluon never possessed. 
+Because the splitting can be arbitrarily soft, 
+the missassigment occurs with a probability that diverges in the same manner as the
+emission spectrum of Eq. \eqref{eq:soft-collinear}, and no virtual correction
+is assigned to cancel it. This is the very mechanism identified in Section
+\ref{sec:ircsafety} for kinematic observables, now reappearing in for flavour.
+The naive definition is spoiled by exactly soft and collinear radiation that 
+QCD produces most abuntantly, and a fixed order calculation of it fails to converge.
+Flavour assigned carelessly is therefore not a physical quantity, and it cannot be compared with theory.
+
+Restoring IRC safety to jet flavour has been pursued for two decades.
+The earliest safe prescriptions achieved it by making the clustering 
+distance itself depend on the flavour of the objects being combined \cite{Banfi_2006},
+which succeeded in taming the divergence but at a price of the resulting jets
+not having the kinematics of the underlying algorithm. This means that a flavour aware
+jet and a standard \antikt{} or C/A jet were no longer the same object. For a measurement 
+that depends on both the kinematics of a jet and flavour of its structure, that price
+is too high. The approach adopted in this work, Interleaved Flavour Neutralisation (IFN)
+\cite{caola2023flavouredjetsexactantikt}, was designed precisely to avoid it. 
+IFN leaves the kinematics of the clustering entirely untouched and treats flavour as
+a seperate layer that runs alongside the ordinary sequence. The jets returned by this
+algorithm are exactly identical to the C/A jets of Section \ref{sec:ca}, constituent
+for constituent and momentum for momentum. What IFN supplies in addition is 
+a flavour label for each, computed by
+a procedure that is stable against soft and collinear emission.
+
+The principle behind that procedure is neutralisation. As the clustering proceeds,
+IFN follows the flavour carried by every object in the sequence, and, at each stage,
+asks wether a flavoured object can be matched to a nearby object of opposite flavour,
+the partner with which it would have originated in a common $g \to q\bar{q}$ splitting.
+When such a pair is found, the two flavours are neutralised against each other, so that
+the spurious net flavour is cancelled at the moment it would otherwise be passed
+up the clustering tree and inherited by a jet. A quark and antiquark born of the same
+soft or collinear gluon splitting are in this way reunited in flavour, even though their
+kinematics remain wherever the C/A algorithm placed them, and the divergence that
+defeated the naive definition is removed order by order. The matching is governed by
+a flavour distance that weighs how soft and how collinear a candidate pair is, so that
+it is exactly the dangerous soft and collinear configurations that are neutralised,
+while genuinely distinct hard flavours are left in place. 
+
+What distinguishes IFN from a prescription that merely labels the final jet is that
+the flavour information is exposed at every step of the clustering and not only at the end.
+This is the feature that makes the present analysis possible. The clustering of a
+C/A history produces at each step a splitting of one object into two branches. IFN
+attaches to those branches a flavour label that is IRC safe and, therefore, meaningful
+at fixed order in perturbation theory. The abstract distinction between the discussed
+channels in Eqs. \eqref{eq:Pgg}, \eqref{eq:Pgq} and \eqref{eq:Pqq} is thereby made concrete, and
+it can be read off at each splitting in the history of a jet. It is on this per splitting flavour 
+that the channel selection at the heart of the measurement is built.
+The algorithm is distributed as a
+plugin to the \textsc{FastJet} package \cite{Cacciari_2012}, and the configuration
+adopted here, together with the way its per-splitting labels are combined into the
+selection itself, is set out in Chapter \ref{cap:metodos}.
+
 \section{The Lund jet plane}
 \label{sec:lund}
 
