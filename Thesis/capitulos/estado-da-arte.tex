@@ -66,8 +66,8 @@ where $E$ and $\theta$ are the energy and emission angle of the radiated gluon
 and $C$ is a colour factor. The two factors carry the characteristic structure of
 QCD radiation. The factor $d\theta/\theta$ diverges as $\theta \to 0$ meaning that
 emmissions are enhanced when the gluon is radiated close to the direction of its emmiter.
-This is known as the collinear divergence. The factir $dE/E$ diverges as $E \to 0$
-meaning that emissions are enchanced when the gluon is soft. This is known
+This is known as the collinear divergence. The factor $dE/E$ diverges as $E \to 0$
+meaning that emissions are enhanced when the gluon is soft. This is known
 as the soft divergence. Together they mean that a hard parton radiates predominantly
 softly and at small angles, and that number of such emissions is,
 in a precise logarithmic sense, large.
@@ -98,8 +98,8 @@ corresponding virtual corrections, leaving a finite result. This cancellation
 is the requirement that shapes the very definition of a jet in Section \ref{sec:jatos}.
 Their logarithmic structure, however, is physical and measurable, and it is exactly
 the structure that the Lund jet plane of Section \ref{sec:lund} is built to expose.
-By mapping each emmision onto logarithmic axes of angle and transverse momentum,
-it turns the double logarithmic enhancement of Eq. \eqref{eq:soft-collinear}
+By mapping each emision onto logarithmic axes of angle and transverse momentum,
+it turns the double logarithmic enhancement of equation \eqref{eq:soft-collinear}
 into an approximately uniform density, against which finer correlations stand out.
 
 \subsection{Parton showers and hadronization}
@@ -108,8 +108,8 @@ Because a single hard parton typically radiates many times before hadronizing,
 the emissions can be organised into a sequence orderred from the hardest,
 widest-angle splittings down to the soft and collinear ones. This sequence
 is what is known as a parton shower. Modern Monte Carlo event generators implement
-this sequence probabilistically through the splitting functions of Eqs. 
-\eqref{eq:Pqq} and \eqref{eq:Pgq}, evolving each parton down from the hard 
+this sequence probabilistically through the splitting functions of equations 
+\eqref{eq:Pqq}-\eqref{eq:Pgq}, evolving each parton down from the hard 
 scale of the collision to a low scale of order $1\GeV$, at which the perturbative
 description breaks down and confinement takes over. Below that scale the partons
 are converted into hadrons by phenomenological hadronization models, tuned to data
@@ -159,7 +159,7 @@ these operations. A soft particle must not create or destroy a jet and a
 collinear splitting must not change how particles are assigned to jets.
 
 The reason why this requirement is not optional follows directly from
-Section \ref{sec:qcd}. The emission probability of Eq. \eqref{eq:soft-collinear}
+Section \ref{sec:qcd}. The emission probability of equation \eqref{eq:soft-collinear}
 diverges in both the soft and the collinear limits. In any IRC-safe observable
 these divergent real emissions cancel against equally divergent virtual
 corrections, leaving a finite result. In an IRC-unsafe observable, that cancellation
@@ -190,7 +190,7 @@ A collinear splitting produces the collinear-unsafe failure.
 Replacing one hard seed by two collinear particles, each
 carrying half its transverse momentum, may leave neither above the seed threshold,
 so that a jet which existed before the splitting is absent after it. In both cases,
-the divergent emissions of Eq. \eqref{eq:soft-collinear} feed directly into the
+the divergent emissions of equation \eqref{eq:soft-collinear} feed directly into the
 jets themselves, and the perturbative prediction diverges with them.
 
 The sequential recombination algorithms introduced below evade both failures by
@@ -224,7 +224,7 @@ algorithms, of which the first two are the tools this work relies on and are
 described in the following subsections.
 
 Common to all three is the radius parameter $R$, which sets the angular reach of
-the clustering through the ratio $\dR_{ij}^2/R^2$ in Eq. \eqref{eq:dij}. A smaller
+the clustering through the ratio $\dR_{ij}^2/R^2$ in equation \eqref{eq:dij}. A smaller
 $R$ yields narrower jets that resolve nearby structure but capture less of a single
 parton's radiation. A larger $R$ collects more of that radiation at the price of
 admitting more contamination from unrelated soft activity. The appropriate choice
@@ -316,7 +316,7 @@ and it is the subject of the next subsection.
 \subsection{The Cambridge/Aachen algorithm}
 \label{sec:ca}
 
-By choosing $p=0$ in Eq. \ref{eq:dij} and Eq. \ref{eq:diB} the Cambridge/Aachen (C/A)
+By choosing $p=0$ in equation \ref{eq:dij} and equation \ref{eq:diB} the Cambridge/Aachen (C/A)
 algorithm is defined \cite{Dokshitzer_1997}-\cite{wobisch1999hadronizationcorrectionsjetcross}.
 With this value, the transverse momentum factors drop out of the distance measure
 entirely, which reduces to the purely angular form:
@@ -338,7 +338,7 @@ parton shower is ordered in angle, with the widest angle splittings occuring ear
 in the physical branching sequence. A C/A clustering therefore mirrors, in reverse,
 the order in which the shower developed. Undoing the clustering one step at a time,
 retraces an approximation to the branching sequence from the widest splitting inwards,
-and each step exposes a single emmision, characterised by the angular seperation
+and each step exposes a single emision, characterised by the angular seperation
 $\Delta R$ and the relative transverse momentum $k_t$ of the two branches it seperates.
 It is this correspondence between the C/A history and the physical shower that the
 Lund jet plane of Section \ref{sec:lund} is built to exploit, and it is the reason
@@ -420,7 +420,7 @@ and antiquark then assigned to different jets, or to different branches of the
 same jet, each would acquire a net flavour that the gluon never possessed. 
 Because the splitting can be arbitrarily soft, 
 the missassigment occurs with a probability that diverges in the same manner as the
-emission spectrum of Eq. \eqref{eq:soft-collinear}, and no virtual correction
+emission spectrum of equation \eqref{eq:soft-collinear}, and no virtual correction
 is assigned to cancel it. This is the very mechanism identified in Section
 \ref{sec:ircsafety} for kinematic observables, now reappearing in for flavour.
 The naive definition is spoiled by exactly soft and collinear radiation that 
@@ -474,5 +474,380 @@ selection itself, is set out in Chapter \ref{cap:metodos}.
 \section{The Lund jet plane}
 \label{sec:lund}
 
+The declustering of the Cambridge/Aachen history, described in Section \ref{sec:ca},
+associates with every jet an ordered sequence of emissions, each carrying an
+angular seperation $\dR$, a relative transverse momentum $k_t$ and a momentum 
+fraction $z$. On its own, this sequence is an unwieldly list of numbers. Jets
+have different numbers of emissions and the raw variables span many orders of magnitude.
+The Lund jet plane \cite{Dreyer:2018nbf} is the representation that turns this list
+into something legible, by mapping each emission to a single point in a two-dimensional
+plane whose coordinates are chosen so that the structure of QCD radiation is exposed
+in its simplest form.
+
+\subsection{Coordinates and the uniform density}
+\label{sec:lund-uniform}
+
+The construction of the Lund jet plane is direct. For each jet, the primary
+declustering of the C/A history, of Section \ref{sec:ca}, yields a list of emissions.
+Every emission in that list is mapped to a single point on the plane, using its
+angular separation $\dR$ and relative transverse momentum $k_t$ as coordinates.
+Repeating this for every emission in the sample and overlaying the resulting points produces
+a two-dimensional distribution, which is then normalised to the number of jets
+to give the average density of emissions per unit area. It is this averaged distribution,
+rather than the pattern of any single jet, that is referred to as the Lund jet plane
+and that carries the statistical information exploited below.
+
+Each primary emission is placed on the plane at the coordinates:
+
+\begin{equation}
+  \left( \ln\frac{1}{\dR},\; \ln\kt \right),
+  \label{eq:lund-coords}
+\end{equation}
+
+the horizontal axis measures the inverse angle of the splitting and the vertical
+axis its hardness, both logarithmically. The choice of logarithmic axes is
+not cosmetic. Recalling in Section \ref(sec:qcd) that the emission probability
+of a gluon emission carries the double structure $d\mathcal{P} \propto \alpha_s\, d\theta/\theta \; dE/E$,
+which is one factor for the collinear enhancement and one for the soft enhancement.
+Written in terms of the Lund coordinates of equation \eqref{eq:lund-coords}, each
+of these factors becomes flat. The measure $d\theta/\theta$ is simply $d\ln(1/\dR)$, and the energy factor
+maps onto $d\ln\kt$. The doubly divergent emission spectrum of the raw variables
+therefore becomes, on the Lund plane, an approximately uniform density of
+emissions per unit area,
+
+\begin{equation}
+  \rho \;=\; \frac{1}{N_{\text{jet}}}\,
+  \frac{dn_{\text{emissions}}}{d\ln(1/\dR)\; d\ln\kt}
+  \;\approx\; \text{const}\times\frac{\alpha_s}{\pi},
+  \label{eq:lund-density}
+\end{equation}
+
+up to the slow running of $\alpha_s$ and the effects discussed below. It is this
+flatness that makes the plane so useful against a uniform background. Any
+physical effect that departs from the leading soft-collinear picture stands out
+as a local excess or depletion, rather than being buried in the steeply falling
+raw spectrum. This uniform density is precisely what is observed in practice. Figure \ref{fig:lund-example}
+shows the average primary Lund plane obtained from a simulated sample of QCD jets.
+Across the perturbative bulk of the plane the density is approximately constant,
+as anticipated by equation \eqref{eq:lund-density}, falling away only towards the
+boundaries of the kinematically accessible region.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figuras/lund-cartoon-1.png}
+  \caption{The average primary Lund plane density, ρ, for jets clustered with the C/A
+  algorithm and $R= 1$ having $p_t > 2$ TeV and $|y|<2.5$, in a simulated QCD dijet sample \cite{Dreyer:2018nbf}.}
+  \label{fig:lund-example}
+\end{figure}
+
+\subsection{Regions of the plane}
+\label{sec:lund-regions}
+
+The accessible area of the plane is bounded, and its interior divides into
+regions of distinct physical origin, sketched in
+Figure \ref{fig:lund-schematic}. The upper boundary is set by the kinematics of
+the jet. An emission cannot be harder than the jet which contains it, so it caps
+$\ln\kt$ from above. Along the right of the plane, at large $\ln(1/\dR)$, lie the collinear emissions,
+those radiated at small angle to their emitter. Towards the bottom, at small
+$\ln\kt$, lie the soft emissions. The perturbative description of
+Section \ref{sec:qcd} holds across the bulk of this region, where $\kt$ is large
+enough for $\alpha_s$ to remain small; the density there is the near-constant
+value of equation \eqref{eq:lund-density}.
+
+The exception is the lower-right corner, at both small angle and low transverse
+momentum. There $\kt$ falls to the scale of a few hundred~MeV, $\alpha_s$ grows
+large, and the perturbative description breaks down. This is the
+non-perturbative region, populated by hadronisation and by the soft, wide-angle
+contamination of the underlying event. One of the strengths of the Lund
+representation is that these non-perturbative effects are confined to a
+localised corner of the plane, cleanly separated from the perturbative bulk,
+rather than being smeared across the whole observable. A measurement can
+therefore be restricted, by eye or by an explicit cut, to the region where
+theory applies.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figuras/lund-cartoon-2.png}
+  \caption{Schematic representation of the diﬀerent regions of the Lund plane \cite{Dreyer:2018nbf}.}
+  \label{fig:lund-schematic}
+\end{figure}
+
+\subsection{Grooming and the primary and secondary planes}
+\label{sec:lund-grooming}
+
+This seperation motivates grooming. Grooming is the deliberate removal of soft,
+wide-angle emissions that dominate the non-peturbative region of the plane. 
+The grooming procedure used in this work is Soft Srop \cite{Larkoski_2014}, which
+walks through the declustering and, at each step, retains the harder branch unless
+the softer one satisfies:
+
+\begin{equation}
+  z \;>\; z_{\text{cut}} \left( \frac{\dR}{R} \right)^{\beta},
+  \label{eq:softdrop}
+\end{equation}
+
+in which case both branches are kept and the declustering continues. The parameter
+$z_{\text{cut}}$ sets how soft an emission must be to be discarded, and $\beta$
+controls the angular reach of the grooming. The choice $\beta = 0$, adopted here for
+the Soft Drop, makes the condition purely one of momentum fraction, $z > z_{\text{cut}}$, independent of angle.
+In this limit, Soft Drop reduces to the modified Mass-Drop Tagger \cite{Dasgupta_2013}.
+On the Lund plane the effect of grooming is immediate and visual. It removes the emissions
+in the soft, low $\kt$ band, clearing the non-peturbative corner and leaving a plane
+populated only by the harder splittings.
+
+In this work, two versions of the plane are produced and used as follows. The primary
+Lund plane collects the emissions along the hard branch of the jet, one point per jet
+splitting, and describes how the leading parton radiated. The secondary Lund plane is built
+by taken the chosen primary emission and declustering its softer branch in turn, as
+described in Section \ref{sec:ca}. Its points describe how that radiated parton itself
+went on to radiate. The two
+planes carry complementary information, and both are needed for the spin
+observables of Section \ref{sec:spin}, which compare the orientation of a
+primary splitting with that of the secondary splitting it seeds.
+Figure~\ref{fig:lund-figure} illustrates these two levels of structure
+for two example jets. The middle row shows the full Lund diagram, in which every
+emission, primary and secondary, is represented, while the bottom row shows
+the primary Lund plane alone, retaining a single point for each primary splitting.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figuras/figs_lund.png}
+  \caption{Different representations for two jets. Top: the particles inside the jet. Middle: the full Lund diagram. Bottom: the primary Lund plane
+  \cite{Dreyer:2018nbf}.}
+  \label{fig:lund-figure}
+\end{figure}
+
 \section{Collinear spin correlations}
 \label{sec:spin}
+
+The tools assembled in the preceding sections have so far been described as though
+a parton shower were a sequence of independent splittings, each each blind to those
+before it. That description is incomplete. The intermediate partons in a shower
+carry spin, and their spin in correlated with the kinematics of the 
+splitting that produces them. When such a parton subsequently branches, that correlation
+is transmitted to the azimuthal orientation of its own decay products. Successive
+splittings are therefore not independent, meaning that the plane of one branching is
+correlated with the plane of the next. These are the collinear spin correlations
+that this work sets out to measure, and they are the subject of this section.
+
+This effect is a genuine quantum interference phenomenon, with no counterpart in a 
+classical picture of sequential radiation, and it manifests in a distinctive and robust
+way. The outcome appears as a modulation of the azimuthal angle between successive
+splitting planes with a period of $\pi$ rather than $2\pi$, that is, as a
+dependence on $\cos 2\psi$. This section develops that statement in four steps.
+Section~\ref{sec:spin-mechanism} sets out the physical mechanism and the origin
+of the $\cos 2\psi$ modulation. Section~\ref{sec:spin-channel} shows how the size
+and sign of the modulation depend on the splitting channel, the property that
+makes flavour identification essential to the measurement.
+Sections~\ref{sec:spin-dpsi} and~\ref{sec:spin-eeec} then introduce the two
+observables through which this work accesses the effect. These observables are the Lund declustering
+angle $\dpsi$, built on the branching history of Section~\ref{sec:lund}, and the
+three-point energy correlator, which reaches the same physics through the flow of
+energy within the jet.
+
+\subsection{Mechanism and the \texorpdfstring{$\cos 2\psi$}{cos 2psi} modulation}
+\label{sec:spin-mechanism}
+
+The origin of the correlation lies in the spin of the intermediate gluon \cite{Karlberg_2021}. Consider a gluon
+produced in a first splitting and undergoing a second splitting of its own, the configuration
+that the primary and secondary Lund planes of Section \ref{sec:lund} isolate. The gluon
+is a spin-one particle, but a hard, nearly on-shell gluon has only two physical polarisation states,
+transverse to its direction of motion. In the collinear limit, these two states are most 
+naturally described not as circular polarisations but as two orthogonal linear polarisations, each
+an oscillation of the field along a fixed axis in the plane transverse to the gluon momentum.
+
+The polarisation of the intermediate gluon is not random. The first splitting,
+which produced it, selects a preferred transverse axis. The gluon emerges linearly
+polarised, with its polarisation correlated with the plane of that first
+branching. This is the essential point. A gluon radiated in a splitting carries a
+memory of the orientation of that splitting, encoded in the direction of its linear
+polarisation.
+
+That memory is then read out by the second splitting. The probability that a linearly polarised
+gluon branches into a given final state depends on the azimuthal orientation of the second splitting
+plane relative to the polarisation of the axis. Writting $\psi$ for the angle between the first
+and the second splitting planes, the differential rate acquires a dependence on $\psi$ through
+this alignment, and the two splittings become correlated in their relative azimuth.
+
+The period of that correlation is fixed by the nature of the polarisation. A
+linear polarisation is specified by an axis, not by a direction along it. Rotating
+the polarisation by $\pi$ returns the same physical state, since an oscillation
+along an axis is unchanged by reversing its sense. The azimuthal dependence must
+therefore be invariant under $\psi \to \psi + \pi$, which forbids a $\cos\psi$ term
+and admits $\cos 2\psi$ as its leading harmonic. This is the distinctive signature of the effect.
+The result has to have a modulation of period $\pi$ rather than $2\pi$, reflecting the
+headless, axial character of linear polarisation. Collinear spin correlations
+announce themselves not as any azimuthal dependence, but specifically as a
+$\cos 2\psi$ dependence.
+
+At second order in the strong coupling and in the collinear limit, the cross
+section differential in $\psi$ therefore takes the form
+
+\begin{equation}
+  \frac{d\sigma}{d\psi} \;\propto\; a_0 \left( 1 + \frac{a_2}{a_0}\cos 2\psi \right),
+  \label{eq:cos2psi}
+\end{equation}
+
+where $a_0$ is the spin-averaged rate, or, in other words, the result one would obtain by ignoring
+the polarisation of the intermediate gluon, and $a_2$ is the coefficient of the
+interference term \cite{Karlberg_2021}. The ratio $a_2/a_0$ measures the strength of the correlation where 
+it vanishes if the intermediate gluon carries no polarisation memory, and its
+magnitude sets the depth of the $\cos 2\psi$ modulation. Its sign determines the
+phase, wether the second splitting preferentially aligns with the first
+splitting plane, giving maxima at $\psi = 0, \pi$, or preferentially lies
+perpendicular to it, giving maxima at $\psi = \pm\pi/2$. The measurement of these
+spin correlations reduces, in essence, to the measurement of this single ratio,
+and the whole of the analysis that follows is directed towards extracting it
+cleanly.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figuras/dpsi12_definition_new.png}
+  \caption{Azimuthal angles are defined between successive splitting planes for the
+  $1 \to 23$ splitting, $\mathcal{P}_1 \supset \{\vec{p}_2, \vec{p}_3\}$, and the
+  $2 \to 45$ splitting, $\mathcal{P}_2 \supset \{\vec{p}_4, \vec{p}_5\}$. The figure
+  also depicts the vectors normal to the two planes, $\vec{n}_1$ and $\vec{n}_2$ \cite{Karlberg_2021}.}
+  \label{fig:psi-definition}
+\end{figure}
+
+\subsection{Channel dependence of \texorpdfstring{$a_2/a_0$}{a2/a0}}
+\label{sec:spin-channel}
+
+The mechanism of Section~\ref{sec:spin-mechanism} was described for a generic
+intermediate gluon, but the strength and sign of the resulting modulation are not
+universal. They depend on the nature of the second splitting, or, that is, on the channel
+through which the polarised gluon decays. The two channels available to it are
+those of Eqs.~\eqref{eq:Pgg} and~\eqref{eq:Pgq}. The gluon may split into a pair
+of gluons, $g \to gg$, or into a quark--antiquark pair, $g \to q\bar{q}$. Each
+reads out the polarisation of the parent gluon, but the two do so with opposite
+sign \cite{Karlberg_2021}.
+
+The origin of the difference is the spin of the produced particles. The angular
+distribution of a splitting depends on how the daughters' spins couple to the
+polarisation axis of the parent, and this coupling differs between a final state
+of two vector gluons and one of two spin-half fermions \cite{Karlberg_2021}. The consequence is that
+the interference coefficient $a_2/a_0$ of equation \eqref{eq:cos2psi} enters with one
+sign for $g \to gg$ and the opposite sign for $g \to q\bar{q}$, where one channel
+favours alignment of the two splitting planes, the other favours a perpendicular
+configuration.
+
+This sign difference is the central obstacle that the present work is built to
+overcome. A measurement that does not distinguish the channel of the second
+splitting sums over both, and the two contributions, carrying opposite signs,
+partially cancel. What survives in such an inclusive measurement is not the intrinsic
+strength of the correlation but a residue, its magnitude and even its sign set by
+the accidental balance of $g \to gg$ and $g \to q\bar{q}$ splittings in the
+sample.The interference is not absent. It is diluted, and the degree of
+dilution reflects the flavour composition of the selection rather than any
+property of QCD.
+
+It follows that a faithful measurement of the effect requires isolating a single
+channel. Selecting the $g \to q\bar{q}$ splittings, and measuring $a_2/a_0$ on
+that subsample alone, replaces the diluted inclusive residue with the genuine
+coefficient of a single channel. This is precisely what the infrared-safe and
+collinear-safe flavour labelling of Section~\ref{sec:ifn} makes possible. By
+tagging the flavour of each splitting exposed in the declustering, it allows the
+$g \to q\bar{q}$ channel to be enriched and the $\cos 2\psi$ modulation to be
+measured as a function of the purity of that enrichment. The channel dependence
+described here is therefore not merely a feature of the physics but the reason the
+flavour selection developed in this work is indispensable, and it is the thread
+that connects the spin observable of the next section to the flavoured-jet
+algorithm of Section~\ref{sec:ifn}.
+
+\subsection{The Lund observable \texorpdfstring{$\dpsi$}{Delta psi 12}}
+\label{sec:spin-dpsi}
+
+The mechanism of the preceding sections can be turned into a concrete observable by
+using the Lund declustering of Section~\ref{sec:lund} to identify the two
+splittings whose planes are to be compared. This is the construction proposed in
+Ref.~\cite{Karlberg_2021}, and the observable it defines is the azimuthal angle
+$\dpsi$ between the hardest primary and secondary branchings of a jet.
+
+The two splittings are selected as follows. Declustering the primary Lund sequence
+of the jet yields a set of primary emissions, from which, among those who pass the
+Soft Drop condition of equation \eqref{eq:softdrop}, the one with largest relative
+transverse momentum $\kt$ is taken as the first splitting. Its softer branch is then
+declustered in turn, generating the secondary sequence associated with it. Equally
+to the procedure of choosing the frist splitting, among
+the secondary emissions that pass the same condition, the hardest in $\kt$ is
+taken as the second splitting.Each of the two chosen splittings defines a plane in
+momentum space. The plane $\mathcal{P}_1$ spanned by the branches of the first,
+and $\mathcal{P}_2$ spanned by the branches of the second. With this, $\dpsi$ is the
+azimuthal angle between them, illustrated in Figure~\ref{fig:psi-definition}.
+
+By construction, $\dpsi$ is the realisation for jets of the abstract angle $\psi$
+of equation \eqref{eq:cos2psi}. Its distribution therefore inherits the $\cos 2\psi$
+modulation derived in Section~\ref{sec:spin-mechanism},
+
+\begin{equation}
+  \frac{1}{\sigma}\frac{d\sigma}{d\dpsi} \;\propto\;
+  1 + \frac{a_2}{a_0}\cos 2\dpsi,
+  \label{eq:dpsi-modulation}
+\end{equation}
+
+and the coefficient $a_2/a_0$ extracted from it is the quantity that carries the
+spin-correlation physics. Two features of the definition are essential to what
+follows. First, because the second splitting is drawn from the secondary sequence
+seeded by the first, $\dpsi$ compares precisely the two successive branchings
+between which the polarisation memory of Section~\ref{sec:spin-mechanism} is
+transmitted. Second, the second splitting is a gluon decay whose channel $g \to gg$ or $g \to q\bar{q}$
+can be identified by the flavour labelling of
+Section~\ref{sec:ifn}. It is this second feature that makes $\dpsi$ not merely a
+measurement of the inclusive, diluted modulation, but a channel-resolved probe of
+the effect. Through restricting to secondary splittings tagged as $g \to q\bar{q}$, the
+sign cancellation of Section~\ref{sec:spin-channel} is undone, and $a_2/a_0$ can be
+measured on a single channel.
+
+\subsection{The three-point energy correlator}
+\label{sec:spin-eeec}
+
+The Lund observable of the previous section is not the only route to the collinear
+spin correlations of Section~\ref{sec:spin-mechanism}. The same $\cos 2\psi$
+modulation can be accessed through the energy flow within a jet, without reference
+to any clustering history, using the three-point energy correlator
+(EEEC)~\cite{Chen_2021}. Where $\dpsi$ reconstructs the two splitting planes by
+declustering, the energy correlator reads the effect directly from the angular and
+energy distribution of the jet's constituents, and the two therefore provide
+complementary handles on the same underlying physics.
+
+The three-point energy correlator measures the energy-weighted distribution of
+triplets of particles as a function of their relative angles. Concretely, it is
+defined as the energy-weighted sum over all triplets of particles in the jet,
+
+\begin{equation}
+  \frac{1}{\sigma}\frac{d^3\Sigma}{d\psi\, d\theta_S\, d\theta_L}
+  = \sum_{i,j,k}
+  \frac{\pt{}_{,i}\,\pt{}_{,j}\,\pt{}_{,k}}{\pt{}_{,\text{jet}}^{\,3}}\,
+  \delta(\psi - \psi_{ijk})\,
+  \delta(\theta_S - \theta_{S,ijk})\,
+  \delta(\theta_L - \theta_{L,ijk}),
+  \label{eq:eeec}
+\end{equation}
+
+where the sum runs over all triplets $(i,j,k)$ of the jet's constituents, each
+weighted by the product of their transverse momenta normalised to that of the
+jet. Here $\theta_S$ and $\theta_L$ are the smallest and largest opening angles
+of the triplet, and $\psi$ is the azimuthal angle between the plane spanned by
+the two closest particles and that spanned by the third. Its power for the present
+purpose is that this last variable retains sensitivity to the azimuthal
+orientation discussed in Section~\ref{sec:spin-mechanism}. This means that the
+correlator's dependence on $\psi$ carries the same $\cos 2\psi$ modulation, governed by the
+same interference between gluon polarisation states. Being built from energy
+weights and angles alone, the correlator is infrared and collinear safe by
+construction and requires no declustering, no grooming and no jet-flavour
+assignment.
+
+This makes the energy correlator an independent cross-check on the physics
+extracted through $\dpsi$. It reaches the same $\cos 2\psi$ effect by a route that
+shares none of the reconstruction choices on which the Lund observable depends,
+so that agreement between the two would establish that the measured modulation is a
+property of the radiation rather than an artefact of any one analysis chain. 
+Note that the coefficient $a_2/a_0$ extracted from the energy correlator is not expected to
+coincide numerically with that from $\dpsi$, since the two observables define the
+azimuthal angle through different objects and carry different sensitivities to the
+kinematic selection. What the two share is the sign and the qualitative behaviour
+dictated by the underlying gluon-polarisation interference, and it is at that
+level that they cross-check one another.
+The correlator is developed in this work as a complementary probe alongside the primary
+$\dpsi$ measurement, and its implementation and results are presented in
+Chapter~\ref{cap:resultados}.

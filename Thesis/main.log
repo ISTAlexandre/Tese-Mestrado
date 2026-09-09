@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  7 SEP 2026 14:28
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  9 SEP 2026 19:10
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/alexmendonca/Desktop/pic2/Thesis/main.tex
@@ -1042,7 +1042,7 @@ Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 51.
 Package biblatex Info: Reference segment=0 on input line 51.
-<figuras/logo-tecnico-lisboa.png, id=100, 737.75626pt x 299.1175pt>
+<figuras/logo-tecnico-lisboa.png, id=128, 737.75626pt x 299.1175pt>
 File: figuras/logo-tecnico-lisboa.png Graphic file (type png)
 <use figuras/logo-tecnico-lisboa.png>
 Package luatex.def Info: figuras/logo-tecnico-lisboa.png  used on input line 54.
@@ -1108,11 +1108,44 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 LaTeX Font Warning: Font shape `TU/Arial.ttf(0)/m/sc' undefined
 (Font)              using `TU/Arial.ttf(0)/m/n' instead on input line 299.
 
-[8] [9] [10]) [11]
+[8] [9] [10] [11]
+
+LaTeX Warning: Reference `(' on page 12 undefined on input line 509.
+
+<figuras/lund-cartoon-1.png, id=306, 410.53375pt x 471.7625pt>
+File: figuras/lund-cartoon-1.png Graphic file (type png)
+<use figuras/lund-cartoon-1.png>
+Package luatex.def Info: figuras/lund-cartoon-1.png  used on input line 537.
+(luatex.def)             Requested size: 227.62206pt x 261.56493pt.
+[12]
+<figuras/lund-cartoon-2.png, id=321, 239.89626pt x 239.89626pt>
+File: figuras/lund-cartoon-2.png Graphic file (type png)
+<use figuras/lund-cartoon-2.png>
+Package luatex.def Info: figuras/lund-cartoon-2.png  used on input line 570.
+(luatex.def)             Requested size: 227.62206pt x 227.6256pt.
+
+Missing character: There is no ﬀ (U+FB00) in font [/System/Library/Fonts/Supplemental/Arial.ttf]:mode=node;script=latn;language=dflt;+tlig;!
+Missing character: There is no ﬀ (U+FB00) in font [/System/Library/Fonts/Supplemental/Arial.ttf]:mode=node;script=latn;language=dflt;+tlig;!
+Missing character: There is no ﬀ (U+FB00) in font [/System/Library/Fonts/Supplemental/Arial.ttf]:mode=node;script=latn;language=dflt;+tlig;!
+[13<./figuras/lund-cartoon-1.png>]
+<figuras/figs_lund.png, id=342, 602.25pt x 556.0775pt>
+File: figuras/figs_lund.png Graphic file (type png)
+<use figuras/figs_lund.png>
+Package luatex.def Info: figuras/figs_lund.png  used on input line 614.
+(luatex.def)             Requested size: 227.62206pt x 210.17465pt.
+ [14
+Missing character: There is no ﬀ (U+FB00) in font [/System/Library/Fonts/Supplemental/Arial.ttf]:mode=node;script=latn;language=dflt;+tlig;!
+<./figuras/lund-cartoon-2.png><./figuras/figs_lund.png>] [15]
+<figuras/dpsi12_definition_new.png, id=368, 235.88126pt x 125.46875pt>
+File: figuras/dpsi12_definition_new.png Graphic file (type png)
+<use figuras/dpsi12_definition_new.png>
+Package luatex.def Info: figuras/dpsi12_definition_new.png  used on input line 705.
+(luatex.def)             Requested size: 227.62206pt x 121.07657pt.
+ [16<./figuras/dpsi12_definition_new.png>] [17]) [18]
 \openout2 = capitulos/metodos.aux
  (./capitulos/metodos.tex
 Chapter 3.
-) [12
+) [19
 
 
 
@@ -1121,7 +1154,7 @@ Chapter 3.
 \openout2 = capitulos/resultados.aux
  (./capitulos/resultados.tex
 Chapter 4.
-) [13
+) [20
 
 
 
@@ -1130,7 +1163,7 @@ Chapter 4.
 \openout2 = capitulos/conclusoes.aux
  (./capitulos/conclusoes.tex
 Chapter 5.
-) [14
+) [21
 
 
 
@@ -1140,12 +1173,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [15
+ [22
 
 
 
 
-] (./main.aux (./capitulos/introducao.aux) (./capitulos/estado-da-arte.aux) (./capitulos/metodos.aux) (./capitulos/resultados.aux) (./capitulos/conclusoes.aux))
+] [23] (./main.aux (./capitulos/introducao.aux) (./capitulos/estado-da-arte.aux) (./capitulos/metodos.aux) (./capitulos/resultados.aux) (./capitulos/conclusoes.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1154,27 +1187,30 @@ L3 programming layer <2026-01-19>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1345B78C61FB9B62E02737B0298273B3;3807.
+(rerunfilecheck)             Checksum: 532990C0F89746DBA5924E27092EA77F;5473.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 27202 strings out of 476076
+ 27346 strings out of 476076
  125081,1648299 words of node,token memory allocated
- 944 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 43 attribute, 105 glue_spec, 22 attribute_list, 1 write, 5 pdf_action nodes
-   avail lists: 1:3,2:1639,3:559,4:59,5:223,6:56,7:9923,8:47,9:511,10:20,11:734,12:1
- 49032 multiletter control sequences out of 65536+600000
- 51 fonts using 10558911 bytes
+ 1046 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 73 attribute, 105 glue_spec, 37 attribute_list, 1 write, 7 pdf_action nodes
+   avail lists: 1:4,2:2047,3:690,4:71,5:275,6:65,7:9929,8:86,9:511,10:20,11:744,12:1
+ 49135 multiletter control sequences out of 65536+600000
+ 66 fonts using 12975623 bytes
  88i,12n,105p,1236b,1793s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></System/Library/Fonts/Supplemental/Arial Italic.ttf></System/Library/Fonts/Supplemental/Arial.ttf></System/Library/Fonts/Supplemental/Arial Bold.ttf></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (21 pages, 219768 bytes).
+</usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></System/Library/Fonts/Supplemental/Arial Italic.ttf></System/Library/Fonts/Supplemental/Arial.ttf></System/Library/Fonts/Supplemental/Arial Bold.ttf></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on main.pdf (29 pages, 338550 bytes).
 
-PDF statistics: 373 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 1048576)
- 193 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 545 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 95 named destinations out of 1000 (max. 1048576)
+ 249 words of extra memory for PDF output out of 10000 (max. 100000000)
 

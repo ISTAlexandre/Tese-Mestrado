@@ -1,15 +1,17 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'main.blg'
-[38] biber-darwin:342> INFO - === Mon Sep  7, 2026, 14:28:46
-[47] Biber.pm:421> INFO - Reading 'main.bcf'
-[87] Biber.pm:1002> INFO - Found 13 citekeys in bib section 0
-[95] Biber.pm:4487> INFO - Processing section 0
-[102] Biber.pm:4678> INFO - Looking for bibtex file 'referencias.bib' for section 0
-[103] bibtex.pm:1713> INFO - LaTeX decoding ...
-[110] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
-[178] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[178] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[178] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[178] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[185] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[189] bbl.pm:779> INFO - Output to main.bbl
+[36] biber-darwin:342> INFO - === Wed Sep  9, 2026, 19:10:28
+[44] Biber.pm:421> INFO - Reading 'main.bcf'
+[85] Biber.pm:1002> INFO - Found 17 citekeys in bib section 0
+[93] Biber.pm:4487> INFO - Processing section 0
+[98] Biber.pm:4678> INFO - Looking for bibtex file 'referencias.bib' for section 0
+[99] bibtex.pm:1713> INFO - LaTeX decoding ...
+[109] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
+[186] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[186] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[186] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[186] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[195] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[199] bbl.pm:779> INFO - Output to main.bbl
+[199] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/l_/9rhztf8x7nvc70y6dvv1m8800000gn/T/biber_tmp_UYC4/f1acd60b6c57e7ae00f56d747b2cd459_23614.utf8, line 185, warning: undefined macro "Sept"
+[199] Biber.pm:134> INFO - WARNINGS: 1
