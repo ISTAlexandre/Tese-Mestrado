@@ -1,2 +1,88 @@
-\chapter{Methods}
+\chapter{Data and analysis}
 \label{cap:metodos}
+
+The preceding chapters established the observables through which collinear spin
+correlations can be accessed. Following that, this chapter describes how they are
+measured in practice and sets out the data on which the analysis is built, the software
+environment in which it runs, and the sequence of steps that leads from the
+publicly released collision events to the azimuthal distributions of
+Chapter~\ref{cap:resultados}. The guiding requirement for this chapter is 
+reproducibility. Consequently, enough detail is given, and the code used is
+available publicly in \cite{Mendonca:CMSJetSubstructure}, 
+so that the analysis can be repeated in full from public inputs alone.
+
+The chapter is organised as follows. Section~\ref{sec:opendata} introduces the
+CERN Open Data initiative and the principles that make an analysis of this kind
+possible outside the experimental collaborations. Section~\ref{sec:cms} describes
+the relevant features of the CMS detector, and Section~\ref{sec:dataset} the data
+format and the specific dataset used. Section~\ref{sec:pipeline} presents the
+analysis pipeline, from the extraction of jet constituents to the computation of
+the spin observables. Section~\ref{sec:flavour} describes the flavour selection
+that isolates the $g \to q\bar{q}$ channel, and Section~\ref{sec:systematics}
+assesses the systematic uncertainties affecting the measurement.
+
+\section{CERN Open Data}
+\label{sec:opendata}
+
+The data analysed in this work were obtained through the CERN Open Data
+Portal~\cite{CERNOpenData}, the platform through which the LHC experiments
+release reconstructed collision data and the associated simulation to the public.
+Launched in 2014, the portal was the first initiative of its kind in high-energy
+physics, and it has since grown into a substantial repository holding data from
+the ALICE, ATLAS, CMS and LHCb collaborations. The first releases came from the
+CMS experiment, and it is CMS data that this work uses.
+
+What the portal provides is not raw detector output but data at the same level
+of reconstruction used in collaborations' own published analysis. These datasets
+include physics objects such as jets, tracks and reconstructed particles, together
+with the calibration and run quality information needed to use them correctly. 
+Alongside the collision data, the portal releases the corresponding Monte Carlo simulation, the software
+environment in which the data were produced, and documentation describing their
+format and contents~\cite{CMSOpenDataGuide}. This completeness is what makes an
+analysis such as the present one possible. The released material contains not only
+the events but the means to interpret them.
+
+The significance of this for the present work is twofold. First, it makes the 
+measurement reproducible in a strong sense. Every input, from the collision 
+events to the simulation used for calibration, is publicly available, so 
+that the analysis can in principle be repeated in full by anyone. Second, 
+the portal specifies, for each dataset, the steps required to use it correctly. 
+For the dataset used here this amounts to restricting the analysis to a list of 
+validated runs, certified for physics use. The released jets already carry the 
+standard energy corrections and residual detector effects, applied by CMS.
+
+This type of analysis are feasible outside the collaborations has been demonstrated
+by a growing body of work built on CMS Open Data. Studies using released CMS
+samples have addressed problems ranging from the discrimination of quark and
+gluon initiated jets~\cite{Komiske_2022} to the measurement of $N$-point energy
+correlators inside jets~\cite{Komiske_2023}, the latter closely related to the
+observables of the present work. These analyses establish both that public data
+retain the information needed for substructure measurements and that results of
+genuine physics interest can be extracted from them. The present work is situated
+in this line. It applies the same public data to the measurement of collinear spin
+correlations, an effect not previously accessed in this way.
+
+A practical consequence of working with public data is the choice of software
+environment. The released CMS data are stored in formats tied to the experiment's
+reconstruction software, and reading them requires a compatible environment. 
+CMS provides this in the form of a dedicated container image that reproduces the
+software stack in which the data were generated. In this work that environment was
+used to read the released files and extract the jet and constituent information
+required by the analysis, which was then carried out in a lighter, independent
+environment. The details of this arrangement are given in
+Section~\ref{sec:dataset} and Section~\ref{sec:pipeline}.
+
+\section{The CMS detector}
+\label{sec:cms}
+
+\section{Data format and dataset}
+\label{sec:dataset}
+
+\section{Analysis pipeline}
+\label{sec:pipeline}
+
+\section{Flavour selection}
+\label{sec:flavour}
+
+\section{Systematic uncertainties}
+\label{sec:systematic}

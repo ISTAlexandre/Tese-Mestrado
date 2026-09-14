@@ -786,6 +786,138 @@
       \verb http://dx.doi.org/10.1103/PhysRevLett.126.112003
       \endverb
     \endentry
+    \entry{Mendonca:CMSJetSubstructure}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d3f8c15b764cebdbf210dd7aba282d94}{%
+           family={Mendonça},
+           familyi={M\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3f8c15b764cebdbf210dd7aba282d94}
+      \strng{fullhash}{d3f8c15b764cebdbf210dd7aba282d94}
+      \strng{fullhashraw}{d3f8c15b764cebdbf210dd7aba282d94}
+      \strng{bibnamehash}{d3f8c15b764cebdbf210dd7aba282d94}
+      \strng{authorbibnamehash}{d3f8c15b764cebdbf210dd7aba282d94}
+      \strng{authornamehash}{d3f8c15b764cebdbf210dd7aba282d94}
+      \strng{authorfullhash}{d3f8c15b764cebdbf210dd7aba282d94}
+      \strng{authorfullhashraw}{d3f8c15b764cebdbf210dd7aba282d94}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ISTAlexandre/PIC2-CMS-Jet-Substructure}}
+      \field{note}{Accessed: 2026-09-14}
+      \field{title}{{PIC2-CMS-Jet-Substructure: a jet-substructure analysis workflow for CMS Open Data based on ROOT, FastJet and MPI}}
+      \field{year}{2026}
+    \endentry
+    \entry{Komiske_2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d5eeb18a69bdaaab8fdde75adf930604}{%
+           family={Komiske},
+           familyi={K\bibinitperiod},
+           given={Patrick\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=da6cd303091fe9f90317c36f5657dcd6}{%
+           family={Kryhin},
+           familyi={K\bibinitperiod},
+           given={Serhii},
+           giveni={S\bibinitperiod}}}%
+        {{hash=90f102f9e580c8d97064f719874e0764}{%
+           family={Thaler},
+           familyi={T\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{5fc199c7e2dbf317f2a2810d2a0171ee}
+      \strng{fullhash}{5f0c86368b96c31d1dedc3a96df7daa0}
+      \strng{fullhashraw}{5f0c86368b96c31d1dedc3a96df7daa0}
+      \strng{bibnamehash}{5f0c86368b96c31d1dedc3a96df7daa0}
+      \strng{authorbibnamehash}{5f0c86368b96c31d1dedc3a96df7daa0}
+      \strng{authornamehash}{5fc199c7e2dbf317f2a2810d2a0171ee}
+      \strng{authorfullhash}{5f0c86368b96c31d1dedc3a96df7daa0}
+      \strng{authorfullhashraw}{5f0c86368b96c31d1dedc3a96df7daa0}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2470-0029}
+      \field{journaltitle}{Physical Review D}
+      \field{month}{11}
+      \field{number}{9}
+      \field{title}{Disentangling quarks and gluons in CMS open data}
+      \field{volume}{106}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1103/physrevd.106.094021
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevD.106.094021
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevD.106.094021
+      \endverb
+    \endentry
+    \entry{Komiske_2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=d5eeb18a69bdaaab8fdde75adf930604}{%
+           family={Komiske},
+           familyi={K\bibinitperiod},
+           given={Patrick\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=ed865308bbadb6711a7538ec37dfb559}{%
+           family={Moult},
+           familyi={M\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=90f102f9e580c8d97064f719874e0764}{%
+           family={Thaler},
+           familyi={T\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+        {{hash=97dfd7c796e6b7d642133cf644c059d0}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Hua\bibnamedelima Xing},
+           giveni={H\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{5fc199c7e2dbf317f2a2810d2a0171ee}
+      \strng{fullhash}{4accb0ea516d6c291744d548fe7bfb95}
+      \strng{fullhashraw}{4accb0ea516d6c291744d548fe7bfb95}
+      \strng{bibnamehash}{4accb0ea516d6c291744d548fe7bfb95}
+      \strng{authorbibnamehash}{4accb0ea516d6c291744d548fe7bfb95}
+      \strng{authornamehash}{5fc199c7e2dbf317f2a2810d2a0171ee}
+      \strng{authorfullhash}{4accb0ea516d6c291744d548fe7bfb95}
+      \strng{authorfullhashraw}{4accb0ea516d6c291744d548fe7bfb95}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{2}
+      \field{number}{5}
+      \field{title}{Analyzing N-Point Energy Correlators inside Jets with CMS Open Data}
+      \field{volume}{130}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1103/physrevlett.130.051901
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.130.051901
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.130.051901
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

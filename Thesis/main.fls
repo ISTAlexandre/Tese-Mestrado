@@ -191,6 +191,7 @@ INPUT ./main.bbl
 INPUT ./figuras/logo-tecnico-lisboa.png
 INPUT ./figuras/logo-tecnico-lisboa.png
 INPUT /usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./main.toc
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
@@ -214,6 +215,7 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
+OUTPUT main.toc
 OUTPUT capitulos/introducao.aux
 INPUT ./capitulos/introducao.tex
 OUTPUT capitulos/estado-da-arte.aux

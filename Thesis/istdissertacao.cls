@@ -128,7 +128,7 @@
     {\bfseries\fontsize{14}{17}\selectfont Júri\par}
     \vspace{0.2cm}
     {\fontsize{12}{14}\selectfont Presidente: \ISTpresidente\par
-    Orientador: \ISTorientadores\par
+    Orientador: Professor Doutor José Guilherme Teixeira de Almeida Milhano\par
     Vogais: \ISTvogais\par}
     \vspace{0.7cm}
     {\bfseries\fontsize{14}{17}\selectfont \ISTdata\par}
@@ -139,7 +139,7 @@
 }
 
 \newcommand{\declaracao}{%
-  \cleardoublepage\thispagestyle{plain}
+  \cleardoublepage\thispagestyle{empty}
   {\bfseries\fontsize{12}{14}\selectfont Declaração\par}\vspace{0.7em}
   Declaro que o presente documento é um trabalho original da minha autoria e que cumpre todos os requisitos do Código de Conduta e Boas Práticas da Universidade de Lisboa.
   \cleardoublepage
