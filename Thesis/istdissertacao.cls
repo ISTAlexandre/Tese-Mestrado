@@ -59,8 +59,8 @@
 \titleformat{\subsubsection}{\normalfont\bfseries\fontsize{10}{12}\selectfont}{\thesubsubsection}{0.65em}{}
 
 \captionsetup{font=small,labelfont=bf,labelsep=endash}
-\captionsetup[table]{position=top,skip=5pt,name=Quadro}
-\captionsetup[figure]{position=bottom,skip=5pt,name=Figura}
+\captionsetup[table]{position=top,skip=5pt,name=Table}
+\captionsetup[figure]{position=bottom,skip=5pt,name=Figure}
 \numberwithin{equation}{chapter}
 
 \renewcommand{\contentsname}{Índice}

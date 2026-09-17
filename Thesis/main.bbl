@@ -109,6 +109,7 @@
       \strng{authornamehash}{0448d009825e0bfac7316a655abf5740}
       \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
       \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -918,7 +919,223 @@
       \verb http://dx.doi.org/10.1103/PhysRevLett.130.051901
       \endverb
     \endentry
+    \entry{docker2026}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e6f3d214228cc5933c1a82019f7dc0e0}{%
+           family={{Docker, Inc.}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6f3d214228cc5933c1a82019f7dc0e0}
+      \strng{fullhash}{e6f3d214228cc5933c1a82019f7dc0e0}
+      \strng{fullhashraw}{e6f3d214228cc5933c1a82019f7dc0e0}
+      \strng{bibnamehash}{e6f3d214228cc5933c1a82019f7dc0e0}
+      \strng{authorbibnamehash}{e6f3d214228cc5933c1a82019f7dc0e0}
+      \strng{authornamehash}{e6f3d214228cc5933c1a82019f7dc0e0}
+      \strng{authorfullhash}{e6f3d214228cc5933c1a82019f7dc0e0}
+      \strng{authorfullhashraw}{e6f3d214228cc5933c1a82019f7dc0e0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-09-16}
+      \field{title}{Docker: Accelerated Container Application Development}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://www.docker.com/
+      \endverb
+      \verb{url}
+      \verb https://www.docker.com/
+      \endverb
+    \endentry
+    \entry{CMS:2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0448d009825e0bfac7316a655abf5740}{%
+           family={{CMS Collaboration}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \strng{bibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorbibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authornamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JINST}
+      \field{title}{{The CMS Experiment at the CERN LHC}}
+      \field{volume}{3}
+      \field{year}{2008}
+      \field{pages}{S08004}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/3/08/S08004
+      \endverb
+    \endentry
+    \entry{CMS:2017}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0448d009825e0bfac7316a655abf5740}{%
+           family={{CMS Collaboration}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \strng{bibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorbibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authornamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \field{extraname}{3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JINST}
+      \field{title}{{Particle-flow reconstruction and global event description with the CMS detector}}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{P10003}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/12/10/P10003
+      \endverb
+      \verb{eprint}
+      \verb 1706.04965
+      \endverb
+    \endentry
+    \entry{JetHT2016G}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0448d009825e0bfac7316a655abf5740}{%
+           family={{CMS Collaboration}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \strng{bibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorbibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authornamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \field{extraname}{4}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{CERN Open Data Portal}
+      \field{title}{{JetHT primary dataset in MINIAOD format from RunG of 2016}}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.7483/OPENDATA.CMS.1KTG.X0W4
+      \endverb
+    \endentry
+    \entry{CMS:2017trigger}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0448d009825e0bfac7316a655abf5740}{%
+           family={{CMS Collaboration}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \strng{bibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorbibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authornamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \field{extraname}{5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JINST}
+      \field{title}{{The CMS trigger system}}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{P01020}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/12/01/P01020
+      \endverb
+      \verb{eprint}
+      \verb 1609.02366
+      \endverb
+    \endentry
+    \entry{CMS:2019csb}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=63f3fa4a8c5eb14450790f54e98365f6}{%
+           family={Sirunyan},
+           familyi={S\bibinitperiod},
+           given={Albert\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f19eea9dd97acf54ff53ff11228f09d4}
+      \strng{fullhash}{f19eea9dd97acf54ff53ff11228f09d4}
+      \strng{fullhashraw}{f19eea9dd97acf54ff53ff11228f09d4}
+      \strng{bibnamehash}{f19eea9dd97acf54ff53ff11228f09d4}
+      \strng{authorbibnamehash}{f19eea9dd97acf54ff53ff11228f09d4}
+      \strng{authornamehash}{f19eea9dd97acf54ff53ff11228f09d4}
+      \strng{authorfullhash}{f19eea9dd97acf54ff53ff11228f09d4}
+      \strng{authorfullhashraw}{f19eea9dd97acf54ff53ff11228f09d4}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{number}{1}
+      \field{title}{{Extraction and validation of a new set of CMS PYTHIA8 tunes from underlying-event measurements}}
+      \field{volume}{80}
+      \field{year}{2020}
+      \field{pages}{4}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-019-7499-4
+      \endverb
+      \verb{eprint}
+      \verb 1903.12179
+      \endverb
+    \endentry
+    \entry{QCDMC2016}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0448d009825e0bfac7316a655abf5740}{%
+           family={{CMS Collaboration}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \strng{bibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorbibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authornamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \field{extraname}{6}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{CERN Open Data Portal}
+      \field{title}{{Simulated QCD multijet dataset in MINIAODSIM format from 2016}}
+      \field{year}{2024}
+      \verb{doi}
+      \verb \TODO{DOI do record 63234}
+      \endverb
+    \endentry
   \enddatalist
+  \missing{Sjostrand:2014zea}
 \endrefsection
 \endinput
 

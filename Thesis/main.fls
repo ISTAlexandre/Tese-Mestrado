@@ -242,11 +242,13 @@ INPUT ./figuras/dpsi12_definition_new.png
 INPUT ./figuras/dpsi12_definition_new.png
 OUTPUT capitulos/metodos.aux
 INPUT ./capitulos/metodos.tex
+INPUT ./figuras/CMS.png
+INPUT ./figuras/CMS.png
+INPUT /Users/alexmendonca/Library/texlive/2026/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 OUTPUT capitulos/resultados.aux
 INPUT ./capitulos/resultados.tex
 OUTPUT capitulos/conclusoes.aux
 INPUT ./capitulos/conclusoes.tex
-INPUT /Users/alexmendonca/Library/texlive/2026/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT ./main.aux
 INPUT ./capitulos/introducao.aux
 INPUT ./capitulos/estado-da-arte.aux
