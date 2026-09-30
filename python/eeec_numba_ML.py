@@ -52,23 +52,14 @@ def fill_dpsi_hist_for_jet(
     for i in range(n):
         theta[i, i] = 0.0
         for j in range(i + 1, n):
-            if norms[i] <= 0.0 or norms[j] <= 0.0:
-                ang = np.nan
-            else:
-                dot = (
-                    pvecs[i, 0] * pvecs[j, 0]
-                    + pvecs[i, 1] * pvecs[j, 1]
-                    + pvecs[i, 2] * pvecs[j, 2]
-                )
-
-                cosang = dot / (norms[i] * norms[j])
-
-                if cosang > 1.0:
-                    cosang = 1.0
-                elif cosang < -1.0:
-                    cosang = -1.0
-
-                ang = np.arccos(cosang)
+            # Distance in the (eta, phi) plane, boost invariant along the beam
+            dphi = phis[i] - phis[j]
+            while dphi > np.pi:
+                dphi -= 2.0 * np.pi
+            while dphi <= -np.pi:
+                dphi += 2.0 * np.pi
+            deta = etas[i] - etas[j]
+            ang = np.sqrt(deta * deta + dphi * dphi)
 
             theta[i, j] = ang
             theta[j, i] = ang

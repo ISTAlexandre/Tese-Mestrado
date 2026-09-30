@@ -5,7 +5,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Abstract}{iii}{chapter*.3}%
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{List of abbreviations and symbols}{v}{chapter*.4}%
+\contentsline {chapter}{List of abbreviations and symbols}{vi}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Context and motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectives}{2}{section.1.2}%
@@ -34,8 +34,21 @@
 \contentsline {section}{\numberline {3.2}The CMS detector}{20}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Data format and datasets}{21}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Analysis pipeline}{23}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Flavour selection}{23}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Systematic uncertainties}{23}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{24}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusions}{25}{chapter.5}%
-\contentsline {chapter}{REFERENCES}{26}{chapter*.12}%
+\contentsline {subsection}{\numberline {3.4.1}Extraction}{25}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Declustering and Lund observables}{25}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Generator-level channel labelling}{27}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}The energy correlator}{28}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Flavour selection}{30}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Strategy and classes}{30}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Input features}{31}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Network architecture and training}{32}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Alternative approaches}{34}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Application and purity calibration}{35}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}Systematic uncertainties}{35}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Statistical uncertainty}{36}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Modelling of the purity}{37}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Detector effects}{38}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Trigger and analysis choices}{38}{subsection.3.6.4}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{40}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusions}{41}{chapter.5}%
+\contentsline {chapter}{REFERENCES}{42}{chapter*.20}%

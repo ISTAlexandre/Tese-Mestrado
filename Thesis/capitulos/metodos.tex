@@ -178,20 +178,20 @@ and released as part of the Ultra-Legacy reprocessing, the final and most comple
 calibration of the Run~2 data.
 
 \begin{table}[htbp]
-    \centering
-    \caption{Characteristics of the JetHT primary dataset \cite{JetHT2016G}.}
-    \label{tab:dataset}
-    \begin{tabularx}{\textwidth}{@{}lX@{}}
-      \toprule
-      Property & Value \\
-      \midrule
-      Dataset & \texttt{/JetHT/Run2016G-UL2016\_MiniAODv2-v2/MINIAOD} \\
-      Collision & proton--proton, $\sqrt{s} = 13$~TeV \\
-      Run period & 2016G (runs 278820--280385) \\
-      Events & $1.21 \times 10^{8}$ \\
-      Size & 4.1~TiB (1236 files) \\
-      \bottomrule
-    \end{tabularx}
+  \centering
+  \caption{Characteristics of the JetHT primary dataset \cite{JetHT2016G}.}
+  \label{tab:dataset}
+  \begin{tabular}{ll}
+    \toprule
+    Property & Value \\
+    \midrule
+    Dataset & \texttt{/JetHT/Run2016G-UL2016\_MiniAODv2-v2/MINIAOD} \\
+    Collision & proton--proton, $\sqrt{s} = 13$~TeV \\
+    Run period & 2016G (runs 278820--280385) \\
+    Events & $1.21 \times 10^{8}$ \\
+    Size & 4.1~TiB (1236 files) \\
+    \bottomrule
+  \end{tabular}
 \end{table}
   
 The JetHT dataset is well suited for this work analysis since it is enriched in jet events. CMS records
@@ -224,17 +224,1090 @@ anti-$\kt$ algorithm of section \ref{sec:antikt} and then, through the Cambridge
 \ref{sec:ca} and the IFN algorithm of Section~\ref{sec:ifn}, into a branching
 history in which each splitting acquires a flavour. It is from this process that 
 the channel of each splitting, $g\to q\bar{q}$, $g\to gg$ or $q\to qg$, is labelled. 
-This flavour labelling process and how it is further used in collision data is discussed in Section \ref{sec:flavour}. 
-The sample used is a QCD multijet dataset generated with
-\textsc{Pythia}~8~\cite{Sjostrand:2014zea} using the CP5
+This flavour labelling process and how it is further used in collision data is discussed 
+with more detail in Section \ref{sec:flavour}. 
+The simulated samples are QCD multijet datasets generated with
+\textsc{Pythia}~8~\cite{Sj_strand_2015} using the CP5
 tune~\cite{CMS:2019csb}, passed through the full simulation of the CMS detector
-and released in the same format as the collision data (MiniAODSIM)~\cite{QCDMC2016}.
+and released in the same format as the collision data (MiniAODSIM). They are
+produced in intervals of the partonic transverse momentum $\hat{p}_{\mathrm{T}}$.
+The interval $800 < \hat{p}_{\mathrm{T}} < 1000$~GeV~\cite{QCDMC2016_800to1000}
+is used to train the flavour selection, and the independent interval
+$600 < \hat{p}_{\mathrm{T}} < 800$~GeV~\cite{QCDMC2016_600to800} to compute
+its purity.
+
+From these two datasets, there are some quantities extracted from each event, which are listed in
+Table \ref{tab:variables}. From each jet in collision datasets, their constituents
+are stored, since they are needed for the declustering of Chapter~\ref{cap:estado-da-arte} and
+to build the Lund jet plane. The electric charge of
+each constituent is extracted in addition to its kinematics, as it is used later in
+the flavour selection of Section~\ref{sec:flavour}. In the simulated datasets, the
+same jet and constituent quantities are extracted, together with the final-state
+generated partons of the event, each with its identity. These partons carry the
+flavour information from which the splitting flavour is determined, as described in
+Section~\ref{sec:flavour}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Quantities extracted from each event. The jet and constituent
+  quantities are stored for both the collision data and the simulation. The
+  generated partons are available in the simulation only.}
+  \label{tab:variables}
+  \begin{tabularx}{\textwidth}{@{}llX@{}}
+    \toprule
+    Level & Quantity & Description \\
+    \midrule
+    Jet & \texttt{jet\_pt}, \texttt{jet\_eta}, \texttt{jet\_phi}, \texttt{jet\_mass}
+        & Transverse momentum, pseudorapidity, azimuth and mass of each jet \\[6pt]
+    \midrule
+    Constituent & \texttt{const\_pt}, \texttt{const\_eta}, \texttt{const\_phi}, \texttt{const\_mass}
+        & Kinematics of each jet constituent \\[2pt]
+        & \texttt{const\_charge} & Electric charge of each constituent \\[6pt]
+    \midrule
+    Parton & \texttt{gen\_pt}, \texttt{gen\_eta}, \texttt{gen\_phi}, \texttt{gen\_mass}
+        & Kinematics of each final-state parton (simulation only) \\[2pt]
+        & \texttt{gen\_pdgId} & Identity of each parton (simulation only) \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+The jets themselves are taken from the \texttt{slimmedJetsAK8} collection, which are the
+\antikt jets with $R=0.8$ stored in MiniAOD, in a way that the jet definition of
+Section~\ref{sec:antikt} is applied by CMS, making it not necessary to repeat this step in this analysis.
+Beyond the requirement of the transverse momentum described earlier in this section, jets
+are required to lie within $|\eta| < 1.7$, keeping them in the
+central, well-instrumented region of the detector. Events are further required to
+contain at least two such jets separated in azimuth by more than $2$~radians,
+selecting the back to back dijet topology in which the two hard jets recoil
+against one another. In addition jet's constituents are required to have $\pt > 1 \text{GeV}$ in
+order to be recorded along with the jet. This selection follows closely that of the CMS measurement on
+which the present analysis is based~\cite{CMS:2026jnt}, applied here to the
+earlier public dataset. The complete set of requirements is summarised in
+Table~\ref{tab:selection}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Event and jet selection. The trigger and certified-run requirements
+  apply to the collision data only.}
+  \label{tab:selection}
+  \begin{tabular}{cc}
+    \toprule
+    Requirement & Value \\
+    \midrule
+    Trigger        & \texttt{HLT\_AK8PFJet} (data only) \\
+    Certified runs & validated-run list (data only) \\
+    Jet collection & \texttt{slimmedJetsAK8}, anti-$\kt$ $R=0.8$ \\
+    Jet $\pt$      & $> 700$~GeV \\
+    Jet $|\eta|$   & $< 1.7$ \\
+    Dijet topology & at least two jets with $\Delta\phi > 2$~rad \\
+    Constituent $\pt$ & $> 1$~GeV \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 \section{Analysis pipeline}
 \label{sec:pipeline}
 
+The analysis made in this work, proceeds in a sequence of steps that start from the 
+collision and simulated datasets, described in Section \ref{sec:dataset}, and end
+with the final azimuthal distributions. These steps are split into two parts,
+separated by the software environment in which each one runs. The first part is the 
+extraction of the jet's properties and constituent information from the datases. 
+This step, as idicated by CMS, must be done inside  the CMS Open Data container or the CMS Virtual Machine
+, since reading the MiniAOD format requires the experiment's own reconstruction software. In this
+work, this step was done using the CMS Open Data docker container (\textsc{CMSSW}) with, for each dataset, the recommended
+version of it. The second step covers declustering of the jets and the computation of the observables.
+It is done in a separate environment built on ROOT \cite{Brun:1997pa}, \textsc{FastJet}~\cite{Cacciari_2012} and Python.
+This separation makes the user able to use the \textsc{CMSSW} software just for a single step which is
+completely mandatory and allows the rest of the analysis to run in a modern and
+portable environment.
+
+The stages of the pipeline are ilustrated in Figure \ref{fig:pipeline} and described in the following
+subsections. Section~\ref{sec:extraction} describes
+the extraction of the jet ntuples from the collision and simulated samples.
+Section~\ref{sec:declustering-impl} describes the reclustering and declustering of
+each jet and the construction of the Lund observables and of $\dpsi$.
+Section~\ref{sec:genlevel} describes how the same procedure is applied to the
+generated partons in simulation in order to label the channel of each splitting.
+Section~\ref{sec:eeec-impl} describes the computation of the three-point energy
+correlator. The outputs of these stages feed the flavour selection of
+Section~\ref{sec:flavour} and the measurement presented in
+Chapter~\ref{cap:resultados}. Since the datasets are extremely large, with a large
+number of jets and its variables, every stage has parallelisation integration. For the
+most demanding step of this analysis, which was the extraction of the variables, the code was 
+run with the LIP's computing cluster, making it an hige difference for the time required to
+complete this step. The code used is publicly available~\cite{Mendonca:CMSJetSubstructure}, so that each stage can be
+reproduced from the released data alone.
+
+\begin{figure}[htbp]
+  \centering
+  \resizebox{0.75\textwidth}{!}{\input{figuras/pipeline}}
+  \caption{Schematic of the analysis pipeline. The extraction stage runs inside
+  the CMS environment and produces the jet ntuples. The declustering, the
+  generator-level labelling and the energy-correlator computation run outside it,
+  and feed the flavour selection and the final measurement.}
+  \label{fig:pipeline}
+\end{figure}
+
+\subsection{Extraction}
+\label{sec:extraction}
+
+The first stage of this work's pipeline is to convert the released MiniAOD and MiniAODSIM datasets
+into compact ROOT ntuples with all the extracted information necessary for the rest of the analysis.
+This stage runs inside the CMS open data container, where the collections present inside the datasets
+are accessed through FWLite \cite{CMS:FWLite}, a lightweight Python interface to the CMS event data
+model. The script developed by this work is capable of analysing datasets without downloading them.
+In order to archieve that, the dataset's files are listed in the file indices provided with each
+record on the CERN Open Data Portal and can be read remotelly from the portal's storage. This
+completely avoids downloading transferring the several terabytes of the full dataset but sacrifices
+a little bit of the execution time of the script. Since there are multiple files and all different 
+from each other, this script is parallelised as an array of jobs on a computing cluster. 
+Each one of this jobs processes a portion of all the dataset's files, creating for each file
+its own output file. After all the jobs are completed, a script was made to merge all the 
+output files into a single one with all the extracted variables of the dataset.
+
+For the collision data, each event goes through a sequence of requirements. As required by CMS,
+each event is first checked against the list of certified luminosity sections, also provided 
+with the datasets, and discarded if its run or luminosity sections are not certified for physics.
+Then, the event is required to have triggered at least one of the \texttt{HLT\_AK8PFJet} trigger
+paths. After passing these two conditions, the jets of the \texttt{slimmedJetsAK8} collection are read off
+and those satisfying the transverse-momentum and pseudorapidity requirements of
+Table~\ref{tab:selection} are extracted. For each extracted jet, its kinematics are
+stored together with the list of its constituents, with $\pt > 1 \text{GeV}$, accompanied by their kinematics and electric charge.
+Finally, the event is kept only if it contains at least two extracted jets separated in azimuth by more
+than $2$~radians, in which case it is written to the output tree.
+
+The simulated sample is processed in a similar way with two differences. The run and luminosity
+certification and trigger requirements are not applied, since they concern real conditions of 
+data taking and have no counterpart in simulation. Because the
+selected jets lie in the region where the trigger is almost fully efficient,
+omitting it in simulation does not introduce a difference between the two
+samples. In addition, a reconstructed jet and its constituents are only extracted if it has an associated
+generator-level jet, so that every simulated jet entering the analysis has a
+counterpart at generator level. Furthermore, for each event, the final state partons 
+are also stored. These partons are quarks and gluons of the generator level record
+that do not split into other partons. In order words, they are the last partons of the shower
+before hadronisation. These final state partons are stored for the event as a whole,
+with their kinematics and identity, and are not
+associated to any reconstructed jet. This step is only done at a later stage described in
+Section \ref{sec:genlevel}.
+
+The output of this stage is then a ROOT tree per sample, in which each entry
+corresponds to an event and holds the selected jets, their constituents and, in
+simulation, the generated partons, as listed in Table~\ref{tab:variables}. After adquiring
+this tree, the CMS software is no longer needed for the remaining stages of this work's pipeline,
+since it is not in a MiniAOD data format and instead a simple ROOT tree.
+
+\subsection{Declustering and Lund observables}
+\label{sec:declustering-impl}
+
+The second stage of this pipeline picks up the output ROOT tree, from the previous stage, and
+computes, for each jet present, the Lund declustering and the observables built from it. 
+This script is written in C++ and uses ROOT and \textsc{FastJet} \cite{Cacciari_2012}, running
+outside the CMS container. Each ntuple file can be processed independently, so the
+stage is parallelised across files in the same way as the extraction, although it can also
+be ran in a single merged output file. The variables computed by this script are stored
+in the same tree per jet as new branches, so that a single file holds, for every jet, both the extracted information and the
+observables derived from it.
+
+For each event inside the ROOT tree, the script processes the jets in decreasing order of their
+transverse momentum, and each jet contributes to the analysis. The stored constituents of the
+jet are first converted into four-momenta from their transverse momentum, pseudorapidity, azimuth and mass, following equations \ref{eq:cartesian}-\ref{eq:energy},
+and each is tagged with its electric charge so that it can be traced back after the clustering process.
+The constituents are then reclustered with the C/A algorithm of Section \ref{sec:ca}, using 
+$R=2$. This value is far larger than the angular size of an AK8 jet ($0.8$), since it
+guarantees that all the constituents of a single \antikt jet are gathered into a single C/A
+object and that no part of the jet is lost during the reclustering. 
+Jets with fewer than two constituents cannot be
+declustered and are flagged as failures.
+
+\begin{equation}
+  p_{x,i} = p_{\mathrm{T},i}\cos\phi_i, \qquad
+  p_{y,i} = p_{\mathrm{T},i}\sin\phi_i, \qquad
+  p_{z,i} = p_{\mathrm{T},i}\sinh\eta_i,
+  \label{eq:cartesian}
+\end{equation}
+%
+\begin{equation}
+  E_i = \sqrt{p_{x,i}^2 + p_{y,i}^2 + p_{z,i}^2 + m_i^2} .
+  \label{eq:energy}
+\end{equation}
+
+After the reclustering, the full history is then declustered with the \textsc{LundGenerator}
+of the \textsc{FastJet} contrib~\cite{Dreyer:2018nbf}, which follows the harder branch at each step
+and returns the ordered list of primary declusterings. For
+each declustering it provides the angular separation $\dR$, the relative
+transverse momentum $\kt$, the momentum fraction $z$ and the Lund coordinates of
+Eq.~\eqref{eq:lund-coords}. Each primary declusterings in order to be recorded has to pass the 
+SoftDrop condition of equation \ref{eq:softdrop} with $z_{\text{cut}} = 0.1$ and $\beta = 0$,
+reducing it to $z > 0.1$. With this list of primary declusterings, the primary splitting is
+chosen by selecting the declustering with largest $\kt$, with its harder and softer branches
+denoted as $p_1$ and $p_2$. The softer branche $p_2$ is then declustered in the same way,
+producing a second list of secondary declusterings. These secondary declusterings that satisfy, again,
+the SoftDrop condition, form the secondary Lund plane, and the one with largest $\kt$ is selected
+as the secondary splitting, with harder and softer branches denoted as $p_3$ and $p_4$. If among
+the list of primary or secondary declusterings noone satisfies the SoftDrop condition, the jet
+is flagged as a failure and no $\dpsi$ is computed.
+
+Following the selection of the primary and secondary splittings, the azimuthal angle between
+the two splitting planes is computed from the three-momenta of the four branches,
+following the convention of the CMS measurement \cite{CMS:2026jnt}. The normals of the two planes
+are
+
+\begin{equation}
+  \hat{n}_1 = \frac{\vec{p}_1 \times \vec{p}_2}{|\vec{p}_1 \times \vec{p}_2|},
+  \qquad
+  \hat{n}_2 = \frac{\vec{p}_3 \times \vec{p}_4}{|\vec{p}_3 \times \vec{p}_4|},
+  \label{eq:normals}
+\end{equation}
+
+and the angle between them is
+
+\begin{equation}
+  \dpsi = \arccos\!\left( s \, \hat{n}_1 \cdot \hat{n}_2 \right),
+  \qquad
+  s = \operatorname{sign}\!\left[ (\hat{n}_1 \times \hat{n}_2) \cdot
+      \vec{p}_{\mathrm{h}} \right],
+  \label{eq:dpsi-impl}
+\end{equation}
+
+where $\vec{p}_{\mathrm{h}}$ is the more energetic of $\vec{p}_1$ and
+$\vec{p}_2$. The sign $s$ orients the two normals consistently, so that $\dpsi$
+is defined in the range $[0, \pi]$. Since the two branches of a declustering are always separated in angle, both
+planes are well defined. Nevertheless, as a safe guard, the script returns no value in the
+case of exactly collinear branches, for which the cross products of
+Eq.~\eqref{eq:normals} vanish.
+
+To conclude this process, a set of shape variables is computed for each of the four branches
+$p_1$ to $p_4$ from the constituents it contains. hese are the number of
+constituents $n_{\text{all}}$, the number of charged constituents
+$n_{\text{ch}}$, the transverse-momentum-weighted width $\sigma$ and the
+transverse-momentum-weighted mean constituent momentum $\langle \pt \rangle$,
+defined as
+
+\begin{equation}
+  \sigma = \frac{\sum_i p_{\mathrm{T},i}\,\Delta R_i}{\sum_i p_{\mathrm{T},i}},
+  \qquad
+  \langle \pt \rangle = \frac{\sum_i p_{\mathrm{T},i}^{2}}{\sum_i p_{\mathrm{T},i}},
+  \label{eq:shapes}
+\end{equation}
+
+where the sums run over the constituents of the branch and $\Delta R_i$ is the
+angular distance of constituent $i$ from the branch axis. These variables play no role
+in the computation of $\dpsi$. They characterise the internal structure of
+each branch, which differs between branches initiated by quarks and by gluons, and
+they serve as the inputs to the flavour selection of Section~\ref{sec:flavour}. In collision
+data no truth information is available, so the channel of the second splitting is left undetermined
+at this stage. The same computation, together with the determination of the splitting channel, is 
+carried out in simulation data and it is described on the following section.
+
+\subsection{Generator-level channel labelling}
+\label{sec:genlevel}
+
+In simulated data, the reconstructed jets are processed exactly as described in Section \ref{sec:declustering-impl},
+so that the Lund observables obtained are identical to the ones obtained in collision data,
+however, the channel label of the primary and secondary splittings is also assigned. This 
+label is built from the final-state partons stored during extraction and its construction
+is made in three steps. Flavoured jets are first built from the
+partons, these generator-level jets are then matched to the reconstructed jets,
+and finally the splittings of the two are matched and labelled.
+
+Firstly, the final-state partons of each event are converted into four-momenta in the same 
+way as the reconstructed constituents, through equation \eqref{eq:cartesian} and \eqref{eq:energy},
+but, in addition, each parton is also assigned a flavour from their identity. A quark
+carries one unit of its flavour, an antiquark minus one unit, and a gluon is
+flavourless. The partons are then clustured using the \antikt algorithm with $R=0.8$, mimicking
+the same definition as the reconstructed jets. Afterwards, it is necessary to match these new generated jets
+with their respective reconstructed jet. This step is performed in their C/A reclustering forms.
+On the reconstructed side, this is the object
+obtained in Section~\ref{sec:declustering-impl} by reclustering the constituents
+of the jet with the Cambridge/Aachen algorithm and $R = 2$. On the generator side,
+the partons of each anti-$\kt$ jet containing at least two partons are reclustered
+in the same way, with the Cambridge/Aachen algorithm and $R = 2$, combined with the
+IFN procedure of Section~\ref{sec:ifn}~\cite{caola2023flavouredjetsexactantikt} with its parameter
+$\alpha$ set to $2$. Each reconstructed jet, taken in order of decreasing
+transverse momentum, is matched to the closest generator-level object in the
+$(\eta,\phi)$ plane among those not already matched, provided that
+
+\begin{equation}
+  \dR\!\left( j^{\text{reco}}_{\text{C/A}},\, j^{\text{gen}}_{\text{C/A}} \right)
+  < 0.4 ,
+  \label{eq:jetmatch}
+\end{equation}
+
+a threshold equal to half the radius of the anti-$\kt$ jets. This matching process is therefore
+one to one. Since each C/A object contains all the constituents of the \antikt jet which was built
+from, its axis should coincide with the axis of the original jet, making it equivalent to matching
+to matching the \antikt jets themselves. The generator-level object selected in this way
+provides a Cambridge/Aachen history in which every branch carries an infrared-
+and collinear-safe flavour. A reconstructed jet with no generator-level
+counterpart satisfying Eq.~\eqref{eq:jetmatch} receives no truth label and is not
+used in the training of the flavour selection.
+
+With the jet matching complete, the generator-level history is then declustered via the same
+process of as the reconstructed one. he harder branch is followed at each step, each
+splitting is tested against the condition $z > 0.1$, and among the splittings that
+satisfy it the one with the largest $\kt$ is taken as the primary generator-level
+splitting. Its softer branch is declustered in turn to obtain the secondary
+generator-level splitting. For each of these two splittings, the flavours of their branches
+are read from the IFN history and the channel of their splitting is labelled according to 
+Table \ref{tab:channels}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Assignment of the splitting channel from the IFN flavours of the two
+  branches of a generator-level splitting.}
+  \label{tab:channels}
+  \begin{tabular}{ll}
+    \toprule
+    Flavours of the two branches & Channel \\
+    \midrule
+    both flavourless                                   & $g \to gg$ \\
+    one quark or antiquark and one flavourless         & $q \to qg$ \\
+    a quark and an antiquark of the same flavour       & $g \to q\bar{q}$ \\
+    any other combination                              & rest \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Note that during this work, the channel of a splitting is denoted as the one inferred from the
+IFN flavours of its own branches thus, and, although it is an infrared and collinear safe
+proxy, it may not coincide with coincide with the real truth channel of the splitting.
+The flavour of a branch reflects
+the whole of the radiation it contains, and the matching to the reconstructed jet
+and the hadronisation introduce further differences. Therefore, the modulation obtained for a
+given label in simulation does not reproduce the theoretical value of \cite{Karlberg_2021} 
+for the corresponding channel.
+
+In order to then label the primary and secondary reconstructed splittings, 
+the primary and secondary generator-level splitting have to correspond geometrically to them.
+For a reconstructed splitting with branches $p_a$
+and $p_b$ and opening angle $\Delta_{ab}$, and the generator-level splitting with
+branches $g_a$ and $g_b$, the requirement is
+
+\begin{equation}
+  \dR(p_a, g_a) < \tfrac{1}{2}\,\Delta_{ab}
+  \quad\text{and}\quad
+  \dR(p_b, g_b) < \tfrac{1}{2}\,\Delta_{ab},
+  \label{eq:splitmatch}
+\end{equation}
+
+where the same condition is also accepted with $g_a$ and $g_b$ interchanged. This is applied 
+seperately to the primary splitting, with branches $p_1$ and $p_2$, and to the secondary
+splitting with branches $p_3$ and $p_4$. When this condition is satisfied, the reconstructed
+splitting gets labelled with the channel of Table \ref{tab:channels}. When the condition fails
+to give any channel, the splitting is labelled as unmatched. An unmatched splitting is
+one for which the reconstructed declustering does not reproduce the partonic
+branching, typically because hadronisation or detector effects have altered the
+clustering sequence. This type of splitting carries no relieable flavour information,
+so it acts as a background which must be rejected.
+
+Subsequently, each simulated jet carries a label for its first and second splittings, taking one of the values unmatched, $g \to q\bar{q}$, $q \to qg$, $g \to gg$ or
+rest. The label of the second splitting is the truth information on which the
+flavour selection of Section~\ref{sec:flavour} is trained. It is used only as the
+target of that selection, while its inputs are the reconstructed quantities of
+Section~\ref{sec:declustering-impl}, which are available in data as well.
+
+\subsection{The energy correlator}
+\label{sec:eeec-impl}
+
+The three-point energy correlator of Section \ref{sec:spin-eeec} is computed seperately from the
+declustering, using directly the jet's constituents stored after extraction. This process
+does not involve any declustering, grooming or flavour selection, so that it computes the spin
+correlation through a different route of the Lund observables. The definition of the three-point
+energy correlator follows that of Ref.\cite{Karlberg_2021}, based on the original proposal
+of Ref.\cite{Chen_2021}, with the particle energies replaced by transverse
+momenta and the opening angles angles between particles are
+replaced by their distances in the $(\eta,\phi)$ plane as appropriate for a hadron collider.
+
+For each jet, their constituents with non-zero transverse momentum are converted into three-momenta
+through equation \eqref{eq:cartesian} and jets with fewer than three constituents are skipped.
+The angular distance between every pair of constituents is computed as
+
+\begin{equation}
+  \dR_{ij} = \sqrt{(\eta_i - \eta_j)^2 + (\phi_i - \phi_j)^2},
+  \label{eq:eeec-dr}
+\end{equation}
+
+with the azimuthal difference computed in the range $(-\pi,\pi]$. Again, this distance is invariant
+under boosts along the beam axis, making it the natural measure of angular seperation at a
+hadron collider and it is the same measure used to define
+the jets themselves. An opening angle in three dimensions would instead shrink with the pseudorapidity
+of the jet, so that a fixed window in that angle would
+select different regions of the jet for central and forward jets.
+
+This computation then runs over every unordered triplet of constituents. The three distances 
+of a triplet are ordered as $\dR_S \leq \dR_M \leq \dR_L$, and the triplet is retained only if
+
+\begin{equation}
+  \sqrt{0.1} < \dR_L < 1
+  \qquad\text{and}\qquad
+  0.01 < \dR_S < 0.1 .
+  \label{eq:eeec-window}
+\end{equation}
+
+These are the values used for the opening angles in
+Ref.~\cite{Karlberg:2021kwr}, but for the $(\eta,\phi)$ plane. These two definitions
+coincide at small angles for central jets, and jets studied here in this work have transverse
+momenta comparable to the hard scale for which the window was chosen. 
+The window selects configurations with a strong hierarchy of angles.
+Two of the constituents lie close together and settle a narrow splitting, while the third
+lies at a much wider angle. This configuration then configuration then approximates two
+successive splittings with strongle ordered opening angles which is the regime where the 
+correlator is sensitive to the spin of the intermediate gluon.
+
+For any triplet, let $a$ and $b$ be the two constituents seperated by the smallest distance
+$\dR_S$ and $c$ the third. The azimuthal angle $\psi$ is the
+angle between the plane containing $\vec{p}_a$ and $\vec{p}_b$ and the plane
+containing their sum and $\vec{p}_c$. It is computed from the three-momenta of
+Eq.~\eqref{eq:cartesian}, through the normals
+
+\begin{equation}
+  \hat{n}_1 = \frac{\vec{p}_a \times \vec{p}_b}{|\vec{p}_a \times \vec{p}_b|},
+  \qquad
+  \hat{n}_2 = \frac{(\vec{p}_a + \vec{p}_b) \times \vec{p}_c}
+                   {|(\vec{p}_a + \vec{p}_b) \times \vec{p}_c|},
+  \label{eq:eeec-normals}
+\end{equation}
+
+as
+
+\begin{equation}
+  \psi = \operatorname{atan2}\!\left(
+  \hat{u} \cdot (\hat{n}_1 \times \hat{n}_2),\;
+  \hat{n}_1 \cdot \hat{n}_2 \right),
+  \qquad
+  \hat{u} = \frac{\vec{p}_a + \vec{p}_b}{|\vec{p}_a + \vec{p}_b|},
+  \label{eq:eeec-psi}
+\end{equation}
+
+which returns a signed angle in the range $(-\pi, \pi]$. Each triplet enters the
+distribution of $\psi$ with the weight
+
+\begin{equation}
+  w_{abc} = \frac{p_{\mathrm{T},a}\,p_{\mathrm{T},b}\,p_{\mathrm{T},c}}
+                 {p_{\mathrm{T},\text{jet}}^{3}} ,
+  \label{eq:eeec-weight}
+\end{equation}
+
+in accordance with Eq.~\eqref{eq:eeec}. In the script, since the sum runs over ordered triplets,
+it will differ from a sum over all all orderings of
+$i$, $j$ and $k$ only by a constant factor. This will affect the normalisation of the distribution,
+but not its shape and therefore it will not affect the factor $a_2/a_0$. In the simulated datasets,
+the distribution is also separately for jets in each channel of the second splitting, as labelled in
+Section~\ref{sec:genlevel}, which provides a channel-by-channel reference for the
+modulation.
+
+The main difficulty of this stage is computation resources, since each jet may have lots 
+of constituents and the number of triplets grows as the cube of their number. To make the 
+computation manageable, the pairwise distances are computed once per jet, the window of
+Eq.~\eqref{eq:eeec-window} is applied before any other quantity is evaluated, so
+that most triplets are rejected at negligible cost, and the loop over triplets is
+compiled to machine code with the \textsc{Numba} just-in-time
+compiler~\cite{Lam:2015numba}.
+
 \section{Flavour selection}
 \label{sec:flavour}
 
+The core measurement of this work requires isolating the secondary splitting channel $g \to q\bar{q}$.
+As discussed in Section \ref{sec:spin-channel}, the modulation of this channel carries 
+opposite sign compared to the $g \to gg$, so that an inclusive measurement dilutes the effect,
+while the other channel $q \to qg$ vanishes. However, the channel of a splitting is only
+defined in simulation, through generator-level labelling of Section~\ref{sec:genlevel}, while
+in collision data remains undefined.
+
+The approach adopted here in this section is to learn, in simulation, the relation between
+this true channel and quantities that are measured in the same way in data. For that,
+a classifier was trained on the reconstructed features of each jet, with the truth
+label as its target, and is then applied unchanged to the collision data. An important
+feature is that its output is not a definite label but a score, whose value gives how likely
+a certain splitting is to belong to the $g \to q\bar{q}$ channel. With that score, one 
+can require it to exceed a threshold and obtain an enriched sample of that channel.
+The $\dpsi$ observable is then measured as a function of this threshold,
+with the fraction of $g \to q\bar{q}$ splittings in each selected sample, its
+purity, determined from simulation.
+
+This section is organised as follows. Section~\ref{sec:flavour-strategy} describes
+the overall strategy and the classes into which the splittings are divided.
+Section~\ref{sec:flavour-features} presents the input features of the classifier,
+and Section~\ref{sec:flavour-training} the architecture of the networks and the
+procedure used to train them. Section~\ref{sec:flavour-alternatives} describes
+the alternative approaches that were considered, and
+Section~\ref{sec:flavour-application} explains how the trained networks are
+applied to the data and how the purity of the selected samples is computed in
+simulation.
+
+\subsection{Strategy and classes}
+\label{sec:flavour-strategy}
+
+The generator level-labelling of section \ref{sec:genlevel} divides the simulated jets
+into five classes according to their secondary splitting channel. A splitting can either be unmatched,
+if the reconstructed declustering does not reproduce the partonic
+branching, or be assigned with the channels $g \to q\bar{q}$, $q \to qg$, $g \to gg$, and rest.
+The composition of the simulated sample in these classes is given in
+Table~\ref{tab:composition}. As one can notice, the unmatched label represents the 
+majority of the dataset, about three quarters of it, but it does carries no relieable flavour
+information, while, among the matched splittings, the $g \to q\bar{q}$ channel is a minority,
+outnumbered by both $q \to qg$ and $g \to gg$.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Composition of the labelled simulated sample by class of the second
+  splitting, for jets with a valid $\dpsi$.}
+  \label{tab:composition}
+  \begin{tabular}{lrr}
+    \toprule
+    Class & Jets & Fraction (\%) \\
+    \midrule
+    unmatched          & $22\,689\,428$ & $75.95$ \\
+    $g \to q\bar{q}$   & $896\,936$    & $3$ \\
+    $q \to qg$         & $1\,736\,862$    & $5.81$ \\
+    $g \to gg$         & $4\,298\,461$    & $14.39$ \\
+    rest               & $253\,299$     & $0.85$ \\
+    \midrule
+    total              & $29\,874\,986$ & $100.0$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The selection procedure is therefore divided into two stages, each adressing a part of the dataset.
+The first stage tries to seperate the matched splittings, of the channels
+$g \to q\bar{q}$, $q \to qg$ and $g \to gg$, from the unmatched ones. Its output is a matched score,
+which is the classifier's confidence level that it is a matched labelled channel. Only the 
+jets with matched score exceeding $0.8$ are passed to the
+second stage. The second stage is only trained on matched splittings and seperated the $g \to q\bar{q}$ channel from the $q \to qg$ and $g \to gg$ channels
+taken together. This classifier's output is the $g \to q\bar{q}$ score on which the threshold of
+the measurement is placed. As suggested in \cite{CMS:2026jnt}, the residual cattegory is 
+excluded from the training of both stages, since it represents less than one percent of the dataset
+and represents other flavour configurations that do not correspond to any channel.
+
+Dividing the problem in this way makes the two classifiers concentrate on a single binary question.
+The first stage removes the unmatched background, in which the
+flavour label is not useful.  The second stage then has to solve only the
+separation that matters for the measurement, without spending capacity on the
+distinction between $q \to qg$ and $g \to gg$, which plays no role in the
+selection. The strong imbalance between the classes in both stages is compensated
+during training, as described in Section~\ref{sec:flavour-training}.
+
+\subsection{Input features}
+\label{sec:flavour-features}
+
+The inputs of the classifers are built from the primary and secondary splittings of each jet and
+from the four branches computed in section \ref{sec:declustering-impl}. They fall
+into two groups, the shapes of the branches of the second splitting and the
+kinematics of the two selected splittings, and are listed in
+Table~\ref{tab:features}.
+
+Each of these variables exploit the different radiation patterns of quark and gluons.
+A gluon carries the larger colour factor, $C_A = 3$ against $C_F = 4/3$ for a
+quark, as introduced in Section~\ref{sec:qcd}, and therefore radiates more. Because
+of that, a branch initiated by a gluon tends to have more constituents, to be wider, and 
+to share its momentum among softer constituents than a branch initiated by a
+quark. For each of the two branches $p_3$ and $p_4$ of the secondary splitting, this
+is captured by the number of constituents $n_{\text{all}}$, the number of charged
+constituents $n_{\text{ch}}$, the width $\sigma$ and the weighted mean constituent
+momentum $\langle \pt \rangle$ of equation \eqref{eq:shapes}. This is supposed 
+to capture the nature of these two branches. A $g \to q\bar{q}$ splitting
+produces two quark branches, a $g \to gg$ splitting two gluon branches, and a
+$q \to qg$ splitting one of each.
+
+The kinematic variables exploit the different momentum sharing of the channels. From the splitting
+functions of equations \eqref{eq:Pgg} and \eqref{eq:Pqq}, it can be noted that the channels
+$g \to gg$ and $q \to qg$ have increased probability when one of the two products is soft, while
+the $g \to q\bar{q}$ channel of equation \eqref{eq:Pgq}, has increased probability with a more even
+sharing of the momentum. The momentum fraction $z_2$ of the secondary splitting is, therefore,
+sensitive to its channel and it is shown in section \ref{sec:z_channels} precisely that. 
+It is also complemented by the angular separation
+$\dR_{34}$ and the relative transverse momentum $k_{\mathrm{T},2}$ of the second
+splitting, and by the momentum fraction $z_1$ of the first. 
+
+\begin{table}[htbp]
+  \centering
+  \caption{Input features of the two stages of the flavour selection. The
+  superscripts $(3)$ and $(4)$ refer to the harder and softer branches of the
+  second splitting.}
+  \label{tab:features}
+  \begin{tabular}{llrr}
+    \toprule
+    Feature & Description & Stage 1 & Stage 2 \\
+    \midrule
+    $z_1$, $z_2$ & momentum fractions of the two splittings & yes & yes \\
+    $\dR_{34}$ & angular separation of the second splitting & yes & yes \\
+    $k_{\mathrm{T},2}$ & relative transverse momentum of the second splitting
+      & yes & yes \\
+    $n_{\text{all}}^{(3)}$, $n_{\text{all}}^{(4)}$ & number of constituents
+      & yes & yes \\
+    $n_{\text{ch}}^{(3)}$, $n_{\text{ch}}^{(4)}$ & number of charged constituents
+      & yes & yes \\
+    $\sigma^{(3)}$, $\sigma^{(4)}$ & width & yes & yes \\
+    $\langle \pt \rangle^{(3)}$, $\langle \pt \rangle^{(4)}$
+      & weighted mean constituent momentum & yes & yes \\
+    symmetric combinations & sum, difference, minimum, maximum and ratio
+      & no & yes \\
+    \midrule
+    total & & $12$ & $37$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The first stage uses these twelve variables directly while the second stage is also supplemented 
+by combinations that do not depend on the ordering of the two
+branches. For each pair of variables and for he pair $z_1$ and $z_2$, the sum 
+the absolute difference, the minimum, the maximum and the ratio of the minimum to the maximum 
+are computed and added to the second classifier. This is motivated by the symmetry of 
+the problem. Since in a $g \to q\bar{q}$ splitting both branches are quarks and in a 
+$q \to qg$ splitting the quark is either the harder or the softer branch, this should help
+the classifier see the flavour information as a whole and not by its ordering. 
+In the second stage the variables $\langle \pt \rangle$ and $k_{\mathrm{T},2}$,
+whose distributions have long tails, are also replaced by their logarithms,
+$\ln(1 + x)$. In both stages every feature is finally standardised to zero mean
+and unit variance, using the statistics of the training sample.
+
+Moreover, to avoid biasing the measurement, two quantities available for each jet
+are excluded from the inputs. The first is the observable itself, $\dpsi$. A
+classifier with access to it could select jets according to their azimuthal angle,
+and would thereby shape the very distribution that this work measures. The second
+is the transverse momentum of the jet. The flavour composition of the sample
+changes with the jet transverse momentum, and the selection is trained and
+calibrated in different intervals of $\hat{p}_{\mathrm{T}}$. Excluding the jet
+transverse momentum prevents the classifier from learning this composition, and
+keeps its output tied to the internal structure of the splitting rather than to
+the kinematics of the jet. It also allows the same classifier to be applied, in
+future work, to jets in other ranges of transverse momentum.
+
+\subsection{Network architecture and training}
+\label{sec:flavour-training}
+
+The two stages of the selection are feedforward neural networks, implemented with Keras~\cite{Chollet:2015keras} on top of
+TensorFlow~\cite{Abadi:2016tf}, with the preprocessing of the inputs performed
+with scikit-learn~\cite{Pedregosa:2011sklearn}. The networks share the same structure 
+with three hidden layers of $256$, $128$ and $64$ neurons with
+rectified linear activations, and is regularised through a penalty on the squared
+magnitude of its weights, batch normalisation and dropout. Their differences are
+the strength of the regularisation, in their output layer and in the loss function
+minimised during training. The complete configuration of the two networks is
+given in Table~\ref{tab:hyperparameters}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Architecture and training configuration of the two stages of the
+  flavour selection.}
+  \label{tab:hyperparameters}
+  \begin{tabular}{llrr}
+    \toprule
+    & Stage 1 & Stage 2 \\
+    \midrule
+    Hidden layers        & $256$, $128$, $64$         & $256$, $128$, $64$ \\
+    Activation           & ReLU                       & ReLU \\
+    L2 penalty           & $10^{-4}$                  & $10^{-5}$ \\
+    Batch normalisation  & after every layer          & after every layer \\
+    Dropout              & $0.25$, $0.20$, $0.10$     & $0.20$, $0.20$, $0.10$ \\
+    Output               & two neurons, softmax       & one neuron, sigmoid \\
+    Loss                 & categorical cross-entropy  & binary focal loss \\
+    Class weights        & balanced, power $0.75$     & balanced \\
+    Optimiser            & Adam, rate $10^{-3}$       & Adam, rate $10^{-3}$ \\
+    Batch size           & $1024$                     & $1024$ \\
+    Maximum epochs       & $100$                      & $300$ \\
+    Monitored metric     & macro-averaged F1 score    & area under the PR curve \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The first stage neural network has two output neurons with a softmax activation, thus
+returning the probabilities that the secondary splitting is matched or unmatched, and the first
+one is the matched score used in this selection. This network was trained by minimising 
+the categorical cross-entropy and, since the matched splittings make about three quarters of 
+the dataset, each class is weighted in the loss by a factor inversely
+proportional to its frequency. These weights are softened by raising them to the
+power $0.75$, which prevents the network from being dominated by the majority
+class without overcompensating for it.
+
+The second stage has a single output neuron with a sigmoid activation, whose value
+is the $g \to q\bar{q}$ score. It is trained with the binary focal
+loss~\cite{Lin:2017focal},
+
+\begin{equation}
+  \mathcal{L}_{\text{focal}} = -\,\alpha_t \left( 1 - p_t \right)^{\gamma}
+  \ln p_t ,
+  \label{eq:focal}
+\end{equation}
+
+where $p_t$ is the probability that the network assigns to the correct class, and
+$\alpha_t$ equals $\alpha$ for splittings of the $g \to q\bar{q}$ channel and
+$1-\alpha$ for the others. The values $\gamma = 2$ and $\alpha = 0.5$ are used. The
+factor $(1-p_t)^{\gamma}$ reduces the contribution of splittings that are already
+classified with confidence, and concentrates the training on the ambiguous ones.
+This is very fitting to the problem since the channels overlap each other in the 
+space of the input features and most splittings are hard to classify. Balanced
+class weights are applied furthermore, to compensate for the minority of the
+$g \to q\bar{q}$ channel among the other splittings.
+
+The difference the two networks is due to the different nature of their task.
+The first stage network seperates classes which differ more clearly in the kinematics 
+of the splittings, since unmatched splittings are those in which the
+reconstructed branching departs from the partonic one, and the separation is
+learned with relative ease. Therefore, this model has a stronger regularisation,
+with larger weight penalty and more dropout in its first layer, preventing it from
+learning accidental patterns or noise that exists only in the training dataset and 
+encouraging it to more general patterns that are more likely to work on general unseen data.
+Meanwhile, the second stage must instead extract the smaller
+differences between the shapes of quark and gluon branches. It uses lighter 
+regularisation and a longer maximum training time so it can learn these weaker 
+features, while early stopping prevents overtraining in both cases. The class 
+imbalance treatment also differs. In the first stage, neither class is of particular 
+interest, and the softened weights keep the matched score closer to a probability, so 
+that the fixed requirement of $0.8$ retains its meaning. In the second stage the underrepresented 
+group is the one of interest, and fully balanced weights ensure that it is not neglected. 
+Finally, the metric used to select the best epoch matches how each output is used. The 
+macro-averaged F1 score weights the two classes of the first stage equally, while the 
+accuracy of the second stage isprecisely the purity of the selected sample, so that the 
+area under the precision--recall curve measures directly the purity achievable at each efficiency.
+
+Both networks are trained on the simulated dataset with
+$800 < \hat{p}_{\mathrm{T}} < 1000$~GeV, using the jets whose secondary splitting
+have been labelled, but excluding the residual cattegory. The first stage network was trained 
+on all such jets while the second stage network only on the matched ones. The sample is
+divided into training, validation and test subsets containing about two thirds,
+one sixth and one sixth of the events. The division was made by event, so that the
+jets of a given event never appear in different subsets. This step was also tested
+with a division made by jet and the performance was essentially the same, which was expected
+since the jets supposably originate from independent showers. The preprocessing of
+Section~\ref{sec:flavour-features}, is determined on the
+training subset alone and then applied unchanged to the other subsets and to the
+data.
+
+The networks are optimised with the Adam algorithm~\cite{Kingma:2014adam} in
+batches of $1024$ jets. After each epoch, the performance is evaluated on the
+validation subset, using the macro-averaged F1 score for the first stage and the
+area under the precision-recall curve for the second. The latter is better suited
+than the area under the Receiver Operating Characteristic (ROC) curve to a problem in which the class of interest is a
+minority. The learning rate is halved whenever this metric fails to improve for
+five consecutive epochs, down to a minimum of $10^{-6}$, and training stops after
+fifteen epochs without improvement, at which point the weights of the best epoch
+are restored. The test subset is used only for the final evaluation of the
+networks.
+
+\subsection{Alternative approaches}
+\label{sec:flavour-alternatives}
+
+The double stage selection described in the previous sections was used after comparison 
+with three alternative strategies. All these different approaches were built on the same
+input features and the same preprocessing, and, again, they all exclude the 
+$\dpsi$ variable from their inputs.
+
+The first alternative is a single neural network that classifies each jet into the 
+four categories unmatched, $g \to q\bar{q}$, $q \to qg$ and $g \to gg$.
+It's structure is the same as of the double stage selection with the same hidden layers 
+described in Table \ref{tab:hyperparameters}, a
+softmax output with four neurons, and is trained with the categorical
+cross-entropy and class weights softened with the power $0.75$. This strategy attempts 
+to solve the two problems that the two stage neural networks approach individually. 
+A network of this kind is used by CMS in \cite{CMS:2026jnt}, where it was trained on 
+a different generator and it tries to 
+reject the unmatched splittings and identify the $g \to q\bar{q}$ channel.
+
+The second approach replaces the binary second stage by a network with three
+outputs, trained on the matched splittings to separate $g \to q\bar{q}$,
+$q \to qg$ and $g \to gg$, with the same loss and class weights as the first
+alternative. It is applied after the same first stage, and its $g \to q\bar{q}$
+output is used for the selection.
+
+The third alternative is an unsupervised neural network. The matched splittings are described by the
+same features, reduced with a principal component analysis, and a Gaussian mixture
+model with full covariance matrices is fitted to them for several numbers of
+components, without any use of the flavour labels. The resulting clusters are then compared
+with the channel composition, in order to test whether the structure of
+the feature space separates the channels by itself.
+
+Although these approaches seem fair, none of them could seperate the $g \to q\bar{q}$ channel as effectively as
+the two-stage selection, as shown in Chapter~\ref{cap:resultados}. The reason behind this
+may be because the $g \to q\bar{q}$ channel is a minority
+of the sample, and a network that must also seperate the channels $q \to qg$ and $g \to gg$,
+or reject the unmatched splittings at the same time, spends part of its power on that 
+which it is not required on this measurement. 
+In the unsupervised case, the channels overlap
+strongly in the space of the input features, so that there is no reason for the
+clusters of a Gaussian mixture to align with them, and the clusters found indeed
+mix the channels. The two-stage selection is therefore the one used in the
+remainder of this work.
+
+\subsection{Application and purity calibration}
+\label{sec:flavour-application}
+
+After training, the two stage networks are applied unchanged to every jet with a valid
+$\dpsi$, both in the collision data and in the simulated calibration sample. The
+inputs of each jet are built and preprocessed exactly as in training, using the
+same engineered features and the same imputation and standardisation, determined
+on the training subset. Thus, each jet receives two scores, the matched score of
+the first stage and the $g \to q\bar{q}$ score of the second, which are then stored
+alongside the other jet quantities.
+
+Afterwards, the selection is made by picking jets with a matched score
+above $0.8$, and a $g \to q\bar{q}$ score above a threshold $t$. The first requirement
+is fixed and removes most of the unmatched splittings. The threshold
+$t$ varies, and each of its values defines a selected sample. As $t$
+increases, the samples become smaller and progressively enriched in the
+$g \to q\bar{q}$ channel.
+
+For each threshold $t$, the composition of the selected sample is computed on the simulated
+sample with $600 < \hat{p}_{\mathrm{T}} < 800$~GeV, which is independent
+of the one used in training. The purity and the efficiency of the selection are
+defined as
+
+\begin{equation}
+  P(t) = \frac{N_{q\bar{q}}(t)}{N(t)},
+  \qquad
+  \varepsilon(t) = \frac{N_{q\bar{q}}(t)}{N_{q\bar{q}}},
+  \label{eq:purity-efficiency}
+\end{equation}
+
+where $N(t)$ is the number of selected jets, $N_{q\bar{q}}(t)$ the number of them
+whose secondary splitting is labelled $g \to q\bar{q}$, and $N_{q\bar{q}}$ the total
+number of jets carrying that label before the selection. When increasing the threshold,
+the purity grows while the efficiency declines, and the comparison between the two
+is shown in Chapter \ref{cap:resultados} summarising the performance of the selection.
+
+At each threshold, the mean value $\langle \cos 2\dpsi \rangle$ of
+equaiton \eqref{eq:mean-cos} is computed on the selected jets, seperately in data and simulation,
+with the statistical uncertainty of equation \eqref{eq:stat}. The measurement made is presented
+as a function of the threshold, with the purity of equation \eqref{eq:purity-efficiency} given for each value.
+The two reference are computed from simulation and data are the mean over all jets labelled $g \to q\bar{q}$ and the
+mean over those labelled $q \to qg$ or $g \to gg$, which indicates the value expected 
+for the labelled channel and for the background before any selection.
+The evaluated threshold range is from $0.3$ up to $0.6$ and beyond this value the number
+of jets fall below a few hundred and the relative statistical
+uncertainty exceeds $10\%$, making these points carry little
+information.
+
+The main assumption of this procedure is that the purity computed in simulation samples also
+describes the samples selected from data at the same threshold. The
+networks are identical in the two cases, but the composition of the selected
+samples depends on how well the simulation reproduces the data, as discussed in
+Section~\ref{sec:sys-purity}.
+
 \section{Systematic uncertainties}
 \label{sec:systematic}
+
+This work's quantity is the mean value $\langle \cos 2\dpsi \rangle$, given per threshold of 
+the $g \to q\bar{q}$ score organized in samples, accompanied by the purity assigned to each
+sample, according to simulation. The $\langle \cos 2\dpsi \rangle$ and purity quantities are both
+subject of uncertanties. The statistical uncertanty comes from the finite number of jets 
+in each sample and it is evaluated at every point of this measurement. The systematic 
+uncertanties arise from the modelling of the simulation on which the selection is trained and
+calibrated, from the response of the detector, and from some choices made in this analysis. 
+However, unlike the statistical uncertainties, they do not decrease when extracting more jets
+and they may shift the result in a definite result
+
+A complete quantitive evaluation of every systematic uncertanty was not done in this work.
+This section just indentifies the relevant souces to the measurement, describes how each of them
+is managed by this analysis, and states which ones are not evaluated. Section~\ref{sec:sys-stat} describes the statistical uncertainty.
+Section~\ref{sec:sys-purity} discusses the modelling of the purity, which is the
+dominant systematic source. Section~\ref{sec:sys-detector} addresses the effects
+of the detector, and Section~\ref{sec:sys-choices} the trigger and the choices of
+the analysis. An overview of the sources considered and of the treatment of each is given in
+Table~\ref{tab:systematics}, and each source is discussed in turn in the
+subsections that follow.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Overview of the sources of uncertainty and of their treatment in this
+  work. Each source is discussed in the section indicated.}
+  \label{tab:systematics}
+  \begin{tabular}{lll}
+    \toprule
+    Source & Treatment & Section \\
+    \midrule
+    Statistical                     & Evaluated for every selected sample
+                                    & \ref{sec:sys-stat} \\
+    Modelling of the purity         & Not evaluated, single generator
+                                    & \ref{sec:sys-purity} \\
+    Kinematic dependence of purity  & Computed on an independent sample
+                                    & \ref{sec:sys-purity} \\
+    Detector resolution             & Present in data and simulation, not unfolded
+                                    & \ref{sec:sys-detector} \\
+    Jet energy scale                & Expected small, not evaluated
+                                    & \ref{sec:sys-detector} \\
+    Pile-up                         & Suppressed by $z > 0.1$, overlaid in simulation
+                                    & \ref{sec:sys-detector} \\
+    Trigger                         & Negligible above $700$~GeV
+                                    & \ref{sec:sys-choices} \\
+    Analysis choices                & Fixed, not varied
+                                    & \ref{sec:sys-choices} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Statistical uncertainty}
+\label{sec:sys-stat}
+
+For a selected sample of $N$ jets, the measured quantity is the mean computed as
+
+\begin{equation}
+  \langle \cos 2\dpsi \rangle = \frac{1}{N}\sum_{j=1}^{N} \cos 2\dpsi^{(j)},
+  \label{eq:mean-cos}
+\end{equation}
+
+and its statistical uncertainty is the standard error of the mean,
+
+\begin{equation}
+  \delta_{\text{stat}} = \frac{s}{\sqrt{N}},
+  \qquad
+  s^2 = \frac{1}{N-1}\sum_{j=1}^{N}
+        \left( \cos 2\dpsi^{(j)} - \langle \cos 2\dpsi \rangle \right)^2 .
+  \label{eq:stat}
+\end{equation}
+
+For a distribution of the form of equation \eqref{eq:dpsi-modulation}, the mean value
+is $\langle \cos 2\dpsi \rangle = \tfrac{1}{2}\,a_2/a_0$, so that the uncertainty on
+$a_2/a_0$ is twice that of Eq.~\eqref{eq:stat}.
+
+This expression assumes that each jet entering the sample is independent. In each event after selection,
+there is at least two jets and all of them enter the analysis, although, events with 
+more than two jets are rare. In that case, the jets of an event originate from separate showers, and their second splittings
+are essentially uncorrelated. This is statement is supported by the behaviour of the flavour
+selection, because its performance did not change, when training and test samples were
+separated by event rather than by jet.
+
+The purity given for each sample is the fraction of selected simulated jets whose second secondary
+splitting is labelled $g \to q\bar{q}$ by the IFN procedure. Its
+statistical uncertainty follows from the binomial distribution,
+
+\begin{equation}
+  \delta P = \sqrt{\frac{P\,(1-P)}{N_{\text{MC}}}},
+  \label{eq:purity-stat}
+\end{equation}
+
+where $N_{\text{MC}}$ is the number of selected simulated jets. The same
+expression of equation \eqref{eq:stat} gives the statistical uncertainty of the mean
+values obtained in simulation. In this work, when showing the results as a function
+of the threshold, the threshold itself is an exact choice, given by the classifiers,
+and carries no uncertanty, so that only the vertical uncertainties of equation \eqref{eq:stat} are presented.
+
+There are two features of the statistical uncertainties that should be kept in mind while
+reading the results. The first is that it grows with the threshold, since raising it
+catches fewer jets, making the threshold's range limited by the number of jets that 
+survive. The second is that each sample is a subset of the
+samples selected at lower thresholds, so that consecutive points share most of
+their jets and their fluctuations are correlated. A trend across thresholds should
+therefore be judged against the uncertainty of the individual points rather than
+against the smoothness of the curve.
+
+\subsection{Modelling of the purity}
+\label{sec:sys-purity}
+
+As said on the previous subsection, the purity is the fraction of the selected simulated jets whose second secondary
+splitting is labelled $g \to q\bar{q}$ by the IFN procedure. It
+is taken from the simulation and transferred to the data, and it is therefore
+correct for the data only if the simulation reproduces two of
+their features. The first is the flavour compostion of the secondary splitting, in particular
+the rate of $g \to q\bar{q}$ splittings relative to $q \to qg$ and
+$g \to gg$. The second is the distribution of the input features of
+Table \ref{tab:features} within each channel. If one of them is mismodelled,
+the same threshold selects a sample of different purity in data than in simulation.
+
+There is direct evidence that this effect is not negligible. In the CMS
+measurement on which this analysis is based~\cite{CMS:2026jnt}, neither
+\textsc{Pythia}~8 nor \textsc{Herwig}~7 describes the distribution of the
+classifier output in data, owing to the mismodelling of several input variables,
+and the simulation is reweighted to reproduce the data before the purity is
+determined, with an associated uncertainty derived from the difference in flavour
+composition between the two generators. No such reweighting is applied in this
+work, and the purities quoted are those of \textsc{Pythia}~8 with the CP5 tune. A
+repetition of the calibration with a generator based on a different parton shower
+and hadronisation model was not performed, and the modelling of the purity is
+therefore the largest source of systematic uncertainty that is not quantified
+here.
+
+The labelling done in Section \ref{sec:flavour-strategy}, provides a partial consistency 
+check. The composition showed in Table \ref{tab:composition} agrees closely with the 
+one obtained in \cite{CMS:2026jnt}. This confirms that the labels are constructed correctly, but
+it does not prove that the simulation describes in the data.
+
+Another aspect concerning the purity is its depence on the kinematics of the jets.
+The selection is trained on simulation with
+$800 < \hat{p}_{\mathrm{T}} < 1000$~GeV and computed on the independent interval
+$600 < \hat{p}_{\mathrm{T}} < 800$~GeV, which secures that the purity is not
+biased by the training. Since $\hat{p}_{\mathrm{T}}$ is the transverse
+momentum of the partonic hard process, each sample contains jets over a brader range
+of transverse momenta than its nominal interval, and both jets above the selection threshold of $700$~GeV.
+The distribution of jet
+transverse momenta in a single interval of $\hat{p}_{\mathrm{T}}$ but still differs
+from the data, which receives contributions from all intervals, weighted by their cross sections.
+Although the jet transverse momentum is not a variable which the classifier uses, 
+the relation between threshold and purity may
+still vary with it, so that a calibration performed on a single interval may not
+describe the full data sample exactly. Combining several intervals, each weighted
+by its cross section, would reproduce the spectrum of the data and remove this
+limitation.
+
+In addition, the purity depends on the definition of the flavour label. In this work, it is defined
+as the matching of the branches of the second splitting, $p_3$ and
+$p_4$, to their generator-level counterparts. However, other choices are possible and, for 
+example, the purities quoted in \cite{CMS:2026jnt} are obtained by matching the branches 
+$p_2$ and $p_3$ instead, yielding far fewer unmatched splittings, thus a different result.
+Purities obtained with different definitions are, of course, not directly
+comparable. 
+
+\subsection{Detector effects}
+\label{sec:sys-detector}
+
+This measurement is performed on reconstructed particles which are not corrected to the level
+of stable particles, making every quantity affected by the finite resolution of the detector.
+The most relevant effect for an angular observable is the resolution on the directions of the
+constituents. For charged particles, the direction is measured by the inner tracker with high precision.
+For neutral particles, it is determined only by the calorimeters, whose granularity in
+the barrel corresponds to cells of about $0.0174 \times 0.0174$ in $(\eta,\phi)$ for
+the electromagnetic calorimeter and $0.087 \times 0.087$ for the hadron
+calorimeter~\cite{CMS:2008}. Splittings resolved at angles comparable to these sizes,
+are thus measured less precisely which is particularly relevant for the lower
+edge $\dR_S > 0.01$ of the window of the energy correlator. The smearing of the
+directions blurs the orientation of the reconstructed planes and dilutes the
+modulation, so that the measured values of $\langle \cos 2\dpsi \rangle$ are
+expected to be somewhat smaller in magnitude than at particle level.
+
+The simulation dataset is done with a full simulation of the CMS detector, so that data and simulation
+are compared at the same level and this dilution is present in both. Therefore, comparing 
+both the datasets is consistent, however the values obtained
+are specific to the CMS detector and cannot be compared with calculations
+at particle level. Such a comparison would require an unfolding of the detector
+response, as performed in \cite{CMS:2026jnt}, which is not done in this work.
+
+The jets come with the standard energy corrections done by CMS, whose residual uncertainty
+moves jets across the selection threshold of $700$~GeV. Since the measured observable
+is an angle averaged by many jets, and the jets near the threshold form a small part of
+the sample, this effect is expected to be small, and it is not evaluated.
+
+Some particles comming from other proton--proton interactions in the same bunch crossing, 
+also known as pile-up, enter the jets as soft constituents spread over wide angles. CMS
+applies a specific pile-up mitigation algorithm in \cite{CMS:2026jnt}, in order to remove 
+this effect. In this work the same method was not applied and just the condition of 
+$z > 0.1$ was imposed on the selected splittings, which rejects the soft
+branches in which pile-up particles are mostly found. Once again,
+the simulated samples
+include an overlay of pile-up interactions, so that its effect is present in data
+and simulation.
+
+\subsection{Trigger and analysis choices}
+\label{sec:sys-choices}
+
+The trigger is not expected to introduce a significant uncertanty, since, in CMS,
+a trigger requiring a jet with a transverse momentum above $550$~GeV
+was found to be more than $99.5\%$ efficient for jets above
+$700$~GeV~\cite{CMS:2026jnt}. Thus, the trigger paths used here in this analysis, are expected
+to have almost full efficiency, but this efficiency is not measured in this work.
+
+Regarding some analysis choices done along the development of this work, several parameters
+were fixed. These are the grooming
+condition $z > 0.1$ applied to the selected splittings, the requirement of a
+matched score above $0.8$ in the first stage of the selection, the angular window
+of the energy correlator, and the criteria used to match the generator-level jets
+and splittings to the reconstructed ones. Playing with these conditions would probe 
+the stability of this work's result, however such thing was not done here.
+
+Of the sources discussed in this section, the two related to the purity are the
+ones that most limit the interpretation of the result. They are the reason for
+presenting the measurement as a function of the threshold, with the purity from
+simulation given as additional information rather than as a calibrated axis. A
+full evaluation of these sources, based on an alternative generator and on the
+variations of the analysis choices listed above, is the most important extension
+of the present analysis and is discussed in Chapter~\ref{cap:conclusoes}.

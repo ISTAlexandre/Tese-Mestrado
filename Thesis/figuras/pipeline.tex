@@ -1,0 +1,78 @@
+% =============================================================================
+%  pipeline.tex -- esquema da pipeline de analise (TikZ)
+%  Requer no preambulo do main.tex:
+%    \usepackage{tikz}
+%    \usetikzlibrary{positioning,fit,arrows.meta,backgrounds}
+% =============================================================================
+\begin{tikzpicture}[
+  font=\footnotesize,
+  box/.style={draw, rounded corners=2pt, align=center, text width=3.8cm,
+              minimum height=1.05cm, inner sep=3pt,
+              execute at begin node={\thickmuskip=5mu\relax\medmuskip=4mu\relax}},
+  io/.style={box, fill=gray!12, draw=gray!60!black},
+  proc/.style={box, fill=blue!5, draw=blue!45!black},
+  ml/.style={box, fill=orange!10, draw=orange!60!black},
+  res/.style={box, fill=green!8, draw=green!40!black, very thick},
+  arr/.style={-{Stealth[length=2.2mm]}, thick, draw=black!75},
+  env/.style={draw=gray!70!black, dashed, rounded corners=5pt, inner sep=7pt},
+  envlabel/.style={font=\footnotesize\itshape, text=gray!40!black, align=center}
+]
+% ---- colunas: A = EEEC, B = dados, C = simulacao --------------------------
+\def\xA{0} \def\xB{5.3} \def\xC{10.6}
+
+% ---- entradas ---------------------------------------------------------------
+\node[io] (inD) at (\xB,0)   {\textbf{JetHT, Run 2016G}\\ MiniAOD (collision data)};
+\node[io] (inS) at (\xC,0)   {\textbf{QCD multijet, Pythia 8 CP5}\\ MiniAODSIM (simulation)};
+
+% ---- ambiente CMS -----------------------------------------------------------
+\node[proc] (exD) at (\xB,-2.0) {\textbf{Extraction and selection}\\
+      certified runs, \texttt{HLT\_AK8PFJet}\\
+      $p_{\mathrm{T}}>700$~GeV, $|\eta|<1.7$, dijet};
+\node[proc] (exS) at (\xC,-2.0) {\textbf{Extraction and selection}\\
+      same jet selection\\ + final-state partons};
+\node[io]   (ntD) at (\xB,-4.0) {\textbf{Jet ntuple}\\ jets and constituents};
+\node[io]   (ntS) at (\xC,-4.0) {\textbf{Jet ntuple}\\ jets, constituents, partons};
+
+% ---- ambiente local ---------------------------------------------------------
+\node[proc] (ee)  at (\xA,-6.4) {\textbf{Energy correlator}\\
+      all constituent triplets\\ $\psi$ for $\sqrt{0.1}<\theta_L<1$,\\ $0.01<\theta_S<0.1$};
+\node[proc] (dcD) at (\xB,-6.4) {\textbf{Declustering}\\
+      C/A reclustering, Lund\\ declustering, Soft Drop\\
+      $\to$ $\Delta\psi_{12}$, subjet shapes};
+\node[proc] (dcS) at (\xC,-6.4) {\textbf{Declustering}\\ identical to data\\
+      $\to$ $\Delta\psi_{12}$, subjet shapes};
+\node[proc] (lbS) at (\xC,-8.7) {\textbf{Channel labelling}\\
+      partons: anti-$k_{\mathrm{T}}$, then C/A + IFN\\
+      gen--reco jet matching\\ $\to$ unmatched, $q\bar q$, $qg$, $gg$};
+\node[ml]   (trS) at (\xC,-11.0) {\textbf{DNN training}\\
+      stage 1: matched vs unmatched\\ stage 2: $g\to q\bar q$ vs rest};
+\node[ml]   (apD) at (\xB,-11.0) {\textbf{DNN application}\\
+      matched and $g\to q\bar q$\\ scores per jet};
+\node[res]  (eeR) at (\xA,-13.3) {\textbf{EEEC}\\ $\psi$ distribution};
+\node[res]  (ms)  at (\xB,-13.3) {\textbf{$\Delta\psi_{12}$ measurement}\\
+      $\langle\cos 2\Delta\psi_{12}\rangle$ vs\\ $g\to q\bar q$ purity};
+
+% ---- setas ------------------------------------------------------------------
+\draw[arr] (inD) -- (exD);   \draw[arr] (inS) -- (exS);
+\draw[arr] (exD) -- (ntD);   \draw[arr] (exS) -- (ntS);
+\draw[arr] (ntD) -- (dcD);   \draw[arr] (ntS) -- (dcS);
+\draw[arr] (ntD.south west) -- (ee.north);
+\draw[arr] (dcS) -- (lbS);
+\draw[arr] (lbS) -- (trS);
+\draw[arr] (dcD) -- (apD);
+\draw[arr] (trS) -- node[above, font=\scriptsize\itshape, align=center]{trained\\ models} (apD);
+\draw[arr] (apD) -- (ms);
+\draw[arr] (trS.south) -- node[right, pos=0.45, font=\scriptsize\itshape,
+      align=left, xshift=2pt]{purity from\\ simulation} (ms.east);
+\draw[arr] (ee) -- (eeR);
+
+% ---- molduras dos ambientes -------------------------------------------------
+\begin{scope}[on background layer]
+  \node[env, fit=(exD)(exS)(ntD)(ntS)] (envCMS) {};
+  \node[env, fit=(ee)(dcD)(dcS)(lbS)(trS)(apD)(eeR)(ms)] (envLoc) {};
+\end{scope}
+\node[envlabel, anchor=east, text width=3.4cm] at ([xshift=-4pt]envCMS.west)
+      {CMS open-data\\ container\\ (CMSSW, FWLite)};
+\node[envlabel, anchor=north] at (envLoc.south)
+      {Local environment (ROOT, FastJet, Python)};
+\end{tikzpicture}
