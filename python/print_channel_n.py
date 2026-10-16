@@ -57,5 +57,5 @@ hist_heatmap.GetXaxis().SetTitle("Channel 1")
 hist_heatmap.GetYaxis().SetTitle("Channel 2")
 hist_heatmap.Draw("COLZ")
 canvas.Draw()
-canvas.SaveAs("imgs/channel_heatmap.png")
+#canvas.SaveAs("imgs/channel_heatmap.png")
 canvas.WaitPrimitive()  # Wait for user input before closing the canvas

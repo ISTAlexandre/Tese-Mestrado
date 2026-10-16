@@ -123,7 +123,7 @@
     \vspace{0.35cm}
     {\bfseries\fontsize{16}{19}\selectfont \ISTcurso\par}
     \vspace{0.75cm}
-    {\fontsize{12}{14}\selectfont Orientador(es)\par\ISTorientadores\par}
+    {\fontsize{12}{14}\selectfont Orientadores\par\ISTorientadores\par}
     \vspace{0.7cm}
     {\bfseries\fontsize{14}{17}\selectfont Júri\par}
     \vspace{0.2cm}

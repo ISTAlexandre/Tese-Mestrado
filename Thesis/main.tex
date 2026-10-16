@@ -8,11 +8,11 @@
 \addbibresource{referencias.bib}
 \input{macros}
 
-% -----------------------------------------------------------------------------
+% ---------------------------------------
 % IDIOMA DO CORPO DA TESE
 % A classe fixa os nomes em português (Índice, Quadro, Figura, ...).
 % Se escrever a tese em inglês, descomente o bloco abaixo.
-% -----------------------------------------------------------------------------
+% ---------------------------------------
 % \renewcommand{\contentsname}{Contents}
 % \renewcommand{\listfigurename}{List of Figures}
 % \renewcommand{\listtablename}{List of Tables}
@@ -23,9 +23,9 @@
 \newcommand{\ISTbodylang}{english}
 % \newcommand{\ISTbodylang}{portuguese}   % <<< comentar se usar o bloco acima
 
-% -----------------------------------------------------------------------------
+% ---------------------------------------
 % DADOS DA DISSERTAÇÃO  <<< PREENCHER >>>
-% -----------------------------------------------------------------------------
+% ---------------------------------------
 \titulodissertação{Exploring Jet Substructure in Public LHC Data}
 %\subtitulodissertação{Subtítulo}
 \autordissertação{Alexandre Maria Neves de Barbosa Mendonça}
@@ -48,6 +48,7 @@
 }
 \usepackage{tikz}
 \usetikzlibrary{positioning,fit,arrows.meta,backgrounds}
+\usepackage{xltabular}
 
 \pagestyle{plain}
 
@@ -59,44 +60,149 @@
 
 \frontmatterIST
 
-% -----------------------------------------------------------------------------
+% ---------------------------------------
 % PÁGINAS PRELIMINARES
 % Resumo (PT) e Abstract (EN) são ambos obrigatórios, seja qual for o idioma
 % escolhido para o corpo da tese. Máximo 250 palavras cada, 4 a 6 palavras-chave.
-% -----------------------------------------------------------------------------
+% ---------------------------------------
 
 \chapter*{Agradecimentos}
 \addcontentsline{toc}{chapter}{Agradecimentos}
 
+Ao Professor Guilherme Milhano e ao Professor Nuno Castro, meus orientadores,
+agradeço a confiança e a oportunidade que me deram para explorar este tema e
+a disponibilidade que demonstraram desde o início deste projeto. Muitas discussões
+e sugestões foram feitas ao longo deste trabalho e, sem elas, este não seria nem de
+perto o mesmo. Agradeço também as indicações sobre o meu percurso académico, que sem
+dúvida mudaram e mudarão a minha pessoa, e com toda a certeza para algo melhor.
+
+Ao LIP, e em particular ao LIP Minho e ao grupo de Fenomenologia, agradeço o
+acolhimento e o ambiente de trabalho que ajudaram esta tese a tornar-se possível.
+Agradeço também ao LIP e à INCD pela disponibilização de recursos computacionais,
+sem os quais nada desta tese estaria feito, e à Colaboração CMS pela
+publicação dos dados e das simulações em que todo este trabalho assenta.
+
+À minha mãe, um especial agradecimento, pois é a ela que dou graças por estar aqui
+neste momento, por me ter apoiado sempre nas minhas escolhas tanto académicas como
+pessoais e por me ter tornado nesta pessoa que teve o prazer de ter feito esta tese e
+que quer continuar a fazer mais. Esta tese é também tua.
+
 \chapter*{Resumo}
 \addcontentsline{toc}{chapter}{Resumo}
 
+As correlações de spin colineares, induzidas pela polarização linear dos gluões
+intermédios na cascata partónica, produzem uma modulação azimutal entre
+ramificações sucessivas nos jatos. Este trabalho estuda-as com dados do CMS Open
+Data, de colisões protão-protão a $\sqrt{s} = 13$~TeV registadas em 2016, e a
+respetiva simulação \textsc{Pythia}~8. Construiu-se uma cadeia de análise
+reprodutível para observar a modulação do ângulo $\dpsi$ entre os planos das duas
+ramificações mais duras na desaglomeração de Lund de jatos com $\pt > 700$~GeV e a
+modulação azimutal do correlador de energia de três pontos. Como os canais
+$g \to q\bar{q}$ e $g \to gg$ contribuem com sinais opostos, desenvolveu-se uma
+seleção em duas etapas com redes neuronais para enriquecer as amostras em
+ramificações $g \to q\bar{q}$, identificadas na simulação com o algoritmo de
+neutralização de sabor intercalada. Sem seleção, obteve-se
+$\langle \cos 2\dpsi \rangle = -0.078 \pm 0.003$ nos dados, em acordo com a
+simulação. Na simulação, a seleção intensifica a modulação de $-0.12$ para
+$-0.27$ quando a pureza sobe de $0.18$ para cerca de metade, e os dados
+acompanham-na dentro da sua precisão. A decomposição por canal mostra, contudo,
+que todas as classes contêm uma componente importante sem origem no spin e que a
+seleção desloca a modulação de cada classe, pelo que a modulação selecionada não
+pode ser atribuída apenas ao canal $g \to q\bar{q}$. O correlador de energia
+apresenta uma pequena modulação positiva, quase insensível ao canal. Estes
+resultados são consistentes com a recente observação do CMS, mas estabelecer as
+correlações de spin requer uma previsão sem elas, processada pela mesma seleção.
+
 \vspace{1em}
-\textbf{Palavras-chave:}
+\textbf{Palavras-chave:} Subestrutura de jatos, Correlações de spin
+colineares, Polarização do gluão, Plano de Lund, CMS Open Data, Aprendizagem
+automática
 
 \cleardoublepage
 \selectlanguage{english}
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 
+Collinear spin correlations, induced by the linear polarisation of intermediate
+gluons in the parton shower, produce an azimuthal modulation between successive
+splittings inside jets. This work studies them using CMS Open Data datasets, created
+from proton-proton collisions at $\sqrt{s} = 13$~TeV recorded in 2016 and the
+corresponding \textsc{Pythia}~8 simulation. A reproducible pipeline was built 
+in order to observe the modulation of the angle $\dpsi$ between the planes of the
+two hardest splittings in the Lund declustering of jets with $\pt > 700$~GeV, and
+the azimuthal modulation of the three-point energy correlator. Given that 
+the $g \to q\bar{q}$ and $g \to gg$ channels contribute with opposite signs, a
+two-stage neural-network selection was developed to enrich the samples in
+$g \to q\bar{q}$ splittings, which were labelled in simulation using the
+interleaved flavour neutralisation algorithm. Before any selection was done, the value
+$\langle \cos 2\dpsi \rangle = -0.078 \pm 0.003$ was obtained in data, in agreement with the
+simulation. The implemented selection strengthens the modulation from $-0.12$ to $-0.27$ in
+simulation as the purity rises from $0.18$ to about one half, and the data follow
+the simulation wherever their precision allows. The decomposition by channel
+shows, however, that every class carries a large non-spin component and that the
+selection shifts the modulation of each class, so the selected modulation cannot
+be interpreted as that of the $g \to q\bar{q}$ channel alone. The energy
+correlator shows a small positive modulation, nearly insensitive to the channel.
+These results are consistent with the recent CMS observation, but establishing the
+spin correlations requires a prediction without them, processed through the same
+selection. 
+
+
 \vspace{1em}
-\textbf{Keywords:}
+\textbf{Keywords:} Jet substructure, Collinear spin correlations, Gluon
+polarisation, Lund jet plane, CMS Open Data, Machine learning
+
 \cleardoublepage
 \selectlanguage{\ISTbodylang}
 
 \tableofcontents
-%\listoftables
-%\listoffigures
 
-\chapter*{List of abbreviations and symbols}
-\addcontentsline{toc}{chapter}{List of abbreviations and symbols}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
 
-\begin{tabularx}{\textwidth}{@{}lX@{}}
-\end{tabularx}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
 
-% -----------------------------------------------------------------------------
-% CORPO
-% -----------------------------------------------------------------------------
+\chapter*{List of abbreviations}
+\addcontentsline{toc}{chapter}{List of abbreviations}
+
+\begin{xltabular}{\textwidth}{@{}lX@{}}
+\multicolumn{2}{@{}l}{} \\[4pt]
+AK8     & Jets clustered with the anti-$\kt$ algorithm and $R = 0.8$ \\
+ALICE   & A Large Ion Collider Experiment \\
+AOD     & Analysis Object Data \\
+ATLAS   & A Toroidal LHC ApparatuS \\
+C/A     & Cambridge/Aachen algorithm \\
+CERN    & European Organization for Nuclear Research \\
+CMS     & Compact Muon Solenoid \\
+CMSSW   & CMS Software \\
+CP5     & \textsc{Pythia}~8 tune derived by CMS \\
+DGLAP   & Dokshitzer-Gribov-Lipatov-Altarelli-Parisi \\
+DNN     & Deep neural network \\
+ECAL    & Electromagnetic calorimeter \\
+EEEC    & Three-point energy correlator \\
+FWLite  & CMS Framework Lite \\
+HCAL    & Hadronic calorimeter \\
+HLT     & High-Level Trigger \\
+IFN     & Interleaved flavour neutralisation \\
+IRC     & Infrared and collinear \\
+LHC     & Large Hadron Collider \\
+LHCb    & Large Hadron Collider beauty \\
+LIP     & Laboratório de Instrumentação e Física Experimental de Partículas \\
+MiniAOD & Reduced version of the AOD format, retaining the particle-flow candidates \\
+NanoAOD & Further reduced version of the AOD format, without constituent information \\
+PR      & Precision-recall \\
+PUPPI   & Pileup per particle identification \\
+QCD     & Quantum Chromodynamics \\
+ReLU    & Rectified linear unit \\
+ROC     & Receiver operating characteristic \\
+\end{xltabular}
+
+
 \mainmatterIST
 
 \include{capitulos/introducao}
@@ -108,8 +214,8 @@
 \cleardoublepage
 \printbibliography[heading=bibintoc,title={REFERENCES}]
 
-%\appendix
+\appendix
 %\include{capitulos/anexo-a}
-%\include{capitulos/anexo-b}
+\include{capitulos/anexo-b}
 
 \end{document}

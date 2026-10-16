@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  30 SEP 2026 16:13
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  16 OCT 2026 18:13
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/alexmendonca/Desktop/pic2/Thesis/main.tex
@@ -1061,34 +1061,56 @@ File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@layerbox@background=\box71
 \pgf@layerboxsaved@background=\box72
 )
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xltabular/xltabular.sty
+Package: xltabular 2025/02/28 v0.2i `xltabular' package (hv,RN)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/ltablex/ltablex.sty
+Package: ltablex 2014/08/13 v1.1 Modified tabularx
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip131
+\LTright=\skip132
+\LTpre=\skip133
+\LTpost=\skip134
+\LTchunksize=\count494
+\LTcapwidth=\dimen320
+\LT@head=\box73
+\LT@firsthead=\box74
+\LT@foot=\box75
+\LT@lastfoot=\box76
+\LT@gbox=\box77
+\LT@cols=\count495
+\LT@rows=\count496
+\c@LT@tables=\count497
+\c@LT@chunks=\count498
+\LT@p@ftn=\toks45
+)))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./main.aux
-(./capitulos/introducao.aux) (./capitulos/estado-da-arte.aux) (./capitulos/metodos.aux) (./capitulos/resultados.aux) (./capitulos/conclusoes.aux))
+ (./main.aux (./capitulos/introducao.aux) (./capitulos/estado-da-arte.aux) (./capitulos/metodos.aux) (./capitulos/resultados.aux) (./capitulos/conclusoes.aux) (./capitulos/anexo-b.aux))
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -1096,56 +1118,56 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 54.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 54.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 54.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 54.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 54.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 54.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 54.
-LaTeX Font Info:    Redeclaring math accent \check on input line 54.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 54.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 54.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 54.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 54.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 55.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 55.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 55.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 55.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 55.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 55.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 55.
+LaTeX Font Info:    Redeclaring math accent \check on input line 55.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 55.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 55.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 55.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 55.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 54.
+(Font)              `operators' in the math version `normal' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Arial.ttf(0)/m/n on input line 54.
+(Font)                  OT1/cmr/m/n --> TU/Arial.ttf(0)/m/n on input line 55.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 54.
+(Font)              `operators' in the math version `bold' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Arial.ttf(0)/m/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> TU/Arial.ttf(0)/m/n on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Arial.ttf(0)/m/n --> TU/Arial.ttf(0)/m/n on input line 54.
+(Font)                  TU/Arial.ttf(0)/m/n --> TU/Arial.ttf(0)/m/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Arial.ttf(0)/m/it on input line 54.
+(Font)                  OT1/cmr/m/it --> TU/Arial.ttf(0)/m/it on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Arial.ttf(0)/b/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> TU/Arial.ttf(0)/b/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Arial.ttf(0)/m/n on input line 54.
+(Font)                  OT1/cmss/m/n --> TU/Arial.ttf(0)/m/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 54.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Arial.ttf(0)/m/n --> TU/Arial.ttf(0)/b/n on input line 54.
+(Font)                  TU/Arial.ttf(0)/m/n --> TU/Arial.ttf(0)/b/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Arial.ttf(0)/b/it on input line 54.
+(Font)                  OT1/cmr/bx/it --> TU/Arial.ttf(0)/b/it on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Arial.ttf(0)/b/n on input line 54.
+(Font)                  OT1/cmss/bx/n --> TU/Arial.ttf(0)/b/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 54.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 55.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1181,13 +1203,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 54.
-Package microtype Info: Applying patch `item' on input line 54.
-Package microtype Info: Applying patch `toc' on input line 54.
-Package microtype Info: Applying patch `eqnum' on input line 54.
-Package microtype Info: Applying patch `footnote' on input line 54.
-Package microtype Info: Applying patch `verbatim' on input line 54.
-LaTeX Info: Redefining \microtypesetup on input line 54.
+LaTeX Info: Redefining \microtypecontext on input line 55.
+Package microtype Info: Applying patch `item' on input line 55.
+Package microtype Info: Applying patch `toc' on input line 55.
+Package microtype Info: Applying patch `eqnum' on input line 55.
+Package microtype Info: Applying patch `footnote' on input line 55.
+Package microtype Info: Applying patch `verbatim' on input line 55.
+LaTeX Info: Redefining \microtypesetup on input line 55.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1204,17 +1226,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count494
-\scratchdimen=\dimen320
-\scratchbox=\box73
-\nofMPsegments=\count495
-\nofMParguments=\count496
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count497
-\MPscratchDim=\dimen321
-\MPnumerator=\count498
-\makeMPintoPDFobject=\count499
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count499
+\scratchdimen=\dimen321
+\scratchbox=\box78
+\nofMPsegments=\count500
+\nofMParguments=\count501
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count502
+\MPscratchDim=\dimen322
+\MPnumerator=\count503
+\makeMPintoPDFobject=\count504
+\everyMPtoPDFconversion=\toks47
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1223,8 +1245,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 54.
+Package hyperref Info: Link coloring OFF on input line 55.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 
@@ -1247,21 +1273,13 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Karlberg:2021kwr
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 54.
-Package biblatex Info: Reference segment=0 on input line 54.
-<figuras/logo-tecnico-lisboa.png, id=208, 737.75626pt x 299.1175pt>
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 55.
+Package biblatex Info: Reference segment=0 on input line 55.
+<figuras/logo-tecnico-lisboa.png, id=300, 737.75626pt x 299.1175pt>
 File: figuras/logo-tecnico-lisboa.png Graphic file (type png)
 <use figuras/logo-tecnico-lisboa.png>
-Package luatex.def Info: figuras/logo-tecnico-lisboa.png  used on input line 57.
+Package luatex.def Info: figuras/logo-tecnico-lisboa.png  used on input line 58.
 (luatex.def)             Requested size: 142.26378pt x 57.67728pt.
  [1
 
@@ -1274,37 +1292,49 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 
 
-] [2
-
-] [3
-
-
-] (./main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 96.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-) [4
+)
+
+LaTeX Font Warning: Font shape `TU/Arial.ttf(0)/m/sc' undefined
+(Font)              using `TU/Arial.ttf(0)/m/n' instead on input line 97.
+
+[2
+
+] [3
+
+
+] (./main.toc [4
 
 ])
 \tf@toc=\write6
 
 \openout6 = main.toc
- [5]
-Underfull \hbox (badness 10000) in alignment at lines 95--95
-[][]
- []
+ [5] (./main.lot [6
 
-[6
+])
+\tf@lot=\write7
+
+\openout7 = main.lot
+ [7] (./main.lof [8
+
+])
+\tf@lof=\write8
+
+\openout8 = main.lof
+ [9] [10] [11
 
 ]
 \openout2 = capitulos/introducao.aux
@@ -1338,40 +1368,26 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 237.
 
-[7]
-
-LaTeX Font Warning: Font shape `TU/Arial.ttf(0)/m/sc' undefined
-(Font)              using `TU/Arial.ttf(0)/m/n' instead on input line 299.
-
-[8] [9] [10] [11]
-
-LaTeX Warning: Reference `(' on page 12 undefined on input line 510.
-
-<figuras/lund-cartoon-1.png, id=446, 410.53375pt x 471.7625pt>
+[7] [8] [9] [10] [11]
+<figuras/lund-cartoon-1.png, id=798, 410.53375pt x 471.7625pt>
 File: figuras/lund-cartoon-1.png Graphic file (type png)
 <use figuras/lund-cartoon-1.png>
 Package luatex.def Info: figuras/lund-cartoon-1.png  used on input line 538.
 (luatex.def)             Requested size: 227.62206pt x 261.56493pt.
-[12]
-<figuras/lund-cartoon-2.png, id=461, 239.89626pt x 239.89626pt>
+ [12]
+<figuras/lund-cartoon-2.png, id=811, 239.89626pt x 239.89626pt>
 File: figuras/lund-cartoon-2.png Graphic file (type png)
 <use figuras/lund-cartoon-2.png>
 Package luatex.def Info: figuras/lund-cartoon-2.png  used on input line 570.
 (luatex.def)             Requested size: 227.62206pt x 227.6256pt.
-
-Missing character: There is no ﬀ (U+FB00) in font [/System/Library/Fonts/Supplemental/Arial.ttf]:mode=node;script=latn;language=dflt;+tlig;!
-Missing character: There is no ﬀ (U+FB00) in font [/System/Library/Fonts/Supplemental/Arial.ttf]:mode=node;script=latn;language=dflt;+tlig;!
-Missing character: There is no ﬀ (U+FB00) in font [/System/Library/Fonts/Supplemental/Arial.ttf]:mode=node;script=latn;language=dflt;+tlig;!
-[13<./figuras/lund-cartoon-1.png>]
-<figuras/figs_lund.png, id=482, 602.25pt x 556.0775pt>
+ [13<./figuras/lund-cartoon-1.png>]
+<figuras/figs_lund.png, id=832, 602.25pt x 556.0775pt>
 File: figuras/figs_lund.png Graphic file (type png)
 <use figuras/figs_lund.png>
 Package luatex.def Info: figuras/figs_lund.png  used on input line 611.
 (luatex.def)             Requested size: 227.62206pt x 210.17465pt.
- [14
-Missing character: There is no ﬀ (U+FB00) in font [/System/Library/Fonts/Supplemental/Arial.ttf]:mode=node;script=latn;language=dflt;+tlig;!
-<./figuras/lund-cartoon-2.png>] [15<./figuras/figs_lund.png>]
-<figuras/dpsi12_definition_new.png, id=508, 235.88126pt x 125.46875pt>
+ [14<./figuras/lund-cartoon-2.png><./figuras/figs_lund.png>] [15]
+<figuras/dpsi12_definition_new.png, id=856, 235.88126pt x 125.46875pt>
 File: figuras/dpsi12_definition_new.png Graphic file (type png)
 <use figuras/dpsi12_definition_new.png>
 Package luatex.def Info: figuras/dpsi12_definition_new.png  used on input line 701.
@@ -1380,16 +1396,13 @@ Package luatex.def Info: figuras/dpsi12_definition_new.png  used on input line 7
 \openout2 = capitulos/metodos.aux
  (./capitulos/metodos.tex
 Chapter 3.
-
-LaTeX Warning: Reference `sec:systematics' on page 19 undefined on input line 21.
-
 [19
 
 
 
 
 ] [20]
-<figuras/CMS.png, id=590, 655.44875pt x 470.75874pt>
+<figuras/CMS.png, id=936, 655.44875pt x 470.75874pt>
 File: figuras/CMS.png Graphic file (type png)
 <use figuras/CMS.png>
 Package luatex.def Info: figuras/CMS.png  used on input line 122.
@@ -1399,16 +1412,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [22] [23] (./figuras/pipeline.tex) [24] [25] [26] [27] [28]
-
-LaTeX Warning: Citation 'Karlberg:2021kwr' on page 29 undefined on input line 650.
-
-[29] [30]
-
-LaTeX Warning: Reference `sec:z_channels' on page 31 undefined on input line 819.
-
-
-Overfull \hbox (2.95126pt too wide) in paragraph at lines 830--851
+ [22] [23] (./figuras/pipeline.tex) [24] [25] [26] [27] [28] [29] [30]
+Overfull \hbox (2.95126pt too wide) in paragraph at lines 839--860
  [][] 
  []
 
@@ -1416,58 +1421,204 @@ Overfull \hbox (2.95126pt too wide) in paragraph at lines 830--851
 \openout2 = capitulos/resultados.aux
  (./capitulos/resultados.tex
 Chapter 4.
-) [40
+[40
 
 
 
 
 ]
+<figuras/jetpt_jets.png, id=1231, 798.985pt x 574.145pt>
+File: figuras/jetpt_jets.png Graphic file (type png)
+<use figuras/jetpt_jets.png>
+Package luatex.def Info: figuras/jetpt_jets.png  used on input line 83.
+(luatex.def)             Requested size: 273.14923pt x 196.28429pt.
+<figuras/nconst_jets.png, id=1233, 798.985pt x 574.145pt>
+File: figuras/nconst_jets.png Graphic file (type png)
+<use figuras/nconst_jets.png>
+Package luatex.def Info: figuras/nconst_jets.png  used on input line 104.
+(luatex.def)             Requested size: 273.14923pt x 196.28429pt.
+ [41<./figuras/jetpt_jets.png><./figuras/nconst_jets.png>]
+<figuras/lund_primary_data.png, id=1246, 698.61pt x 574.145pt>
+File: figuras/lund_primary_data.png Graphic file (type png)
+<use figuras/lund_primary_data.png>
+Package luatex.def Info: figuras/lund_primary_data.png  used on input line 179.
+(luatex.def)             Requested size: 223.07211pt x 183.32715pt.
+<figuras/lund_primary_sim.png, id=1247, 698.61pt x 574.145pt>
+File: figuras/lund_primary_sim.png Graphic file (type png)
+<use figuras/lund_primary_sim.png>
+Package luatex.def Info: figuras/lund_primary_sim.png  used on input line 185.
+(luatex.def)             Requested size: 223.07211pt x 183.32715pt.
+<figuras/lund_secondary_data.png, id=1248, 698.61pt x 574.145pt>
+File: figuras/lund_secondary_data.png Graphic file (type png)
+<use figuras/lund_secondary_data.png>
+Package luatex.def Info: figuras/lund_secondary_data.png  used on input line 191.
+(luatex.def)             Requested size: 223.07211pt x 183.32715pt.
+<figuras/lund_secondary_sim.png, id=1249, 698.61pt x 574.145pt>
+File: figuras/lund_secondary_sim.png Graphic file (type png)
+<use figuras/lund_secondary_sim.png>
+Package luatex.def Info: figuras/lund_secondary_sim.png  used on input line 197.
+(luatex.def)             Requested size: 223.07211pt x 183.32715pt.
+ [42] [43<./figuras/lund_primary_data.png><./figuras/lund_primary_sim.png><./figuras/lund_secondary_data.png><./figuras/lund_secondary_sim.png>]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 220.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 220.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 220.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 220.
+
+<figuras/dpsi_inclusive.png, id=1263, 798.985pt x 674.52pt>
+File: figuras/dpsi_inclusive.png Graphic file (type png)
+<use figuras/dpsi_inclusive.png>
+Package luatex.def Info: figuras/dpsi_inclusive.png  used on input line 234.
+(luatex.def)             Requested size: 318.66948pt x 269.0313pt.
+[44<./figuras/dpsi_inclusive.png>]
+<figuras/dpsi_labels.png, id=1283, 798.985pt x 674.52pt>
+File: figuras/dpsi_labels.png Graphic file (type png)
+<use figuras/dpsi_labels.png>
+Package luatex.def Info: figuras/dpsi_labels.png  used on input line 331.
+(luatex.def)             Requested size: 318.66948pt x 269.0313pt.
+ [45]
+<figuras/zplane_channels.png, id=1293, 867.24pt x 549.252pt>
+File: figuras/zplane_channels.png Graphic file (type png)
+<use figuras/zplane_channels.png>
+Package luatex.def Info: figuras/zplane_channels.png  used on input line 355.
+(luatex.def)             Requested size: 455.24411pt x 288.31972pt.
+<figuras/zplane_ratios.png, id=1294, 1084.05pt x 303.534pt>
+File: figuras/zplane_ratios.png Graphic file (type png)
+<use figuras/zplane_ratios.png>
+Package luatex.def Info: figuras/zplane_ratios.png  used on input line 367.
+(luatex.def)             Requested size: 455.24411pt x 127.46951pt.
+ [46<./figuras/dpsi_labels.png>] [47<./figuras/zplane_channels.png><./figuras/zplane_ratios.png>]
+<figuras/roc_stage1.png, id=1319, 498.663pt x 426.393pt>
+File: figuras/roc_stage1.png Graphic file (type png)
+<use figuras/roc_stage1.png>
+Package luatex.def Info: figuras/roc_stage1.png  used on input line 466.
+(luatex.def)             Requested size: 223.07211pt x 190.74298pt.
+<figuras/confusion.png, id=1320, 398.9304pt x 339.669pt>
+File: figuras/confusion.png Graphic file (type png)
+<use figuras/confusion.png>
+Package luatex.def Info: figuras/confusion.png  used on input line 473.
+(luatex.def)             Requested size: 223.07211pt x 189.93346pt.
+ [48]
+<figuras/score_stage2.png, id=1328, 798.985pt x 574.145pt>
+File: figuras/score_stage2.png Graphic file (type png)
+<use figuras/score_stage2.png>
+Package luatex.def Info: figuras/score_stage2.png  used on input line 498.
+(luatex.def)             Requested size: 318.66948pt x 228.99687pt.
+ [49<./figuras/roc_stage1.png><./figuras/confusion.png><./figuras/score_stage2.png>]
+<figuras/roc_pr_stage2.png, id=1337, 859.2903pt x 354.123pt>
+File: figuras/roc_pr_stage2.png Graphic file (type png)
+<use figuras/roc_pr_stage2.png>
+Package luatex.def Info: figuras/roc_pr_stage2.png  used on input line 519.
+(luatex.def)             Requested size: 455.24411pt x 187.60863pt.
+<figuras/purity_efficiency.png, id=1340, 570.933pt x 354.123pt>
+File: figuras/purity_efficiency.png Graphic file (type png)
+<use figuras/purity_efficiency.png>
+Package luatex.def Info: figuras/purity_efficiency.png  used on input line 563.
+(luatex.def)             Requested size: 341.43307pt x 211.78378pt.
+ [50<./figuras/roc_pr_stage2.png>]
+<figuras/purity_full_methods.png, id=1350, 505.89pt x 397.485pt>
+File: figuras/purity_full_methods.png Graphic file (type png)
+<use figuras/purity_full_methods.png>
+Package luatex.def Info: figuras/purity_full_methods.png  used on input line 603.
+(luatex.def)             Requested size: 341.43307pt x 268.2726pt.
+ [51<./figuras/purity_efficiency.png>] [52<./figuras/purity_full_methods.png>]
+<figuras/modulation_components.png, id=1371, 487.37082pt x 434.97507pt>
+File: figuras/modulation_components.png Graphic file (type png)
+<use figuras/modulation_components.png>
+Package luatex.def Info: figuras/modulation_components.png  used on input line 700.
+(luatex.def)             Requested size: 318.66948pt x 284.42291pt.
+ [53<./figuras/modulation_components.png>]
+<figuras/z_kinematics.png, id=1380, 794.97pt x 325.215pt>
+File: figuras/z_kinematics.png Graphic file (type png)
+<use figuras/z_kinematics.png>
+Package luatex.def Info: figuras/z_kinematics.png  used on input line 771.
+(luatex.def)             Requested size: 455.24411pt x 186.24289pt.
+ [54]
+<figuras/modulation_threshold.png, id=1390, 542.025pt x 361.35pt>
+File: figuras/modulation_threshold.png Graphic file (type png)
+<use figuras/modulation_threshold.png>
+Package luatex.def Info: figuras/modulation_threshold.png  used on input line 828.
+(luatex.def)             Requested size: 318.66948pt x 212.45029pt.
+ [55<./figuras/z_kinematics.png>] [56<./figuras/modulation_threshold.png>]
+<figuras/eeec_inclusive.png, id=1413, 473.3685pt x 377.61075pt>
+File: figuras/eeec_inclusive.png Graphic file (type png)
+<use figuras/eeec_inclusive.png>
+Package luatex.def Info: figuras/eeec_inclusive.png  used on input line 926.
+(luatex.def)             Requested size: 223.07211pt x 177.94954pt.
+<figuras/eeec_labels.png, id=1414, 467.04488pt x 377.61075pt>
+File: figuras/eeec_labels.png Graphic file (type png)
+<use figuras/eeec_labels.png>
+Package luatex.def Info: figuras/eeec_labels.png  used on input line 930.
+(luatex.def)             Requested size: 223.07211pt x 180.358pt.
+ [57<./figuras/eeec_inclusive.png><./figuras/eeec_labels.png>]
+<figuras/eeec_threshold.png, id=1429, 505.89pt x 346.896pt>
+File: figuras/eeec_threshold.png Graphic file (type png)
+<use figuras/eeec_threshold.png>
+Package luatex.def Info: figuras/eeec_threshold.png  used on input line 991.
+(luatex.def)             Requested size: 273.14923pt x 187.30516pt.
+ [58] [59<./figuras/eeec_threshold.png>] [60] [61] [62]) [63]
 \openout2 = capitulos/conclusoes.aux
  (./capitulos/conclusoes.tex
 Chapter 5.
-) [41
+[64
 
 
 
 
-] [42
+] [65]) [66] [67
 
 
 
 
-] [43] [44] (./main.aux (./capitulos/introducao.aux) (./capitulos/estado-da-arte.aux) (./capitulos/metodos.aux) (./capitulos/resultados.aux) (./capitulos/conclusoes.aux))
+] [68] [69]
+\openout2 = capitulos/anexo-b.aux
+ (./capitulos/anexo-b.tex
+Appendix A.
+) [70
+
+
+] [71] [72] (./main.aux (./capitulos/introducao.aux) (./capitulos/estado-da-arte.aux) (./capitulos/metodos.aux) (./capitulos/resultados.aux) (./capitulos/conclusoes.aux) (./capitulos/anexo-b.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 
 
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 22192D335FDD633FEAC9D347D79ED116;8881.
+(rerunfilecheck)             Checksum: 70E6F6DFB99A129305369D6517E32930;13408.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 38881 strings out of 476076
- 125081,1977958 words of node,token memory allocated
- 1355 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 159 attribute, 105 glue_spec, 80 attribute_list, 2 write, 15 pdf_action nodes
-   avail lists: 1:5,2:3955,3:1541,4:157,5:277,6:134,7:10185,8:88,9:833,10:29,11:732,12:1
- 60187 multiletter control sequences out of 65536+600000
- 79 fonts using 16511703 bytes
- 88i,13n,105p,1236b,2203s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</System/Library/Fonts/Supplemental/Arial Italic.ttf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></System/Library/Fonts/Supplemental/Arial.ttf></System/Library/Fonts/Supplemental/Arial Bold.ttf></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on main.pdf (52 pages, 1533366 bytes).
+ 39618 strings out of 476076
+ 125342,1977958 words of node,token memory allocated
+ 1897 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 253 attribute, 109 glue_spec, 127 attribute_list, 4 write, 54 pdf_action nodes
+   avail lists: 1:8,2:3932,3:1541,4:158,5:349,6:128,7:12595,8:88,9:1061,10:30,11:796,12:2
+ 60714 multiletter control sequences out of 65536+600000
+ 103 fonts using 20975823 bytes
+ 88i,13n,105p,1492b,3009s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</System/Library/Fonts/Supplemental/Arial Italic.ttf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></System/Library/Fonts/Supplemental/Arial.ttf></System/Library/Fonts/Supplemental/Arial Bold.ttf></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (85 pages, 2571113 bytes).
 
-PDF statistics: 1056 PDF objects out of 1200 (max. 8388607)
- 945 compressed objects within 10 object streams
- 186 named destinations out of 1000 (max. 1048576)
- 416 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1724 PDF objects out of 1728 (max. 8388607)
+ 1534 compressed objects within 16 object streams
+ 275 named destinations out of 1000 (max. 1048576)
+ 600 words of extra memory for PDF output out of 10000 (max. 100000000)
 

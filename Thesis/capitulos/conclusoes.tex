@@ -1,2 +1,146 @@
 \chapter{Conclusions}
 \label{cap:conclusoes}
+
+\section{Summary of the results}
+\label{sec:conc-summary}
+
+This work studied the collinear spin correlations in QCD jets with CMS Open Data datasets, using 
+two observables sensitive to the polarisation of an intermediate gluon. The first 
+computed observable is the azimuthal angle $\dpsi$ between the planes of two
+successive splittings of the Lund declustering. The second is the azimuthal
+modulation of the three-point energy correlator. Both of them were measured 
+in jets with $\pt > 700$~GeV in the 2016 collision data and compared with the corresponding
+\textsc{Pythia}~8 simulation, before and after a flavour selection designed to
+enrich the samples in $g \to q\bar{q}$ splittings. The results are summarised below 
+in relation to the objectives of Section~\ref{sec:objetivos}.
+
+A fully complete and reproducible analysis was developed over the released data. It
+extracts the jets and their constituents information inside the CMS software environment, and
+performs the declustering, the generator-level labelling of the splittings, the
+computation of the energy correlator and the flavour selection outside it, with
+public tools. The simulation describes the collision data kinematics, and the primary and secondary Lund jet planes
+show the structure expected from the emission pattern of QCD and from the
+boundaries set by the grooming condition and by the jet radius. The momentum fractions 
+distribution of the two selected splittings agree between data and simulation as well, 
+with mean values of $0.270$ and $0.283$ in data
+against $0.268$ and $0.283$ in simulation.
+
+The observed $\dpsi$ shows a clear $\cos(2\dpsi)$ modulation even before any flavour selection,
+with $\langle \cos 2\dpsi \rangle = -0.078 \pm 0.003$ in data and
+$-0.083$ in simulation. In simulation, the jets labelled as $g \to q\bar{q}$ have a
+modulation about twice as strong as the background, $-0.167$ against $-0.081$,
+with a negative sign as predicted for this channel. However, every channel carries a negative
+modulation, including those in which little or no spin correlation is
+expected. This non-spin component is largest for asymmetric splittings and
+dominates the inclusive modulation, in line with the small difference between
+the \textsc{Pythia}~8 predictions with and without spin correlations reported by
+CMS. The three-point energy correlator also shows a modulation that the simulation describes
+well in data, $+0.0200 \pm 0.0012$ against $+0.0186 \pm 0.0001$, but has a positive sign 
+and almost independent of the channel, in contradition with the theory prediction.
+In the configuration used here,
+it is therefore not a channel-selective probe of the spin correlations.
+
+A two-stage flavour selection was developed, in which a first network separates
+matched from unmatched splittings and a second network identifies the
+$g \to q\bar{q}$ channel among the matched ones. This selection raises the purity 
+of the selected samples from $0.03$ before any selection to between $0.48$ and $0.62$ at
+the highest threshold. It performs best among the methods studied at low
+efficiency, while a four-class network developed as an alternative test, similar to the one used by CMS, is better
+at high efficiency. The purity counted against all jets saturates at about $0.5$,
+because the tightest requirements retain proportionally more jets without a
+generator-level counterpart. This sets the practical limit of the selection with
+the features used.
+
+Using this selection, the modulation of the selected jets strengthens steadily with
+the threshold, from $-0.122$ at $0.30$ to $-0.266$ at $0.60$ in simulation. The data 
+follows the simulation within one standard deviation up to a threshold of
+$0.50$, beyond which their statistical precision is insufficient. However,
+a modulation of a pure $g \to q\bar{q}$ sample could not be established. The modulation of each
+labelled class changes with the threshold, making the selected samples not behaving 
+as mixtures of classes with fixed modulations,
+and a linear extrapolation to a purity of one is not justified. The most reasonable
+quantity is the difference between the $g \to q\bar{q}$ class and the background,
+which stays close to $0.13$ up to a threshold of $0.50$, and which is less than 
+half of the difference expected at leading order. The shift present in both classes can be explained
+by a selection of configurations with a stronger non-spin
+component, or by genuine $g \to q\bar{q}$ splittings that the label assigns to
+other channels. Despite of these hypothesis, the samples available do not allow 
+them to be studied or tested.
+
+The sources of systematic uncertainties were identified, with those related to the purity 
+limitting the interpretation most. These are the dependence of
+the purity on the generator and on the definition of the channel label.
+However, the most important limitation of this work is the absence of a simulated dataset 
+without spin correlations processed using the selection adopted here. A dataset of that 
+kind allowed CMS to establish the presence of the correlations, and it is not
+available among the released simulations of the period studied. Nevertheless, the present
+analysis reproduces the strategy of the CMS measurement with public data,
+and its results are consistent with the CMS observation that the data agree with
+\textsc{Pythia}~8 with spin correlations, although, it cannot establish by itself 
+their presence. Its main contribution is the decomposition of the modulation by channel
+class, which shows that the modulation of a flavour-selected sample cannot be
+interpreted as that of the $g \to q\bar{q}$ channel alone. This applies to any
+measurement of this kind, and it supports comparing the data with predictions
+without spin correlations rather than interpreting the selected modulation
+directly.
+
+\section{Future work}
+\label{sec:conc-future}
+
+The most important extension would be a prediction without spin correlations, 
+processed with the same selection as in data. In \textsc{Pythia}~8 the correlations can
+be switched off in the parton shower, and \textsc{Herwig}~7 treats them explicitly
+through the spin-density matrix, so that samples with and without correlations can
+be generated with both. A full simulation of the CMS detector is computationally
+demanding, but a first study can be carried out at particle level, where the
+flavour selection, the labelling and the observables can be applied without
+change. Such samples would separate the spin and non-spin components of the
+modulation, and would distinguish between the two explanations of the effect of
+the selection discussed in Section~\ref{sec:disc-selection}.
+
+The flavour selection procedure could also be improved in two directions.
+Although $\dpsi$ is not an input of the classifier, the shift that the selection induces in every
+class shows that its score is correlated with $\dpsi$ through other features. Training another
+classifier but instead explicitly decorrelated from $\dpsi$, using, for instance, a penalty
+on the distance correlation between its score and
+$\dpsi$~\cite{Kasieczka:2020disco} or with an adversarial network~\cite{Louppe:2017pivot}, 
+would limit this shift, possibly at the cost of
+some discriminating power. Another and a more simple solution would be training the network
+on a sample without spin correlations, as done by CMS. This would also ensure that any
+residual correlation would not be originated from spin. The dependence of the purity on the definition of the channel label
+should also be studied, by comparing the matching of the two branches of the
+second splitting used here with alternatives such as the matching of subjets 2 and
+3 used by CMS. A second generator would finally test how much the composition and
+the purity depend on the description of the parton shower and of the
+hadronisation.
+
+On the collision data side, the statistical precision could be increased by using 
+other datasets of other periods of the 2016 data taking available in CMS Open Data.
+This would permit a comparison with simulation at the highest thresholds. The
+systematic uncertainties identified in Section~\ref{sec:systematic} should be
+propagated to the results, and the analysis choices that differ from the CMS
+measurement, in particular the thresholds on the transverse momentum of the
+constituents and of the second subjet, should be varied. An unfolding of the
+measured distributions to particle level would finally allow a direct comparison
+with theoretical predictions and with the CMS result.
+
+The three-point energy correlator requires a different treatment in order to become 
+sensitive to the $g \to q\bar{q}$ channel. Its angular window was transposed from
+electron-positron collisions, and its optimisation for jets at a hadron collider,
+together with predictions for proton-proton collisions, would clarify the origin
+of the positive modulation observed here. Restricting the triplets to the
+constituents of the branches selected by the Lund declustering would also tie the
+correlator to the labelled splitting, and allow the flavour selection to act on
+it in the same way as on $\dpsi$.
+
+Concluding, this analysis chain is not restricted to proton-proton collisions.
+CMS also released heavy-ion data, in which the same observables 
+could be used to study whether the spin correlations of the parton shower are
+modified by the quark-gluon plasma. However the simulated heavy-ion datasets, that 
+are suitable for this analysis, do not include jet quenching and their maximum
+jet radius is at maximum of $R=0.5$. Nevertheless,
+they can provide a reference without medium effects, but not a prediction of how
+the medium modifies the correlations, which would require dedicated samples
+generated with a model of jet quenching. The reference provided by the
+proton-proton measurement, together with the understanding of the selection
+obtained in this work, is a necessary starting point for such a study.

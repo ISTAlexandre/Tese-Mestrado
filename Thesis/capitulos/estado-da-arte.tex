@@ -34,10 +34,10 @@ coupling fall at large $Q$.  It is a direct imprint of the gluon self-interactio
 and its discovery established that a perturbative treatment of hard processes is
 justified. It is convenient to trade the reference scale for a single dimensionful
 constant $\Lambda_{\mathrm{QCD}}$, the scale at which the perturbative coupling formally
-diverges, of an order of a few hundred MeV. In terms of it the coupling is small for
+diverges, of an order of a few hundred MeV. In terms of it, the coupling is small for
 $Q \gg \Lambda_{\mathrm{QCD}}$ and grows strong as $Q$ approaches it.
 
-This growth is the second property called confinement. At low momentum transfer
+This growth is the second property called confinement. At low momentum transfer,
 $\alpha_s$ becomes large and colour-charged particles cannot be isolated. A
 quark or gluon produced in a hard scattering does not propagate freely to a detector,
 because as it separates from other colour charges, the energy stored in the colour field
@@ -62,10 +62,10 @@ coupling takes the schematic form
   \label{eq:soft-collinear}
 \end{equation}
 
-where $E$ and $\theta$ are the energy and emission angle of the radiated gluon
+where $E$ and $\theta$ are the energy and emission angle of the radiated gluon,
 and $C$ is a colour factor. The two factors carry the characteristic structure of
 QCD radiation. The factor $d\theta/\theta$ diverges as $\theta \to 0$ meaning that
-emissions are enhanced when the gluon is radiated close to the direction of its emmiter.
+emissions are enhanced when the gluon is radiated close to the direction of its emitter.
 This is known as the collinear divergence. The factor $dE/E$ diverges as $E \to 0$
 meaning that emissions are enhanced when the gluon is soft. This is known
 as the soft divergence. Together they mean that a hard parton radiates predominantly
@@ -105,13 +105,13 @@ into an approximately uniform density, against which finer correlations stand ou
 \subsection{Parton showers and hadronization}
 
 Because a single hard parton typically radiates many times before hadronizing,
-the emissions can be organised into a sequence orderred from the hardest,
+the emissions can be organised into a sequence ordered from the hardest,
 widest-angle splittings down to the soft and collinear ones. This sequence
 is what is known as a parton shower. Modern Monte Carlo event generators implement
 this sequence probabilistically through the splitting functions of equations 
 \eqref{eq:Pqq}-\eqref{eq:Pgq}, evolving each parton down from the hard 
 scale of the collision to a low scale of order $1\GeV$, at which the perturbative
-description breaks down and confinement takes over. Below that scale the partons
+description breaks down, and confinement takes over. Below that scale, the partons
 are converted into hadrons by phenomenological hadronization models, tuned to data
 rather than derived from first principles.
 
@@ -120,7 +120,7 @@ increasingly soft and collinear emissions and finally hadronized, underlies
 the whole of the analysis that follows. The observables studied in this work are
 built to read the perturbative shower through the hadrons that reach the
 detector, and for this reason the measurement is deliberately confined to a hard
-kinematic regime, where the perturbative component dominates and non-perturbative
+kinematic regime, where the perturbative component dominates, and non-perturbative
 corrections are comparatively suppressed.
 
 \section{Jets}
@@ -129,14 +129,14 @@ corrections are comparatively suppressed.
 As settled in Section \ref{sec:qcd}, a coloured parton produced in a hard
 scattering does not reach the detector directly because it radiates
 and hadronizes before arriving as a collimated spray of hadrons. A jet is then
-an object, which by grouping those hadrons and combining their momentum back together
-inverts the process approximately and estimates the momentum of the orininal parton that
+an object, which by grouping those hadrons and combining their momentum back together,
+inverts the process approximately and estimates the momentum of the original parton that
 produced them. Therefore, a jet is a reconstructed physical object, built from a construction
 algorithm, with properties that depend on this specific algorithm used to build it. This 
-section sets out that the requirement which any jet definition must satisfy, in order to
-be usable in peturbative QCD, and three algorithms, used in this work and built on that requirement. 
+section sets out the requirement which any jet definition must satisfy, in order to
+be usable in perturbative QCD, and three algorithms, used in this work and built on that requirement. 
 
-\subsection{Jet algorithms and infrared--collinear safety}
+\subsection{Jet algorithms and infrared-collinear safety}
 \label{sec:ircsafety}
 
 A jet is built using two components. A jet algorithm establishes which inputs,
@@ -149,11 +149,11 @@ and momenta are combined in the
 $E$-scheme, in which four-momenta are simply added. This scheme is Lorentz invariant
 and returns jets with non-zero mass.
 
-Though, every conceivable grouping prescription is not admissible.
-The requirement necessary and the one that eliminates most of them is infrared and collinear (IRC) safety.
+Though, not every conceivable grouping prescription is admissible.
+The necessary requirement, and the one that eliminates most of them is infrared and collinear (IRC) safety.
 In order for an observable to be infrared safe is that its value most remain unchanged 
 by the addition of an arbitrarily soft emission. For it to be collinear safe, this value
-most also reamin unchanged if one of its inputs is replaced by two collinear inputs
+most also remain unchanged if one of its inputs is replaced by two collinear inputs
 sharing its momentum. So, a jet algorithm is IRC safe when the set of jets it returns 
 is stable under both of these operations. A soft particle must not create or destroy a jet and a
 collinear splitting must not change how particles are assigned to jets.
@@ -163,7 +163,7 @@ The emission probability of equation \eqref{eq:soft-collinear}
 diverges in both the soft and the collinear limits. In any IRC-safe observable
 these divergent real emissions cancel against equally divergent virtual corrections,
 leaving a finite result. Opposingly, in an IRC-unsafe observable, that cancellation
-is ruined and a fixed-order peturbative prediction returns infinity rather than an
+is ruined and a fixed-order perturbative prediction returns infinity rather than an
 finite number. An IRC-unsafe jet definition is therefore not merely inconvenient but it also cannot
 be compared with perturbative QCD at all. Since the purpose of measuring jets is to
 confront the theory with data, IRC safety is a precondition and not a refinement.
@@ -198,7 +198,7 @@ Going back to the family introduced before, the sequential algorithms avoid both
 failures by never relying on seeds or on fixed geometric cones. In these algorithms,
 jets are built by repeatedly merging inputs according to a distance measure, so that soft
 or collinear additions change only the order in which already nearby inputs are combined
-and never the final assigment of hard momentum jets. This structural difference is the 
+and never the final assignment of hard momentum jets. This structural difference is the 
 reason why this entire family is IRC safe and it is why it is recommended
 for any measurement to be compared with theory over the cone algorithms. 
 
@@ -507,7 +507,7 @@ Each primary emission is placed on the plane at the coordinates:
 
 the horizontal axis measures the inverse angle of the splitting and the vertical
 axis its hardness, both logarithmically. The choice of logarithmic axes is
-not cosmetic. Going back to Section \ref(sec:qcd) that the emission probability
+not cosmetic. Going back to Section \ref{sec:qcd} that the emission probability
 of a gluon emission carries the double structure $d\mathcal{P} \propto \alpha_s\, d\theta/\theta \; dE/E$,
 which is one factor for the collinear enhancement and one for the soft enhancement.
 When written in terms of Lund coordinates of equation \eqref{eq:lund-coords}, each
@@ -568,7 +568,7 @@ theory is applicable.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.5\textwidth]{figuras/lund-cartoon-2.png}
-  \caption{Schematic representation of the diﬀerent regions of the Lund plane \cite{Dreyer:2018nbf}.}
+  \caption{Schematic representation of the different regions of the Lund plane \cite{Dreyer:2018nbf}.}
   \label{fig:lund-schematic}
 \end{figure}
 
@@ -714,7 +714,7 @@ intermediate gluon, however, the strength and sign of the resulting modulation a
 universal. These parameters depend on the nature of the second splitting, or, in other words,
 on the channel through which the polarised gluon decays. The two channels available are those
 of equations \eqref{eq:Pgg} and \eqref{eq:Pgq}. The gluon can spit into a pair
-of gluons, $g \to gg$, or into a quark--antiquark pair, $g \to q\bar{q}$. Each of these
+of gluons, $g \to gg$, or into a quark-antiquark pair, $g \to q\bar{q}$. Each of these
 channels read out the polarisation of the parent gluon, but each one of them do so with opposite
 sign and different strengh \cite{Karlberg_2021}.
 

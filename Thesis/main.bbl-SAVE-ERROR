@@ -45,8 +45,8 @@
       \strng{authornamehash}{0c581b72523c02f0c838af9e977dbed9}
       \strng{authorfullhash}{1eb8b7fd91258b89fd7c5a6b323054f0}
       \strng{authorfullhashraw}{1eb8b7fd91258b89fd7c5a6b323054f0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ph}
@@ -78,8 +78,8 @@
       \strng{authornamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
       \strng{authorfullhash}{350ae988c85cf1a13c8cc0d38f28d0ee}
       \strng{authorfullhashraw}{350ae988c85cf1a13c8cc0d38f28d0ee}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{CERN Open Data Portal}}
@@ -110,8 +110,8 @@
       \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
       \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{CMS Open Data Guide}}
@@ -156,8 +156,8 @@
       \strng{authornamehash}{228a733bfb295f9d69b154da546acf06}
       \strng{authorfullhash}{dbeb9700370fc58a9f2c998ff0109659}
       \strng{authorfullhashraw}{dbeb9700370fc58a9f2c998ff0109659}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-521-54589-1}
@@ -190,8 +190,8 @@
       \strng{authornamehash}{34b5e20b120e40499257ca10dc84b465}
       \strng{authorfullhash}{34b5e20b120e40499257ca10dc84b465}
       \strng{authorfullhashraw}{34b5e20b120e40499257ca10dc84b465}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -220,8 +220,8 @@
       \strng{authornamehash}{d8dc045abf1b867c743dba0a5d4456d3}
       \strng{authorfullhash}{d8dc045abf1b867c743dba0a5d4456d3}
       \strng{authorfullhashraw}{d8dc045abf1b867c743dba0a5d4456d3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -250,8 +250,8 @@
       \strng{authornamehash}{cdd9546b48e743df2da267f924c11cb4}
       \strng{authorfullhash}{cdd9546b48e743df2da267f924c11cb4}
       \strng{authorfullhashraw}{cdd9546b48e743df2da267f924c11cb4}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ph}
@@ -296,8 +296,8 @@
       \strng{authorfullhash}{cc4b1f772e2313dc9fc5e11538cab46e}
       \strng{authorfullhashraw}{cc4b1f772e2313dc9fc5e11538cab46e}
       \field{extraname}{1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ph}
@@ -488,8 +488,8 @@
       \strng{authornamehash}{d67b62ead40d1022738a4fa044db81c4}
       \strng{authorfullhash}{36f23bed8d799cb4289763bf9a5b7dd7}
       \strng{authorfullhashraw}{36f23bed8d799cb4289763bf9a5b7dd7}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1434-6052}
@@ -552,8 +552,8 @@
       \strng{authornamehash}{5bc8eac157393802a148dfce252f0007}
       \strng{authorfullhash}{aedf47dbad1c604925e9793b043c3e9d}
       \strng{authorfullhashraw}{aedf47dbad1c604925e9793b043c3e9d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ph}
@@ -716,8 +716,8 @@
       \strng{authornamehash}{7ef5b6774465ef95bb9a56121f4416eb}
       \strng{authorfullhash}{7a9b21223e048e6efda8d6623e46b27a}
       \strng{authorfullhashraw}{7a9b21223e048e6efda8d6623e46b27a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1434-6052}
@@ -803,8 +803,8 @@
       \strng{authornamehash}{d3f8c15b764cebdbf210dd7aba282d94}
       \strng{authorfullhash}{d3f8c15b764cebdbf210dd7aba282d94}
       \strng{authorfullhashraw}{d3f8c15b764cebdbf210dd7aba282d94}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/ISTAlexandre/Tese-Mestrado}}
@@ -841,8 +841,8 @@
       \strng{authorfullhash}{5f0c86368b96c31d1dedc3a96df7daa0}
       \strng{authorfullhashraw}{5f0c86368b96c31d1dedc3a96df7daa0}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2470-0029}
@@ -897,8 +897,8 @@
       \strng{authorfullhash}{4accb0ea516d6c291744d548fe7bfb95}
       \strng{authorfullhashraw}{4accb0ea516d6c291744d548fe7bfb95}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1079-7114}
@@ -932,8 +932,8 @@
       \strng{authornamehash}{e6f3d214228cc5933c1a82019f7dc0e0}
       \strng{authorfullhash}{e6f3d214228cc5933c1a82019f7dc0e0}
       \strng{authorfullhashraw}{e6f3d214228cc5933c1a82019f7dc0e0}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2026-09-16}
@@ -961,8 +961,8 @@
       \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
       \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{JINST}
@@ -1024,8 +1024,8 @@
       \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
       \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
       \field{extraname}{4}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{CERN Open Data Portal}
@@ -1050,8 +1050,8 @@
       \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
       \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
       \field{extraname}{5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{physics.ins-det}
@@ -1067,6 +1067,91 @@
       \endverb
       \verb{eprint}
       \verb 1609.02366
+      \endverb
+    \endentry
+    \entry{Sj_strand_2015}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=1f7e99224e14002bdface802b6379512}{%
+           family={Sjöstrand},
+           familyi={S\bibinitperiod},
+           given={Torbjörn},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ff13235d93756d3379349e38f8229395}{%
+           family={Ask},
+           familyi={A\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5581c0413dd7fd5c57d2334c00de1162}{%
+           family={Christiansen},
+           familyi={C\bibinitperiod},
+           given={Jesper\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=39433ee7fe060cb02937e1d447218ce3}{%
+           family={Corke},
+           familyi={C\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d9ede315d9535d79d63b9d64a2307cfd}{%
+           family={Desai},
+           familyi={D\bibinitperiod},
+           given={Nishita},
+           giveni={N\bibinitperiod}}}%
+        {{hash=516a0cd8376e1ba0a0bcf1284dd920c9}{%
+           family={Ilten},
+           familyi={I\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b2f5b287eab22155743b6f6e452539c9}{%
+           family={Mrenna},
+           familyi={M\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=312a31f430cf1ba02b15944e08cd63f6}{%
+           family={Prestel},
+           familyi={P\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=370f72a19eab82f125bce3ca2006e12b}{%
+           family={Rasmussen},
+           familyi={R\bibinitperiod},
+           given={Christine\bibnamedelima O.},
+           giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=d07ecde30a48771685fd69b1eb4960d6}{%
+           family={Skands},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima Z.},
+           giveni={P\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{214de42c5c16a2b9c81a3d1b9ef923cf}
+      \strng{fullhash}{db2e81669ff3f7c57ff54f1b12c3f5e2}
+      \strng{fullhashraw}{db2e81669ff3f7c57ff54f1b12c3f5e2}
+      \strng{bibnamehash}{db2e81669ff3f7c57ff54f1b12c3f5e2}
+      \strng{authorbibnamehash}{db2e81669ff3f7c57ff54f1b12c3f5e2}
+      \strng{authornamehash}{214de42c5c16a2b9c81a3d1b9ef923cf}
+      \strng{authorfullhash}{db2e81669ff3f7c57ff54f1b12c3f5e2}
+      \strng{authorfullhashraw}{db2e81669ff3f7c57ff54f1b12c3f5e2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0010-4655}
+      \field{journaltitle}{Computer Physics Communications}
+      \field{title}{An introduction to PYTHIA 8.2}
+      \field{volume}{191}
+      \field{year}{2015}
+      \field{pages}{159\bibrangedash 177}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.cpc.2015.01.024
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.cpc.2015.01.024
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.cpc.2015.01.024
       \endverb
     \endentry
     \entry{CMS:2019csb}{article}{}{}
@@ -1087,8 +1172,8 @@
       \strng{authornamehash}{f19eea9dd97acf54ff53ff11228f09d4}
       \strng{authorfullhash}{f19eea9dd97acf54ff53ff11228f09d4}
       \strng{authorfullhashraw}{f19eea9dd97acf54ff53ff11228f09d4}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ex}
@@ -1107,7 +1192,7 @@
       \verb 1903.12179
       \endverb
     \endentry
-    \entry{QCDMC2016}{misc}{}{}
+    \entry{QCDMC2016_800to1000}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=0448d009825e0bfac7316a655abf5740}{%
            family={{CMS Collaboration}},
@@ -1122,15 +1207,41 @@
       \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
       \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
       \field{extraname}{6}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{CERN Open Data Portal}
-      \field{title}{{Simulated QCD multijet dataset in MINIAODSIM format from 2016}}
+      \field{title}{{Simulated dataset QCD\_Pt\_800to1000\_TuneCP5\_13TeV\_pythia8 in MINIAODSIM format for 2016 collision data}}
       \field{year}{2024}
       \verb{doi}
-      \verb \TODO{DOI do record 63234}
+      \verb 10.7483/OPENDATA.CMS.R6GX.8H9J
+      \endverb
+    \endentry
+    \entry{QCDMC2016_600to800}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0448d009825e0bfac7316a655abf5740}{%
+           family={{CMS Collaboration}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \strng{bibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorbibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authornamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \field{extraname}{7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{CERN Open Data Portal}
+      \field{title}{{Simulated dataset QCD\_Pt\_600to800\_TuneCP5\_13TeV\_pythia8 in MINIAODSIM format for 2016 collision data}}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.7483/OPENDATA.CMS.FBVA.7HTR
       \endverb
     \endentry
     \entry{CMS:2026jnt}{article}{}{}
@@ -1199,8 +1310,245 @@
       \verb 10.1016/S0168-9002(97)00048-X
       \endverb
     \endentry
+    \entry{CMS:FWLite}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0448d009825e0bfac7316a655abf5740}{%
+           family={{CMS Collaboration}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{fullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \strng{bibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorbibnamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authornamehash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhash}{0448d009825e0bfac7316a655abf5740}
+      \strng{authorfullhashraw}{0448d009825e0bfac7316a655abf5740}
+      \field{extraname}{8}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{CMS Offline WorkBook, Getting Started with FWLite}}
+      \field{urlday}{22}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookFWLite
+      \endverb
+      \verb{url}
+      \verb https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookFWLite
+      \endverb
+    \endentry
+    \entry{Lam:2015numba}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=31e738d2abdeaf4aad96d0dc47e87405}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={Siu\bibnamedelima Kwan},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=5367bdb73444f39a0ea034f24f104805}{%
+           family={Pitrou},
+           familyi={P\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b8f8a4b90ef94fad8c504d0a293755d9}{%
+           family={Seibert},
+           familyi={S\bibinitperiod},
+           given={Stanley},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{96e7bdc081858582c25d87af3beeb6c1}
+      \strng{fullhash}{0e3fe92a0dc3d3c6114b4c4a7b5319a4}
+      \strng{fullhashraw}{0e3fe92a0dc3d3c6114b4c4a7b5319a4}
+      \strng{bibnamehash}{0e3fe92a0dc3d3c6114b4c4a7b5319a4}
+      \strng{authorbibnamehash}{0e3fe92a0dc3d3c6114b4c4a7b5319a4}
+      \strng{authornamehash}{96e7bdc081858582c25d87af3beeb6c1}
+      \strng{authorfullhash}{0e3fe92a0dc3d3c6114b4c4a7b5319a4}
+      \strng{authorfullhashraw}{0e3fe92a0dc3d3c6114b4c4a7b5319a4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC}
+      \field{title}{{Numba: A LLVM-based Python JIT compiler}}
+      \field{year}{2015}
+      \field{pages}{7:1\bibrangedash 7:6}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1145/2833157.2833162
+      \endverb
+    \endentry
+    \entry{Chollet:2015keras}{misc}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=14134a39113404b1f80969c9ccc1f71e}{%
+           family={Chollet},
+           familyi={C\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{fullhash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{fullhashraw}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{bibnamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authorbibnamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authornamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authorfullhash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authorfullhashraw}{2f3cf4de7406c8a08275677188d056f8}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://keras.io}}
+      \field{title}{Keras}
+      \field{year}{2015}
+    \endentry
+    \entry{Abadi:2016tf}{misc}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=9a04ae935da573a7aa9c83afdf2fd845}{%
+           family={Abadi},
+           familyi={A\bibinitperiod},
+           given={Martín},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{24b1e0a436b566c814359b41f12b3ce3}
+      \strng{fullhash}{24b1e0a436b566c814359b41f12b3ce3}
+      \strng{fullhashraw}{24b1e0a436b566c814359b41f12b3ce3}
+      \strng{bibnamehash}{24b1e0a436b566c814359b41f12b3ce3}
+      \strng{authorbibnamehash}{24b1e0a436b566c814359b41f12b3ce3}
+      \strng{authornamehash}{24b1e0a436b566c814359b41f12b3ce3}
+      \strng{authorfullhash}{24b1e0a436b566c814359b41f12b3ce3}
+      \strng{authorfullhashraw}{24b1e0a436b566c814359b41f12b3ce3}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.DC}
+      \field{eprinttype}{arXiv}
+      \field{title}{{TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems}}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1603.04467
+      \endverb
+    \endentry
+    \entry{Pedregosa:2011sklearn}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=bab4e5caee2d67831e464ce575022b37}{%
+           family={Pedregosa},
+           familyi={P\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{fullhash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{fullhashraw}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{bibnamehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{authorbibnamehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{authornamehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{authorfullhash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{authorfullhashraw}{9ec95d747bac3417f92265a9a44f8bb4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Mach. Learn. Res.}
+      \field{title}{{Scikit-learn: Machine Learning in Python}}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{2825\bibrangedash 2830}
+      \range{pages}{6}
+    \endentry
+    \entry{Lin:2017focal}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=08f925fe4692d130a1d7cb7d94483351}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Tsung-Yi},
+           giveni={T\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=d87be7c19fa16049347907c9820816c6}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Priya},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ecd149fdcb3e0503881d49e545744c3d}{%
+           family={Dollár},
+           familyi={D\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{fullhash}{4ccabcfdf9c34f3d9a88fdca5bb95dd5}
+      \strng{fullhashraw}{4ccabcfdf9c34f3d9a88fdca5bb95dd5}
+      \strng{bibnamehash}{4ccabcfdf9c34f3d9a88fdca5bb95dd5}
+      \strng{authorbibnamehash}{4ccabcfdf9c34f3d9a88fdca5bb95dd5}
+      \strng{authornamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authorfullhash}{4ccabcfdf9c34f3d9a88fdca5bb95dd5}
+      \strng{authorfullhashraw}{4ccabcfdf9c34f3d9a88fdca5bb95dd5}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Conference on Computer Vision (ICCV)}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Focal Loss for Dense Object Detection}}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1708.02002
+      \endverb
+    \endentry
+    \entry{Kingma:2014adam}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhashraw}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhashraw}{a09df9f123146b8e2c7f1134c9496932}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Adam: A Method for Stochastic Optimization}}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1412.6980
+      \endverb
+    \endentry
   \enddatalist
-  \missing{Sjostrand:2014zea}
+  \missing{Karlberg:2021kwr}
 \endrefsection
 \endinput
 

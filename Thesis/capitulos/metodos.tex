@@ -18,7 +18,7 @@ the relevant features of the CMS detector, and Section~\ref{sec:dataset} the dat
 format and the specific dataset used. Section~\ref{sec:pipeline} presents the
 analysis pipeline, from the extraction of jet constituents to the computation of
 the spin observables. Section~\ref{sec:flavour} describes the flavour selection
-that isolates the $g \to q\bar{q}$ channel, and Section~\ref{sec:systematics}
+that isolates the $g \to q\bar{q}$ channel, and Section~\ref{sec:systematic}
 assesses the systematic uncertainties affecting the measurement.
 
 \section{CERN Open Data}
@@ -438,7 +438,7 @@ of the \textsc{FastJet} contrib~\cite{Dreyer:2018nbf}, which follows the harder 
 and returns the ordered list of primary declusterings. For
 each declustering it provides the angular separation $\dR$, the relative
 transverse momentum $\kt$, the momentum fraction $z$ and the Lund coordinates of
-Eq.~\eqref{eq:lund-coords}. Each primary declusterings in order to be recorded has to pass the 
+equation \eqref{eq:lund-coords}. Each primary declusterings in order to be recorded has to pass the 
 SoftDrop condition of equation \ref{eq:softdrop} with $z_{\text{cut}} = 0.1$ and $\beta = 0$,
 reducing it to $z > 0.1$. With this list of primary declusterings, the primary splitting is
 chosen by selecting the declustering with largest $\kt$, with its harder and softer branches
@@ -476,7 +476,7 @@ $\vec{p}_2$. The sign $s$ orients the two normals consistently, so that $\dpsi$
 is defined in the range $[0, \pi]$. Since the two branches of a declustering are always separated in angle, both
 planes are well defined. Nevertheless, as a safe guard, the script returns no value in the
 case of exactly collinear branches, for which the cross products of
-Eq.~\eqref{eq:normals} vanish.
+equation~\eqref{eq:normals} vanish.
 
 To conclude this process, a set of shape variables is computed for each of the four branches
 $p_1$ to $p_4$ from the constituents it contains. hese are the number of
@@ -541,7 +541,7 @@ from, its axis should coincide with the axis of the original jet, making it equi
 to matching the \antikt jets themselves. The generator-level object selected in this way
 provides a Cambridge/Aachen history in which every branch carries an infrared-
 and collinear-safe flavour. A reconstructed jet with no generator-level
-counterpart satisfying Eq.~\eqref{eq:jetmatch} receives no truth label and is not
+counterpart satisfying equation~\eqref{eq:jetmatch} receives no truth label and is not
 used in the training of the flavour selection.
 
 With the jet matching complete, the generator-level history is then declustered via the same
@@ -611,57 +611,59 @@ Section~\ref{sec:declustering-impl}, which are available in data as well.
 \subsection{The energy correlator}
 \label{sec:eeec-impl}
 
-The three-point energy correlator of Section \ref{sec:spin-eeec} is computed seperately from the
-declustering, using directly the jet's constituents stored after extraction. This process
-does not involve any declustering, grooming or flavour selection, so that it computes the spin
-correlation through a different route of the Lund observables. The definition of the three-point
-energy correlator follows that of Ref.\cite{Karlberg_2021}, based on the original proposal
-of Ref.\cite{Chen_2021}, with the particle energies replaced by transverse
-momenta and the opening angles angles between particles are
-replaced by their distances in the $(\eta,\phi)$ plane as appropriate for a hadron collider.
+The three-point energy correlator of Section~\ref{sec:spin-eeec} is computed
+separately from the declustering, using directly the jet constituents stored after
+the extraction. This process does not involve any declustering or grooming, so
+that it probes the spin correlation through a different route from the Lund
+observables. It is evaluated both for all jets and for the jets selected by the
+flavour selection of Section~\ref{sec:flavour}. The definition of the three-point
+energy correlator follows that of Ref.~\cite{Karlberg_2021}, based on the original
+proposal of Ref.~\cite{Chen_2021}, with the particle energies replaced by
+transverse momenta and the opening angles between particles replaced by their
+distances in the $(\eta,\phi)$ plane, as appropriate for a hadron collider.
 
-For each jet, their constituents with non-zero transverse momentum are converted into three-momenta
-through equation \eqref{eq:cartesian} and jets with fewer than three constituents are skipped.
-The angular distance between every pair of constituents is computed as
-
+For each jet, its constituents with non-zero transverse momentum are converted
+into three-momenta through equation~\eqref{eq:cartesian}, and jets with fewer than three
+such constituents are skipped. The angular distance between every pair of
+constituents is computed as
+%
 \begin{equation}
   \dR_{ij} = \sqrt{(\eta_i - \eta_j)^2 + (\phi_i - \phi_j)^2},
   \label{eq:eeec-dr}
 \end{equation}
+%
+with the azimuthal difference computed in the range $(-\pi,\pi]$. Again, this
+distance is invariant under boosts along the beam axis, making it the natural
+measure of angular separation at a hadron collider, and it is the same measure used
+to define the jets themselves. An opening angle in three dimensions would instead
+shrink with the pseudorapidity of the jet, so that a fixed window in that angle
+would select different regions of the jet for central and forward jets.
 
-with the azimuthal difference computed in the range $(-\pi,\pi]$. Again, this distance is invariant
-under boosts along the beam axis, making it the natural measure of angular seperation at a
-hadron collider and it is the same measure used to define
-the jets themselves. An opening angle in three dimensions would instead shrink with the pseudorapidity
-of the jet, so that a fixed window in that angle would
-select different regions of the jet for central and forward jets.
-
-This computation then runs over every unordered triplet of constituents. The three distances 
-of a triplet are ordered as $\dR_S \leq \dR_M \leq \dR_L$, and the triplet is retained only if
-
+This computation then runs over every unordered triplet of constituents. The three
+distances of a triplet are ordered as $\dR_S \leq \dR_M \leq \dR_L$, and the
+triplet is retained only if
+%
 \begin{equation}
   \sqrt{0.1} < \dR_L < 1
   \qquad\text{and}\qquad
   0.01 < \dR_S < 0.1 .
   \label{eq:eeec-window}
 \end{equation}
+%
+These are the values used for the opening angles in Ref.~\cite{Karlberg_2021},
+but for the $(\eta,\phi)$ plane. These two definitions coincide at small angles for
+central jets. The window selects configurations with a strong hierarchy of angles.
+Two of the constituents lie close together and resolve a narrow splitting, while
+the third lies at a much wider angle. This configuration then approximates two
+successive splittings with strongly ordered opening angles, which is the regime
+where the correlator is sensitive to the spin of the intermediate gluon.
 
-These are the values used for the opening angles in
-Ref.~\cite{Karlberg:2021kwr}, but for the $(\eta,\phi)$ plane. These two definitions
-coincide at small angles for central jets, and jets studied here in this work have transverse
-momenta comparable to the hard scale for which the window was chosen. 
-The window selects configurations with a strong hierarchy of angles.
-Two of the constituents lie close together and settle a narrow splitting, while the third
-lies at a much wider angle. This configuration then configuration then approximates two
-successive splittings with strongle ordered opening angles which is the regime where the 
-correlator is sensitive to the spin of the intermediate gluon.
-
-For any triplet, let $a$ and $b$ be the two constituents seperated by the smallest distance
-$\dR_S$ and $c$ the third. The azimuthal angle $\psi$ is the
+For any retained triplet, let $a$ and $b$ be the two constituents separated by the
+smallest distance $\dR_S$ and $c$ the third. The azimuthal angle $\psi$ is the
 angle between the plane containing $\vec{p}_a$ and $\vec{p}_b$ and the plane
 containing their sum and $\vec{p}_c$. It is computed from the three-momenta of
-Eq.~\eqref{eq:cartesian}, through the normals
-
+equation~\eqref{eq:cartesian}, through the normals
+%
 \begin{equation}
   \hat{n}_1 = \frac{\vec{p}_a \times \vec{p}_b}{|\vec{p}_a \times \vec{p}_b|},
   \qquad
@@ -669,9 +671,9 @@ Eq.~\eqref{eq:cartesian}, through the normals
                    {|(\vec{p}_a + \vec{p}_b) \times \vec{p}_c|},
   \label{eq:eeec-normals}
 \end{equation}
-
+%
 as
-
+%
 \begin{equation}
   \psi = \operatorname{atan2}\!\left(
   \hat{u} \cdot (\hat{n}_1 \times \hat{n}_2),\;
@@ -680,31 +682,38 @@ as
   \hat{u} = \frac{\vec{p}_a + \vec{p}_b}{|\vec{p}_a + \vec{p}_b|},
   \label{eq:eeec-psi}
 \end{equation}
-
-which returns a signed angle in the range $(-\pi, \pi]$. Each triplet enters the
-distribution of $\psi$ with the weight
-
+%
+which returns a signed angle in the range $(-\pi, \pi]$. Exchanging $a$ and $b$
+will reverse $\hat{n}_1$ and shift $\psi$ by $\pi$, leaving $\cos 2\psi$ unchanged.
+The two constituents are taken in the order in which they are stored. Each triplet
+enters the distribution of $\psi$ with the weight
+%
 \begin{equation}
   w_{abc} = \frac{p_{\mathrm{T},a}\,p_{\mathrm{T},b}\,p_{\mathrm{T},c}}
                  {p_{\mathrm{T},\text{jet}}^{3}} ,
   \label{eq:eeec-weight}
 \end{equation}
+%
+in accordance with equation~\eqref{eq:eeec}. Since the sum runs over unordered
+triplets, it will differ from a sum over all orderings of $i$, $j$ and $k$ only by
+a constant factor. This will affect the normalisation of the distribution, but not
+its shape and therefore it will not affect the factor $a_2/a_0$. The weighted
+distribution is accumulated in a histogram of $100$ bins spanning $(-\pi,\pi]$. In
+the simulated datasets, the distribution is also accumulated separately for jets in
+each channel of the second splitting, as labelled in Section~\ref{sec:genlevel},
+which provides a channel-by-channel reference for the modulation. Since the
+triplets of a jet share its constituents, they are not independent, and the
+statistical uncertainties are computed treating the jets as the independent units.
 
-in accordance with Eq.~\eqref{eq:eeec}. In the script, since the sum runs over ordered triplets,
-it will differ from a sum over all all orderings of
-$i$, $j$ and $k$ only by a constant factor. This will affect the normalisation of the distribution,
-but not its shape and therefore it will not affect the factor $a_2/a_0$. In the simulated datasets,
-the distribution is also separately for jets in each channel of the second splitting, as labelled in
-Section~\ref{sec:genlevel}, which provides a channel-by-channel reference for the
-modulation.
-
-The main difficulty of this stage is computation resources, since each jet may have lots 
-of constituents and the number of triplets grows as the cube of their number. To make the 
-computation manageable, the pairwise distances are computed once per jet, the window of
-Eq.~\eqref{eq:eeec-window} is applied before any other quantity is evaluated, so
-that most triplets are rejected at negligible cost, and the loop over triplets is
-compiled to machine code with the \textsc{Numba} just-in-time
-compiler~\cite{Lam:2015numba}.
+The main difficulty of this stage is the computational cost, since each jet may
+have many constituents and the number of triplets grows as the cube of their
+number. To make the computation manageable, the pairwise distances are computed
+once per jet, the window of equation~\eqref{eq:eeec-window} is applied before any other
+quantity is evaluated, so that most triplets are rejected at negligible cost, and
+the loop over triplets is compiled to machine code with the \textsc{Numba}
+just-in-time compiler~\cite{Lam:2015numba}. The correlator of each jet is also
+computed only once and added to every category of jets to which the jet belongs,
+and the events are processed in parallel in independent blocks.
 
 \section{Flavour selection}
 \label{sec:flavour}
@@ -816,7 +825,7 @@ functions of equations \eqref{eq:Pgg} and \eqref{eq:Pqq}, it can be noted that t
 $g \to gg$ and $q \to qg$ have increased probability when one of the two products is soft, while
 the $g \to q\bar{q}$ channel of equation \eqref{eq:Pgq}, has increased probability with a more even
 sharing of the momentum. The momentum fraction $z_2$ of the secondary splitting is, therefore,
-sensitive to its channel and it is shown in section \ref{sec:z_channels} precisely that. 
+sensitive to its channel and it is shown in section \ref{sec:res-zplane} precisely that. 
 It is also complemented by the angular separation
 $\dR_{34}$ and the relative transverse momentum $k_{\mathrm{T},2}$ of the second
 splitting, and by the momentum fraction $z_1$ of the first. 
@@ -1020,7 +1029,7 @@ with the channel composition, in order to test whether the structure of
 the feature space separates the channels by itself.
 
 Although these approaches seem fair, none of them could seperate the $g \to q\bar{q}$ channel as effectively as
-the two-stage selection, as shown in Chapter~\ref{cap:resultados}. The reason behind this
+the two-stage selection, in an high purity region, as shown in Chapter~\ref{cap:resultados}. The reason behind this
 may be because the $g \to q\bar{q}$ channel is a minority
 of the sample, and a network that must also seperate the channels $q \to qg$ and $g \to gg$,
 or reject the unmatched splittings at the same time, spends part of its power on that 
@@ -1159,7 +1168,7 @@ and its statistical uncertainty is the standard error of the mean,
 
 For a distribution of the form of equation \eqref{eq:dpsi-modulation}, the mean value
 is $\langle \cos 2\dpsi \rangle = \tfrac{1}{2}\,a_2/a_0$, so that the uncertainty on
-$a_2/a_0$ is twice that of Eq.~\eqref{eq:stat}.
+$a_2/a_0$ is twice that of equation~\eqref{eq:stat}.
 
 This expression assumes that each jet entering the sample is independent. In each event after selection,
 there is at least two jets and all of them enter the analysis, although, events with 
@@ -1277,15 +1286,19 @@ moves jets across the selection threshold of $700$~GeV. Since the measured obser
 is an angle averaged by many jets, and the jets near the threshold form a small part of
 the sample, this effect is expected to be small, and it is not evaluated.
 
-Some particles comming from other proton--proton interactions in the same bunch crossing, 
-also known as pile-up, enter the jets as soft constituents spread over wide angles. CMS
-applies a specific pile-up mitigation algorithm in \cite{CMS:2026jnt}, in order to remove 
-this effect. In this work the same method was not applied and just the condition of 
-$z > 0.1$ was imposed on the selected splittings, which rejects the soft
-branches in which pile-up particles are mostly found. Once again,
-the simulated samples
-include an overlay of pile-up interactions, so that its effect is present in data
-and simulation.
+Particles from additional proton--proton interactions in the same bunch crossing,
+known as pile-up, enter the jets as soft constituents spread over wide angles.
+Part of this contribution is already removed in the reconstruction of the jets,
+since charged particles originating from pile-up vertices are discarded before the
+clustering, a procedure known as charged-hadron subtraction. Neutral pile-up
+particles may nevertheless remain among the constituents, with their full momenta.
+The CMS measurement goes further and also rescales the momenta of neutral
+particles by their probability of originating from the primary
+interaction~\cite{CMS:2026jnt}, which is not done in this work. The effect of the
+remaining pile-up on the observable is limited by the condition $z > 0.1$ imposed
+on the selected splittings, which rejects the soft branches in which pile-up
+particles are mostly found. The simulated samples include an overlay of pile-up
+interactions, so that its effect is present in data and simulation alike.
 
 \subsection{Trigger and analysis choices}
 \label{sec:sys-choices}

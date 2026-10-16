@@ -1,11 +1,186 @@
-\chapter{Computational reproduction}
+\chapter{Supplementary Numerical Results}
 \label{anexo:b}
 
-\section{Software environment}
-\label{sec:anexo-ambiente}
+This appendix collects the numerical values behind the figures of
+Chapter~\ref{cap:resultados} that are not tabulated in the main text. The tables
+follow the order in which the results are presented there, and all uncertainties
+are statistical.
 
-\section{Execution sequence}
-\label{sec:anexo-execucao}
+\begin{table}[htbp]
+  \centering
+  \caption{Number of jets with a valid $\dpsi$, mean values of the momentum
+  fractions $z_1$ and $z_2$ of the two selected splittings, and correlation
+  coefficient between them, for all jets in the collision data and in the
+  simulated calibration sample, and for the simulated jets in each class of the
+  channel label of the second splitting. The fraction is given relative to all
+  simulated jets. The statistical uncertainties are below $0.001$ for the mean
+  values and below $0.005$ for the correlation coefficients.}
+  \label{tab:zplane}
+  \begin{tabular}{lrrccc}
+    \toprule
+    Sample & Jets & Fraction & $\langle z_1 \rangle$ & $\langle z_2 \rangle$ & $\rho(z_1, z_2)$ \\
+    \midrule
+    Data, all jets & $45\,755$ & & $0.270$ & $0.283$ & $-0.032$ \\
+    \midrule
+    Simulation, all jets & $8\,495\,207$ & $100.0\%$ & $0.268$ & $0.283$ & $-0.031$ \\
+    \quad no label & $2\,647\,865$ & $31.2\%$ & $0.267$ & $0.285$ & $-0.026$ \\
+    \quad unmatched & $4\,397\,983$ & $51.8\%$ & $0.264$ & $0.275$ & $-0.028$ \\
+    \quad $g \to q\bar{q}$ & $179\,810$ & $2.1\%$ & $0.275$ & $0.315$ & $-0.064$ \\
+    \quad $q \to qg$ & $358\,498$ & $4.2\%$ & $0.294$ & $0.294$ & $-0.066$ \\
+    \quad $g \to gg$ & $857\,140$ & $10.1\%$ & $0.273$ & $0.301$ & $-0.086$ \\
+    \quad rest & $53\,911$ & $0.6\%$ & $0.299$ & $0.305$ & $-0.048$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
-\section{Repository structure}
-\label{sec:anexo-repo}
+\begin{table}[htbp]
+  \centering
+  \caption{Performance of the first stage of the flavour selection as a function of
+  the threshold on the matched score, evaluated on the test set of the training
+  sample. Among the labelled splittings of this set, a fraction $0.234$ is matched.
+  The purity is the fraction of matched splittings among those selected, the
+  efficiency is the fraction of matched splittings that are selected, and the last
+  column gives the fraction of unmatched splittings that are selected. The
+  threshold of $0.8$ is the one adopted in this work.}
+  \label{tab:stage1-scan}
+  \begin{tabular}{ccccc}
+    \toprule
+    Threshold & Selected fraction & Purity & Efficiency & Unmatched selected \\
+    \midrule
+    $0.30$ & $0.449$ & $0.427$ & $0.820$ & $0.336$ \\
+    $0.40$ & $0.323$ & $0.516$ & $0.714$ & $0.204$ \\
+    $0.50$ & $0.241$ & $0.599$ & $0.618$ & $0.126$ \\
+    $0.60$ & $0.184$ & $0.672$ & $0.530$ & $0.079$ \\
+    $0.70$ & $0.143$ & $0.733$ & $0.449$ & $0.050$ \\
+    $0.75$ & $0.123$ & $0.764$ & $0.403$ & $0.038$ \\
+    $\mathbf{0.80}$ & $\mathbf{0.102}$ & $\mathbf{0.797}$ & $\mathbf{0.349}$ & $\mathbf{0.027}$ \\
+    $0.85$ & $0.080$ & $0.830$ & $0.284$ & $0.018$ \\
+    $0.90$ & $0.054$ & $0.865$ & $0.198$ & $0.009$ \\
+    $0.95$ & $0.012$ & $0.917$ & $0.046$ & $0.001$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Mean value $\langle \cos 2\dpsi \rangle$ of the jets selected by the
+  two-stage selection as a function of the threshold on the $g \to q\bar{q}$
+  score, in the simulated calibration sample and in the collision data. All jets
+  have a matched score above $0.8$. The purity is given as the interval between
+  the values obtained by counting the jets without a channel label as background and
+  excluding them. In simulation, the mean value is given for all selected jets,
+  for those labelled $g \to q\bar{q}$, and for those labelled $q \to qg$ or
+  $g \to gg$. After the requirement on the matched score alone, these two labelled
+  classes have mean values of $-0.2315 \pm 0.0027$ and $-0.1346 \pm 0.0011$. The
+  uncertainties are statistical.}
+  \label{tab:modulation-scan}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{crccccrc}
+    \toprule
+    & \multicolumn{5}{c}{Simulation} & \multicolumn{2}{c}{Data} \\
+    \cmidrule(lr){2-6} \cmidrule(l){7-8}
+    & & & \multicolumn{3}{c}{$\langle \cos 2\dpsi \rangle$} & & \\
+    \cmidrule(lr){4-6}
+    Threshold & Jets & Purity & All selected & $g \to q\bar{q}$ & $q \to qg$, $g \to gg$
+              & Jets & $\langle \cos 2\dpsi \rangle$ \\
+    \midrule
+    $0.30$ & $286\,380$ & $0.179$--$0.181$ & $-0.1218 \pm 0.0013$ & $-0.2365 \pm 0.0030$ & $-0.1078 \pm 0.0018$ & $2\,607$ & $-0.1281 \pm 0.0138$ \\
+    $0.35$ & $165\,321$ & $0.238$--$0.244$ & $-0.1335 \pm 0.0017$ & $-0.2428 \pm 0.0034$ & $-0.1106 \pm 0.0025$ & $1\,613$ & $-0.1366 \pm 0.0174$ \\
+    $0.40$ & $90\,503$  & $0.304$--$0.316$ & $-0.1501 \pm 0.0023$ & $-0.2505 \pm 0.0041$ & $-0.1150 \pm 0.0036$ & $924$    & $-0.1568 \pm 0.0231$ \\
+    $0.45$ & $42\,982$  & $0.377$--$0.399$ & $-0.1724 \pm 0.0034$ & $-0.2621 \pm 0.0053$ & $-0.1268 \pm 0.0059$ & $423$    & $-0.1585 \pm 0.0336$ \\
+    $0.50$ & $18\,220$  & $0.444$--$0.485$ & $-0.2006 \pm 0.0052$ & $-0.2712 \pm 0.0075$ & $-0.1473 \pm 0.0105$ & $162$    & $-0.2289 \pm 0.0539$ \\
+    $0.55$ & $6\,548$   & $0.493$--$0.566$ & $-0.2276 \pm 0.0085$ & $-0.2912 \pm 0.0118$ & $-0.1791 \pm 0.0204$ & $50$     & $-0.3495 \pm 0.0864$ \\
+    $0.60$ & $1\,852$   & $0.478$--$0.615$ & $-0.2661 \pm 0.0156$ & $-0.3252 \pm 0.0221$ & $-0.2495 \pm 0.0433$ & $16$     & $-0.5202 \pm 0.0997$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Mean value $\langle \cos 2\dpsi \rangle$ as a function of the momentum
+  fraction $z_2$ of the second splitting, for the simulated jets labelled
+  $g \to q\bar{q}$ and for those labelled $q \to qg$ or $g \to gg$, after the
+  requirement of a matched score above $0.8$. The last column gives the
+  difference between the two classes. The values correspond to the right panel
+  of Figure~\ref{fig:z-kinematics}, and the uncertainties are statistical.}
+  \label{tab:z-profile}
+  \begin{tabular}{cccc}
+    \toprule
+    $z_2$ & $g \to q\bar{q}$ & $q \to qg$ or $g \to gg$ & Difference \\
+    \midrule
+    $0.10$--$0.15$ & $-0.2709 \pm 0.0213$ & $-0.1896 \pm 0.0084$ & $-0.0813 \pm 0.0229$ \\
+    $0.15$--$0.20$ & $-0.2467 \pm 0.0110$ & $-0.1682 \pm 0.0042$ & $-0.0785 \pm 0.0118$ \\
+    $0.20$--$0.25$ & $-0.2333 \pm 0.0085$ & $-0.1467 \pm 0.0033$ & $-0.0866 \pm 0.0091$ \\
+    $0.25$--$0.30$ & $-0.2348 \pm 0.0074$ & $-0.1383 \pm 0.0030$ & $-0.0965 \pm 0.0080$ \\
+    $0.30$--$0.35$ & $-0.2327 \pm 0.0068$ & $-0.1301 \pm 0.0029$ & $-0.1026 \pm 0.0074$ \\
+    $0.35$--$0.40$ & $-0.2348 \pm 0.0065$ & $-0.1222 \pm 0.0028$ & $-0.1126 \pm 0.0071$ \\
+    $0.40$--$0.45$ & $-0.2275 \pm 0.0064$ & $-0.1298 \pm 0.0028$ & $-0.0977 \pm 0.0070$ \\
+    $0.45$--$0.50$ & $-0.2197 \pm 0.0064$ & $-0.1228 \pm 0.0029$ & $-0.0969 \pm 0.0070$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Mean value $\langle \cos 2\psi \rangle$ of the three-point energy
+    correlator for all jets in the collision data and in the simulated calibration
+    sample, and for the simulated jets in each class of the channel label of the
+    second splitting. All jets of the ntuples are included, also those without a
+    valid $\dpsi$. The last two rows give the labelled classes used as references in
+    Figure~\ref{fig:eeec-threshold}, after the requirement of a matched score above
+    $0.8$ alone. The coefficient of the modulation is
+    $a_2/a_0 = 2\langle \cos 2\psi \rangle$. The uncertainties are statistical and
+    treat the jets as independent.}
+    \label{tab:eeec-classes}
+    \begin{tabular}{lrrc}
+      \toprule
+      Sample & Jets & Triplets & $\langle \cos 2\psi \rangle$ \\
+      \midrule
+      Data, all jets & $60\,566$ & $1.54 \times 10^{8}$ & $+0.0200 \pm 0.0012$ \\
+      \midrule
+      Simulation, all jets & $11\,476\,817$ & $2.58 \times 10^{10}$ & $+0.0186 \pm 0.0001$ \\
+      \quad no label & $5\,629\,475$ & $5.21 \times 10^{9}$ & $+0.0196 \pm 0.0002$ \\
+      \quad unmatched & $4\,397\,983$ & $1.35 \times 10^{10}$ & $+0.0200 \pm 0.0001$ \\
+      \quad $g \to q\bar{q}$ & $179\,810$ & $7.18 \times 10^{8}$ & $+0.0125 \pm 0.0006$ \\
+      \quad $q \to qg$ & $358\,498$ & $1.73 \times 10^{9}$ & $+0.0136 \pm 0.0004$ \\
+      \quad $g \to gg$ & $857\,140$ & $4.36 \times 10^{9}$ & $+0.0161 \pm 0.0002$ \\
+      \quad rest & $53\,911$ & $2.79 \times 10^{8}$ & $+0.0130 \pm 0.0010$ \\
+      \midrule
+      Matched score $> 0.8$, $g \to q\bar{q}$ & $64\,104$ & $3.24 \times 10^{8}$ & $+0.0100 \pm 0.0009$ \\
+      Matched score $> 0.8$, $q \to qg$ or $g \to gg$ & $388\,308$ & $2.70 \times 10^{9}$ & $+0.0125 \pm 0.0003$ \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+  
+  \begin{table}[htbp]
+    \centering
+    \caption{Mean value $\langle \cos 2\psi \rangle$ of the three-point energy
+    correlator of the jets selected by the two-stage selection, as a function of
+    the threshold on the $g \to q\bar{q}$ score, in the collision data and in the
+    simulated calibration sample. All jets have a matched score above $0.8$. The
+    last two columns refer to the selected simulated jets labelled
+    $g \to q\bar{q}$. The uncertainties are statistical and treat the jets as
+    independent.}
+    \label{tab:eeec-threshold}
+    \small
+    \begin{tabular}{crcrcrc}
+      \toprule
+      & \multicolumn{2}{c}{Data}
+      & \multicolumn{2}{c}{Simulation, all selected}
+      & \multicolumn{2}{c}{Simulation, $g \to q\bar{q}$ label} \\
+      \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(l){6-7}
+      Threshold & Jets & $\langle \cos 2\psi \rangle$
+                & Jets & $\langle \cos 2\psi \rangle$
+                & Jets & $\langle \cos 2\psi \rangle$ \\
+      \midrule
+      $0.30$ & $2\,607$ & $+0.0168 \pm 0.0046$ & $286\,380$ & $+0.0136 \pm 0.0004$ & $51\,186$ & $+0.0093 \pm 0.0010$ \\
+      $0.35$ & $1\,613$ & $+0.0158 \pm 0.0061$ & $165\,321$ & $+0.0132 \pm 0.0006$ & $39\,305$ & $+0.0093 \pm 0.0011$ \\
+      $0.40$ & $924$    & $+0.0049 \pm 0.0082$ & $90\,503$  & $+0.0121 \pm 0.0008$ & $27\,512$ & $+0.0095 \pm 0.0014$ \\
+      $0.45$ & $423$    & $-0.0032 \pm 0.0122$ & $42\,982$  & $+0.0120 \pm 0.0011$ & $16\,197$ & $+0.0082 \pm 0.0018$ \\
+      $0.50$ & $162$    & $-0.0071 \pm 0.0211$ & $18\,220$  & $+0.0104 \pm 0.0017$ & $8\,084$  & $+0.0044 \pm 0.0026$ \\
+      $0.55$ & $50$     & $+0.0021 \pm 0.0387$ & $6\,548$   & $+0.0075 \pm 0.0027$ & $3\,229$  & $+0.0035 \pm 0.0040$ \\
+      $0.60$ & $16$     & $-0.0114 \pm 0.0679$ & $1\,852$   & $+0.0008 \pm 0.0048$ & $886$     & $-0.0017 \pm 0.0073$ \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
