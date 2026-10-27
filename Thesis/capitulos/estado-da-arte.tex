@@ -86,7 +86,7 @@ the three splittings relevant to this work they read, at leading order,
 \end{align}
 
 with colour factors $C_F = 4/3$, $C_A = 3$ and $T_R = 1/2$. The distinction
-between the gluon splitting channels of Eqs. \eqref{eq:Pgg} and \eqref{eq:Pgq},
+between the gluon splitting channels of equations \eqref{eq:Pgg} and \eqref{eq:Pgq},
 one producing a pair of gluons and the other a quark-antiquark pair, will
 prove central. The two channels differ not only in these rates but in the spin
 structure of their emissions, and it is that difference which the spin
@@ -151,7 +151,7 @@ and returns jets with non-zero mass.
 
 Though, not every conceivable grouping prescription is admissible.
 The necessary requirement, and the one that eliminates most of them is infrared and collinear (IRC) safety.
-In order for an observable to be infrared safe is that its value most remain unchanged 
+In order for an observable to be infrared safe, its value most remain unchanged 
 by the addition of an arbitrarily soft emission. For it to be collinear safe, this value
 most also remain unchanged if one of its inputs is replaced by two collinear inputs
 sharing its momentum. So, a jet algorithm is IRC safe when the set of jets it returns 
@@ -174,9 +174,9 @@ falling within a fixed angular radius of a candidate axis. These algorithms were
 simple and seed-based and were not IRC safe because a soft particle could seed a new
 candidate cone, or a collinear splitting could change which particles acted as seeds, thus
 either these flaws could alter the resulting jets. A lot of effort was put in order to
-fix them and eventually producing seedless variants that restored collinear safety.
+fix them and eventually producing seedless variants that restored collinear safety but made them very slow.
 Alternatively, another family of algorithms, the sequential recombination algorithms,
-are IRC safe by construction and this work utilised them.
+are IRC safe by construction and this work uses them.
 
 Since the same mechanism reappears when flavour is assigned to jets in Section \ref{sec:ifn},
 it is worh making concrete how such a problem arises. Consider
@@ -215,12 +215,12 @@ family \cite{Salam_2010} writes these as
 where $\dR_{ij}^2 = (y_i - y_j)^2 + (\phi_i - \phi_j)^2$ is the squared angular
 separation of the inputs in rapidity $y$ and azimuth $\phi$, $R$ is the jet radius
 parameter, and the integer $p$ selects the algorithm. The algorithm, at each step,
-finds the smallest of all the distances. f it is a $d_{ij}$, the inputs $i$ and
+finds the smallest of all the distances. If it is a $d_{ij}$, the inputs $i$ and
 $j$ are recombined into a single input. If it is a $d_{iB}$, the input $i$ is
 declared a final jet and removed. This procedure repeats until no inputs remain.
 The returned jets are IRC safe for any integer value of $p$, but the value
-of $p$ changes extremely how the clustering proceeds. The three choices $p=-1$,
-$p=0$ and $p=+1$ give, respectively, the \antikt{}, Cambridge/Aachen and $\kt$
+of $p$ changes extremely how the clustering proceeds. The common choices $p=-1$,
+$p=0$ and $p=+1$, give, respectively, the \antikt{}, Cambridge/Aachen and $\kt$
 algorithms, of which the first two are the tools this work relies on and are
 described in the following subsections.
 
@@ -237,7 +237,7 @@ and \ref{sec:ca}.
 \subsection{The anti-$\kt$ algorithm}
 \label{sec:antikt}
 
-The choice $p = -1$ in Eqs. \eqref{eq:dij} and \eqref{eq:diB} defines the \antikt{}
+The choice $p = -1$ in equations \eqref{eq:dij} and \eqref{eq:diB} defines the \antikt{}
 algorithm \cite{Cacciari_2008}. With this value the inter-particle distance becomes
 
 \begin{equation}
@@ -266,7 +266,7 @@ There is a geometric consequence because of this ordering. A hard particle with
 no other hard particle within an an angular distance $2R$ gathers all softer inputs
 within a distance $R$ of it, producing a jet that is exactly circular in the $(y,\phi)$
 plane. When two hard particles are closer than $2R$, the border between their jets
-is set by their relative transverse momenta with the harder one retains the larger
+is set by their relative transverse momenta with the harder one retaining the larger
 share, but the jets remain regular in shape. Due to soft radiation being last in the
 clustering, it cannot deform these borders. They are spread across the hard jets 
 without chaging their shape.
@@ -303,10 +303,17 @@ definition by the LHC experiments, a role it has held since.
 It is because of this that the \antikt{} algorithm was used in this work to define
 the jets, with radius parameter $R = 0.8$. Jets constructed in this way are
 conventionally denoted as AK8. Howver, the algorithm does not provide a physically
-meaningful account of how the jet was assembled. This is becacause its sequence is
-ordered by hardness rather than by angle and the intermediate recombinations bear
-no correspondence to the sequence of physical splittings in a parton shower,  which is
-ordered in angle. The clustering history of an \antikt{} jet is, in this sense, an
+meaningful account of how the jet was assembled. This is because its sequence is ordered by decreasing hardness,
+so that the hardest particles are clustered first. A clustering
+sequence follows the radiation process only if it undoes the
+latest splittings first. Since a parton shower evolves from the
+hardest, widest-angle splittings down to the soft and collinear
+ones, this requires an ordering by increasing hardness, as in the
+$k_\mathrm{T}$ algorithm, or by increasing angle, as in the C/A
+algorithm. The intermediate recombinations of the
+anti-$k_\mathrm{T}$ algorithm therefore bear no correspondence
+to the sequence of physical splittings in a parton shower.
+The clustering history of an \antikt{} jet is, in this sense, an
 artefact of the algorithm rather than a record of the underlying radiation.
 Recovering that history, which is what the substructure observables of this work
 require, calls for a different member of the family, applied to the constituents
@@ -359,7 +366,7 @@ and latest.
 Every splitting in this sequence is characterised by a small set of kinematic variables.
 The angular separation of the two branches $\dR_{ab}$, and their relative transverse
 momentum $k_t = p_{t,b}\,\dR_{ab}$, together locate the emission on the two scales
-that matter. This characterises the splitting by how hard and how hard it is. A third variable,
+that matter. This characterises the splitting by how hard and how collinear it is. A third variable,
 the momentum fraction $z = p_{t,b}/(p_{t,a} + p_{t,b})$, computes how the momentum was distributed
 between the emission and the emitter.
 These are the quantities from which the Lund jet plane of section \ref{sec:lund} is
@@ -415,7 +422,7 @@ to a branch inside one, in a way that remains theoretically well defined and exp
 
 The most obvious procedure is to sum the flavour of a jet's constituents, by counting
 a quark as $+1$ and an antiquark as $-1$ for each quark flavour separatelly, so
-that the net flavour of a jet is that of the parton which initiated it. Although
+that the net flavour of a jet is that of the parton which initiated it. While
 this procedure is simple, it is not IRC safe and the root of the problem is precisely the
 $g \to q\bar{q}$ splitting. A gluon carries no net flavour, but it can split into
 a quark-antiquark pair that is soft or wide in angle or even both. This quark and 
@@ -442,7 +449,7 @@ that cost is too high. In this work, the approach adopted was using the Interlea
 IFN leaves the kinematics of the clusturing entirely untouched and treats flavour as
 a separate layer that runs alongside the normal clustering sequence. The jets, which are returned
 by this algorithm, are the identical to the C/A jets of Section \ref{sec:ca}. This includes 
-constituents and momentums. What IFN gives in addition is a flavour label for each, computed by
+constituents and momenta. What IFN gives in addition is a flavour label for each, computed by
 a procedure that is stable against soft and collinear emissions.
 
 The principle behind this new procedure is neutralisation. While the clustering occurs,
@@ -450,21 +457,43 @@ IFN tracks down the flavour carried by every object in the sequence, and, at eac
 asks wether a flavoured object can be matched to a nearby object of opposite flavour,
 which is the partner who would have originated the common $g \to q\bar{q}$ splitting.
 Whenever it finds such a pair, the two flavours are neutralised against each other,
-so that the ingenuine flavour is cancelled at the moment it would otherwise be passed
+so that the non-genuine flavour is cancelled at the moment it would otherwise be passed
 up the clustering tree and inherited by a jet. This makes the quark and antiquark born
 of the same soft or collinear gluon splitting reunite in flavour, even though their kinematics
-remain whatever the C/A algorithm placed them. The matching is ruled by a flavour distance
-that weighs how soft and how collinear a candidate pair is, so that it is exactly the 
-soft and collinear configurations that are neutralised,
-while genuinely distinct hard flavours are left in place. 
+remain whatever the C/A algorithm placed them. The matching is ruled by a flavour distance that weighs how soft
+and how collinear a candidate pair is,
+\begin{equation}
+  u_{ik} = \max(p_{\mathrm{T},i},p_{\mathrm{T},k})^{\alpha}\,
+           \min(p_{\mathrm{T},i},p_{\mathrm{T},k})^{2-\alpha}\,
+           \Omega_{ik}^{2},
+  \label{eq:ifn_uik}
+\end{equation}
+with the angular measure
+\begin{equation}
+  \Omega_{ik}^{2} = 2\left[\frac{\cosh(\omega\,\Delta y_{ik})-1}
+                    {\omega^{2}}-\left(\cos\Delta\phi_{ik}-1\right)
+                    \right],
+  \label{eq:ifn_omega}
+\end{equation}
+where $\Delta y_{ik}$ and $\Delta\phi_{ik}$ are the rapidity and
+azimuthal separations of $i$ and $k$. At small angles
+$\Omega_{ik}^{2}\to\Delta R_{ik}^{2}$, and $u_{ik}$ takes the
+form of the flavour-$k_\mathrm{T}$ distance of \cite{Banfi_2006}. When
+$i$ is about to be clustered with $j$, its flavour is neutralised
+against a flavoured object $k$ of opposite flavour if
+$u_{ik}<u_{ij}$. In this way it is exactly the soft and collinear
+configurations that are neutralised, while genuinely distinct
+hard flavours are left in place. IRC safety requires
+$\alpha+\omega>2$ \cite{caola2023flavouredjetsexactantikt}, and this work uses $\alpha=2$ and
+$\omega=3-\alpha=1$.
 
 What IFN brings to this work is that it does not merely give a prescription that labels
 the final jet. It exposes the flavour at every step of the clustering and not only at the end.
-This is the feature that the present analysis required. he clustering of a
+This is the feature that the present analysis required. The clustering of a
 C/A history produces at each step a splitting of one object into two branches. IFN
 attaches to those branches a flavour label that is IRC safe and, therefore, meaningful
 at fixed order in perturbation theory. The abstract distinction between the discussed
-channels in Eqs. \eqref{eq:Pgg}, \eqref{eq:Pgq} and \eqref{eq:Pqq} is thereby made concrete, and
+channels in equations \eqref{eq:Pgg}, \eqref{eq:Pgq} and \eqref{eq:Pqq} is thereby made concrete, and
 it can be read off at each splitting in the history of a jet. It is on this per splitting flavour
 that the channel selection at the heart of the measurement is built.
 The algorithm is distributed as a
@@ -718,14 +747,53 @@ of gluons, $g \to gg$, or into a quark-antiquark pair, $g \to q\bar{q}$. Each of
 channels read out the polarisation of the parent gluon, but each one of them do so with opposite
 sign and different strengh \cite{Karlberg_2021}.
 
-The reason behind this difference comes from the spin of the produced particles. The angular
+The reason behind this difference comes from the spin of the produced particles.
 The angular distribution of a splitting depends on how the daughters' spins couple to the
 polarisation axis of the parent, and this coupling differs between a final state
-of two vector gluons and one of two spin-half fermions \cite{Karlberg_2021}. The
-difference is that the interference coefficient $a_2/a_0$ of equation \eqref{eq:cos2psi}
-appears with one sign for the $g \to gg$ channel and the opposite sign for the $g \to q\bar{q}$ channel,
-where one channel prefers the alignment of the two splitting planes, the other a perpendicular
-configuration.
+of two vector gluons and one of two spin-half fermions \cite{Karlberg_2021}. For a gluon fully linearly polarised along a fixed transverse
+direction, the splitting functions of euqations \eqref{eq:Pgg} and \eqref{eq:Pgq}
+acquire a dependence on the azimuthal angle $\phi$ between the
+plane of the splitting and the polarisation axis \cite{Karlberg_2021},
+\begin{align}
+  P_{g\to gg}(z,\phi) &= C_A\left[\frac{z}{1-z}+\frac{1-z}{z}
+    +z(1-z)+z(1-z)\cos 2\phi\right],
+    \label{eq:Pgg_pol}\\
+  P_{g\to q\bar{q}}(z,\phi) &= T_R\left[z^2+(1-z)^2
+    -2z(1-z)\cos 2\phi\right],
+    \label{eq:Pqq_pol}
+\end{align}
+which reduce to equations \eqref{eq:Pgg} and \eqref{eq:Pgq} when averaged over $\phi$.
+The $\cos 2\phi$ term enters the two channels with opposite
+signs. The gluon produced in the first splitting is only
+partially polarised. It emerges linearly polarised in the plane
+of that splitting, with a degree of polarisation that depends on
+the momentum fraction $z_1$ it carries,
+\begin{equation}
+  A_{q\to qg}(z_1) = \frac{2(1-z_1)}{1+(1-z_1)^2},
+  \qquad
+  A_{g\to gg}(z_1) = \frac{(1-z_1)^2}
+                          {\left[1-z_1(1-z_1)\right]^2}.
+  \label{eq:A_pol}
+\end{equation}
+At this order the ratio of equation \eqref{eq:cos2psi} factorises into one
+factor from each splitting \cite{Karlberg_2021},
+\begin{equation}
+  \frac{a_2}{a_0} = A(z_1)\,B(z_2),
+  \label{eq:a2a0_AB}
+\end{equation}
+where $B(z_2)$ is the ratio of the $\cos 2\phi$ term to the
+$\phi$-independent term of equations \eqref{eq:Pgg_pol} and
+\eqref{eq:Pqq_pol},
+\begin{equation}
+  B_{g\to gg}(z_2) = \frac{z_2^2(1-z_2)^2}
+                          {\left[1-z_2(1-z_2)\right]^2},
+  \qquad
+  B_{g\to q\bar{q}}(z_2) = -\frac{2z_2(1-z_2)}
+                                 {1-2z_2(1-z_2)}.
+  \label{eq:B_pol}
+\end{equation}
+For symmetric splittings, $z_2=1/2$, $B_{g\to q\bar{q}}$ reaches
+$-1$, while $B_{g\to gg}$ never exceeds $1/9$.
 
 This sign difference is the main goal which this work is built to overcome.
 If one does a measurement without distinguishing the two channels of the 
@@ -803,7 +871,7 @@ single channel.
 \subsection{The three-point energy correlator}
 \label{sec:spin-eeec}
 
-Although the lund observable described in the previous section gives a result for the
+Although the Lund observable described in the previous section gives a result for the
 collinear spin correlations of Section \ref{sec:spin-mechanism}, it is not the route
 to do so. The $\cos 2\psi$ modulation can be accessed through the energy flow within a jet
 and without any reference to any clustering history, using the three-point energy correlator

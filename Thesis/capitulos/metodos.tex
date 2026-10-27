@@ -313,7 +313,7 @@ collision and simulated datasets, described in Section \ref{sec:dataset}, and en
 with the final azimuthal distributions. These steps are split into two parts,
 separated by the software environment in which each one runs. The first part is the 
 extraction of the jet's properties and constituent information from the datases. 
-This step, as idicated by CMS, must be done inside  the CMS Open Data container or the CMS Virtual Machine
+This step, as indicated by CMS, must be done inside  the CMS Open Data container or the CMS Virtual Machine
 , since reading the MiniAOD format requires the experiment's own reconstruction software. In this
 work, this step was done using the CMS Open Data docker container (\textsc{CMSSW}) with, for each dataset, the recommended
 version of it. The second step covers declustering of the jets and the computation of the observables.
@@ -335,7 +335,7 @@ Section~\ref{sec:flavour} and the measurement presented in
 Chapter~\ref{cap:resultados}. Since the datasets are extremely large, with a large
 number of jets and its variables, every stage has parallelisation integration. For the
 most demanding step of this analysis, which was the extraction of the variables, the code was 
-run with the LIP's computing cluster, making it an hige difference for the time required to
+run with the LIP's computing cluster, making it an huge difference for the time required to
 complete this step. The code used is publicly available~\cite{Mendonca:CMSJetSubstructure}, so that each stage can be
 reproduced from the released data alone.
 
@@ -359,7 +359,7 @@ are accessed through FWLite \cite{CMS:FWLite}, a lightweight Python interface to
 model. The script developed by this work is capable of analysing datasets without downloading them.
 In order to archieve that, the dataset's files are listed in the file indices provided with each
 record on the CERN Open Data Portal and can be read remotelly from the portal's storage. This
-completely avoids downloading transferring the several terabytes of the full dataset but sacrifices
+completely avoids downloading/transferring the several terabytes of the full dataset but sacrifices
 a little bit of the execution time of the script. Since there are multiple files and all different 
 from each other, this script is parallelised as an array of jobs on a computing cluster. 
 Each one of this jobs processes a portion of all the dataset's files, creating for each file
@@ -545,7 +545,7 @@ counterpart satisfying equation~\eqref{eq:jetmatch} receives no truth label and 
 used in the training of the flavour selection.
 
 With the jet matching complete, the generator-level history is then declustered via the same
-process of as the reconstructed one. he harder branch is followed at each step, each
+process of as the reconstructed one. The harder branch is followed at each step, each
 splitting is tested against the condition $z > 0.1$, and among the splittings that
 satisfy it the one with the largest $\kt$ is taken as the primary generator-level
 splitting. Its softer branch is declustered in turn to obtain the secondary
@@ -672,18 +672,19 @@ equation~\eqref{eq:cartesian}, through the normals
   \label{eq:eeec-normals}
 \end{equation}
 %
-as
-%
+as the signed angle $\psi\in(-\pi,\pi]$ defined by
 \begin{equation}
-  \psi = \operatorname{atan2}\!\left(
-  \hat{u} \cdot (\hat{n}_1 \times \hat{n}_2),\;
-  \hat{n}_1 \cdot \hat{n}_2 \right),
+  \cos\psi = \hat{n}_1\cdot\hat{n}_2,
   \qquad
-  \hat{u} = \frac{\vec{p}_a + \vec{p}_b}{|\vec{p}_a + \vec{p}_b|},
+  \sin\psi = \hat{u}\cdot(\hat{n}_1\times\hat{n}_2),
+  \qquad
+  \hat{u} = \frac{\vec{p}_a+\vec{p}_b}
+                 {|\vec{p}_a+\vec{p}_b|}.
   \label{eq:eeec-psi}
 \end{equation}
-%
-which returns a signed angle in the range $(-\pi, \pi]$. Exchanging $a$ and $b$
+Since both normals are perpendicular to $\hat{u}$, these two
+relations fix $\psi$ uniquely, its sign being given by the sense
+of the rotation from $\hat{n}_1$ to $\hat{n}_2$ about $\hat{u}$. Exchanging $a$ and $b$
 will reverse $\hat{n}_1$ and shift $\psi$ by $\pi$, leaving $\cos 2\psi$ unchanged.
 The two constituents are taken in the order in which they are stored. Each triplet
 enters the distribution of $\psi$ with the weight
@@ -752,10 +753,10 @@ simulation.
 The generator level-labelling of section \ref{sec:genlevel} divides the simulated jets
 into five classes according to their secondary splitting channel. A splitting can either be unmatched,
 if the reconstructed declustering does not reproduce the partonic
-branching, or be assigned with the channels $g \to q\bar{q}$, $q \to qg$, $g \to gg$, and rest.
+branching, or be assigned with the channels $g \to q\bar{q}$, $q \to qg$, $g \to gg$, or with a residual class, denoted as rest.
 The composition of the simulated sample in these classes is given in
 Table~\ref{tab:composition}. As one can notice, the unmatched label represents the 
-majority of the dataset, about three quarters of it, but it does carries no relieable flavour
+majority of the dataset, about three quarters of it, but it does carry no relieable flavour
 information, while, among the matched splittings, the $g \to q\bar{q}$ channel is a minority,
 outnumbered by both $q \to qg$ and $g \to gg$.
 
@@ -780,11 +781,11 @@ outnumbered by both $q \to qg$ and $g \to gg$.
 \end{table}
 
 The selection procedure is therefore divided into two stages, each adressing a part of the dataset.
-The first stage tries to seperate the matched splittings, of the channels
+The first stage tries to seperate the matched splittings, the channels
 $g \to q\bar{q}$, $q \to qg$ and $g \to gg$, from the unmatched ones. Its output is a matched score,
 which is the classifier's confidence level that it is a matched labelled channel. Only the 
 jets with matched score exceeding $0.8$ are passed to the
-second stage. The second stage is only trained on matched splittings and seperated the $g \to q\bar{q}$ channel from the $q \to qg$ and $g \to gg$ channels
+second stage. The second stage is only trained on matched splittings and seperate the $g \to q\bar{q}$ channel from the $q \to qg$ and $g \to gg$ channels
 taken together. This classifier's output is the $g \to q\bar{q}$ score on which the threshold of
 the measurement is placed. As suggested in \cite{CMS:2026jnt}, the residual cattegory is 
 excluded from the training of both stages, since it represents less than one percent of the dataset
@@ -951,7 +952,7 @@ space of the input features and most splittings are hard to classify. Balanced
 class weights are applied furthermore, to compensate for the minority of the
 $g \to q\bar{q}$ channel among the other splittings.
 
-The difference the two networks is due to the different nature of their task.
+The difference between the two networks is due to the different nature of their task.
 The first stage network seperates classes which differ more clearly in the kinematics 
 of the splittings, since unmatched splittings are those in which the
 reconstructed branching departs from the partonic one, and the separation is
@@ -974,7 +975,7 @@ area under the precision--recall curve measures directly the purity achievable a
 
 Both networks are trained on the simulated dataset with
 $800 < \hat{p}_{\mathrm{T}} < 1000$~GeV, using the jets whose secondary splitting
-have been labelled, but excluding the residual cattegory. The first stage network was trained 
+have been labelled, but excluding the residual class. The first stage network was trained 
 on all such jets while the second stage network only on the matched ones. The sample is
 divided into training, validation and test subsets containing about two thirds,
 one sixth and one sixth of the events. The division was made by event, so that the
@@ -1077,7 +1078,7 @@ the purity grows while the efficiency declines, and the comparison between the t
 is shown in Chapter \ref{cap:resultados} summarising the performance of the selection.
 
 At each threshold, the mean value $\langle \cos 2\dpsi \rangle$ of
-equaiton \eqref{eq:mean-cos} is computed on the selected jets, seperately in data and simulation,
+equation \eqref{eq:mean-cos} is computed on the selected jets, seperately in data and simulation,
 with the statistical uncertainty of equation \eqref{eq:stat}. The measurement made is presented
 as a function of the threshold, with the purity of equation \eqref{eq:purity-efficiency} given for each value.
 The two reference are computed from simulation and data are the mean over all jets labelled $g \to q\bar{q}$ and the
@@ -1107,8 +1108,8 @@ calibrated, from the response of the detector, and from some choices made in thi
 However, unlike the statistical uncertainties, they do not decrease when extracting more jets
 and they may shift the result in a definite result
 
-A complete quantitive evaluation of every systematic uncertanty was not done in this work.
-This section just indentifies the relevant souces to the measurement, describes how each of them
+A complete quantitive evaluation of every systematic uncertainty was not done in this work.
+This section just identifies the relevant souces to the measurement, describes how each of them
 is managed by this analysis, and states which ones are not evaluated. Section~\ref{sec:sys-stat} describes the statistical uncertainty.
 Section~\ref{sec:sys-purity} discusses the modelling of the purity, which is the
 dominant systematic source. Section~\ref{sec:sys-detector} addresses the effects

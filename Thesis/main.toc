@@ -22,56 +22,56 @@
 \contentsline {subsection}{\numberline {2.2.2}The anti-$k_{\mathrm {T}}$ algorithm}{8}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}The Cambridge/Aachen algorithm}{9}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Flavoured jets and the IFN algorithm}{10}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}The Lund jet plane}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.3}The Lund jet plane}{12}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Coordinates and the uniform density}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Regions of the plane}{12}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Grooming and the primary and secondary planes}{13}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.2}Regions of the plane}{13}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Grooming and the primary and secondary planes}{14}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}Collinear spin correlations}{15}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Mechanism and the $\cos 2\psi $ modulation}{15}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Channel dependence of $a_2/a_0$}{16}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}The Lund observable $\Delta \psi _{12}$}{17}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}The three-point energy correlator}{18}{subsection.2.4.4}%
-\contentsline {chapter}{\numberline {3}Data and analysis}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}CERN Open Data}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}The CMS detector}{20}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Data format and datasets}{21}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Analysis pipeline}{23}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Extraction}{25}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Declustering and Lund observables}{25}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Generator-level channel labelling}{27}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}The energy correlator}{28}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Flavour selection}{30}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Strategy and classes}{30}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Input features}{31}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Network architecture and training}{32}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Alternative approaches}{34}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Application and purity calibration}{35}{subsection.3.5.5}%
-\contentsline {section}{\numberline {3.6}Systematic uncertainties}{35}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Statistical uncertainty}{36}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Modelling of the purity}{37}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Detector effects}{38}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Trigger and analysis choices}{38}{subsection.3.6.4}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{40}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Event selection and jet kinematics}{40}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Lund jet planes}{42}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Inclusive $\Delta \psi _{12}$ distribution}{44}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Channel labelling}{45}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Momentum fractions of the two splittings}{46}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Flavour selection performance}{48}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Two-stage selection}{48}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Comparison with alternative approaches}{50}{subsection.4.5.2}%
-\contentsline {section}{\numberline {4.6}Spin modulation as a function of the flavour selection}{52}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Modulation in simulation}{53}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Kinematics of the selected splittings}{54}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Comparison with collision data}{55}{subsection.4.6.3}%
-\contentsline {section}{\numberline {4.7}Three-point energy correlator}{57}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Discussion}{58}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Comparison with theoretical expectations}{59}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Effect of the flavour selection}{60}{subsection.4.8.2}%
-\contentsline {subsection}{\numberline {4.8.3}Comparison with the CMS measurement}{61}{subsection.4.8.3}%
-\contentsline {subsection}{\numberline {4.8.4}Limitations}{62}{subsection.4.8.4}%
-\contentsline {chapter}{\numberline {5}Conclusions}{64}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary of the results}{64}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future work}{65}{section.5.2}%
-\contentsline {chapter}{REFERENCES}{67}{chapter*.43}%
-\contentsline {chapter}{\numberline {A}Supplementary Numerical Results}{70}{appendix.A}%
+\contentsline {subsection}{\numberline {2.4.2}Channel dependence of $a_2/a_0$}{17}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}The Lund observable $\Delta \psi _{12}$}{18}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}The three-point energy correlator}{19}{subsection.2.4.4}%
+\contentsline {chapter}{\numberline {3}Data and analysis}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}CERN Open Data}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The CMS detector}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Data format and datasets}{22}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Analysis pipeline}{24}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Extraction}{26}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Declustering and Lund observables}{26}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Generator-level channel labelling}{28}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}The energy correlator}{29}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Flavour selection}{31}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Strategy and classes}{31}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Input features}{32}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Network architecture and training}{33}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Alternative approaches}{35}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Application and purity calibration}{36}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}Systematic uncertainties}{36}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Statistical uncertainty}{37}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Modelling of the purity}{38}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Detector effects}{39}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Trigger and analysis choices}{39}{subsection.3.6.4}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Event selection and jet kinematics}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Lund jet planes}{43}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Inclusive $\Delta \psi _{12}$ distribution}{45}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Channel labelling}{46}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Momentum fractions of the two splittings}{47}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Flavour selection performance}{49}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Two-stage selection}{49}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Comparison with alternative approaches}{51}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Spin modulation as a function of the flavour selection}{53}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Modulation in simulation}{54}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Kinematics of the selected splittings}{55}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Comparison with collision data}{56}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}Three-point energy correlator}{58}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Discussion}{59}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Comparison with theoretical expectations}{60}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Effect of the flavour selection}{61}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}Comparison with the CMS measurement}{62}{subsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.8.4}Limitations}{63}{subsection.4.8.4}%
+\contentsline {chapter}{\numberline {5}Conclusions}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary of the results}{65}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future work}{66}{section.5.2}%
+\contentsline {chapter}{REFERENCES}{68}{chapter*.43}%
+\contentsline {chapter}{\numberline {A}Supplementary Numerical Results}{71}{appendix.A}%
