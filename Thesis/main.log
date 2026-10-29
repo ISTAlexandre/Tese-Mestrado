@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  29 OCT 2026 22:27
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  29 OCT 2026 23:01
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/alexmendonca/Desktop/pic2/Thesis/main.tex
@@ -1426,33 +1426,33 @@ Chapter 4.
 
 
 ]
-<figuras/jetpt_jets.png, id=1254, 798.985pt x 574.145pt>
+<figuras/jetpt_jets.png, id=1253, 798.985pt x 574.145pt>
 File: figuras/jetpt_jets.png Graphic file (type png)
 <use figuras/jetpt_jets.png>
 Package luatex.def Info: figuras/jetpt_jets.png  used on input line 83.
 (luatex.def)             Requested size: 273.14923pt x 196.28429pt.
-<figuras/nconst_jets.png, id=1256, 798.985pt x 574.145pt>
+<figuras/nconst_jets.png, id=1255, 798.985pt x 574.145pt>
 File: figuras/nconst_jets.png Graphic file (type png)
 <use figuras/nconst_jets.png>
 Package luatex.def Info: figuras/nconst_jets.png  used on input line 104.
 (luatex.def)             Requested size: 273.14923pt x 196.28429pt.
  [42<./figuras/jetpt_jets.png><./figuras/nconst_jets.png>]
-<figuras/lund_primary_data.png, id=1269, 698.61pt x 574.145pt>
+<figuras/lund_primary_data.png, id=1268, 698.61pt x 574.145pt>
 File: figuras/lund_primary_data.png Graphic file (type png)
 <use figuras/lund_primary_data.png>
 Package luatex.def Info: figuras/lund_primary_data.png  used on input line 179.
 (luatex.def)             Requested size: 223.07211pt x 183.32715pt.
-<figuras/lund_primary_sim.png, id=1270, 698.61pt x 574.145pt>
+<figuras/lund_primary_sim.png, id=1269, 698.61pt x 574.145pt>
 File: figuras/lund_primary_sim.png Graphic file (type png)
 <use figuras/lund_primary_sim.png>
 Package luatex.def Info: figuras/lund_primary_sim.png  used on input line 185.
 (luatex.def)             Requested size: 223.07211pt x 183.32715pt.
-<figuras/lund_secondary_data.png, id=1271, 698.61pt x 574.145pt>
+<figuras/lund_secondary_data.png, id=1270, 698.61pt x 574.145pt>
 File: figuras/lund_secondary_data.png Graphic file (type png)
 <use figuras/lund_secondary_data.png>
 Package luatex.def Info: figuras/lund_secondary_data.png  used on input line 191.
 (luatex.def)             Requested size: 223.07211pt x 183.32715pt.
-<figuras/lund_secondary_sim.png, id=1272, 698.61pt x 574.145pt>
+<figuras/lund_secondary_sim.png, id=1271, 698.61pt x 574.145pt>
 File: figuras/lund_secondary_sim.png Graphic file (type png)
 <use figuras/lund_secondary_sim.png>
 Package luatex.def Info: figuras/lund_secondary_sim.png  used on input line 197.
@@ -1472,93 +1472,93 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 220.
 
-<figuras/dpsi_inclusive.png, id=1287, 798.985pt x 674.52pt>
+<figuras/dpsi_inclusive.png, id=1286, 798.985pt x 674.52pt>
 File: figuras/dpsi_inclusive.png Graphic file (type png)
 <use figuras/dpsi_inclusive.png>
 Package luatex.def Info: figuras/dpsi_inclusive.png  used on input line 234.
 (luatex.def)             Requested size: 318.66948pt x 269.0313pt.
 [45<./figuras/dpsi_inclusive.png>]
-<figuras/dpsi_labels.png, id=1307, 798.985pt x 674.52pt>
+<figuras/dpsi_labels.png, id=1306, 798.985pt x 674.52pt>
 File: figuras/dpsi_labels.png Graphic file (type png)
 <use figuras/dpsi_labels.png>
 Package luatex.def Info: figuras/dpsi_labels.png  used on input line 331.
 (luatex.def)             Requested size: 318.66948pt x 269.0313pt.
  [46]
-<figuras/zplane_channels.png, id=1316, 867.24pt x 549.252pt>
+<figuras/zplane_channels.png, id=1315, 867.24pt x 549.252pt>
 File: figuras/zplane_channels.png Graphic file (type png)
 <use figuras/zplane_channels.png>
 Package luatex.def Info: figuras/zplane_channels.png  used on input line 355.
 (luatex.def)             Requested size: 455.24411pt x 288.31972pt.
-<figuras/zplane_ratios.png, id=1317, 1084.05pt x 303.534pt>
+<figuras/zplane_ratios.png, id=1316, 1084.05pt x 303.534pt>
 File: figuras/zplane_ratios.png Graphic file (type png)
 <use figuras/zplane_ratios.png>
 Package luatex.def Info: figuras/zplane_ratios.png  used on input line 367.
 (luatex.def)             Requested size: 455.24411pt x 127.46951pt.
  [47<./figuras/dpsi_labels.png>] [48<./figuras/zplane_channels.png><./figuras/zplane_ratios.png>]
-<figuras/roc_stage1.png, id=1343, 498.663pt x 426.393pt>
+<figuras/roc_stage1.png, id=1342, 498.663pt x 426.393pt>
 File: figuras/roc_stage1.png Graphic file (type png)
 <use figuras/roc_stage1.png>
 Package luatex.def Info: figuras/roc_stage1.png  used on input line 466.
 (luatex.def)             Requested size: 223.07211pt x 190.74298pt.
-<figuras/confusion.png, id=1344, 398.9304pt x 339.669pt>
+<figuras/confusion.png, id=1343, 398.9304pt x 339.669pt>
 File: figuras/confusion.png Graphic file (type png)
 <use figuras/confusion.png>
 Package luatex.def Info: figuras/confusion.png  used on input line 473.
 (luatex.def)             Requested size: 223.07211pt x 189.93346pt.
  [49]
-<figuras/score_stage2.png, id=1351, 798.985pt x 574.145pt>
+<figuras/score_stage2.png, id=1350, 798.985pt x 574.145pt>
 File: figuras/score_stage2.png Graphic file (type png)
 <use figuras/score_stage2.png>
 Package luatex.def Info: figuras/score_stage2.png  used on input line 498.
 (luatex.def)             Requested size: 318.66948pt x 228.99687pt.
  [50<./figuras/roc_stage1.png><./figuras/confusion.png><./figuras/score_stage2.png>]
-<figuras/roc_pr_stage2.png, id=1360, 859.2903pt x 354.123pt>
+<figuras/roc_pr_stage2.png, id=1359, 859.2903pt x 354.123pt>
 File: figuras/roc_pr_stage2.png Graphic file (type png)
 <use figuras/roc_pr_stage2.png>
 Package luatex.def Info: figuras/roc_pr_stage2.png  used on input line 519.
 (luatex.def)             Requested size: 455.24411pt x 187.60863pt.
-<figuras/purity_efficiency.png, id=1363, 570.933pt x 354.123pt>
+<figuras/purity_efficiency.png, id=1362, 570.933pt x 354.123pt>
 File: figuras/purity_efficiency.png Graphic file (type png)
 <use figuras/purity_efficiency.png>
 Package luatex.def Info: figuras/purity_efficiency.png  used on input line 563.
 (luatex.def)             Requested size: 341.43307pt x 211.78378pt.
  [51<./figuras/roc_pr_stage2.png>]
-<figuras/purity_full_methods.png, id=1373, 505.89pt x 397.485pt>
+<figuras/purity_full_methods.png, id=1372, 505.89pt x 397.485pt>
 File: figuras/purity_full_methods.png Graphic file (type png)
 <use figuras/purity_full_methods.png>
 Package luatex.def Info: figuras/purity_full_methods.png  used on input line 603.
 (luatex.def)             Requested size: 341.43307pt x 268.2726pt.
  [52<./figuras/purity_efficiency.png>] [53<./figuras/purity_full_methods.png>]
-<figuras/modulation_components.png, id=1395, 487.37082pt x 434.97507pt>
+<figuras/modulation_components.png, id=1393, 487.37082pt x 434.97507pt>
 File: figuras/modulation_components.png Graphic file (type png)
 <use figuras/modulation_components.png>
 Package luatex.def Info: figuras/modulation_components.png  used on input line 700.
 (luatex.def)             Requested size: 318.66948pt x 284.42291pt.
  [54<./figuras/modulation_components.png>]
-<figuras/z_kinematics.png, id=1404, 794.97pt x 325.215pt>
+<figuras/z_kinematics.png, id=1403, 794.97pt x 325.215pt>
 File: figuras/z_kinematics.png Graphic file (type png)
 <use figuras/z_kinematics.png>
 Package luatex.def Info: figuras/z_kinematics.png  used on input line 771.
 (luatex.def)             Requested size: 455.24411pt x 186.24289pt.
  [55]
-<figuras/modulation_threshold.png, id=1414, 542.025pt x 361.35pt>
+<figuras/modulation_threshold.png, id=1413, 542.025pt x 361.35pt>
 File: figuras/modulation_threshold.png Graphic file (type png)
 <use figuras/modulation_threshold.png>
 Package luatex.def Info: figuras/modulation_threshold.png  used on input line 828.
 (luatex.def)             Requested size: 318.66948pt x 212.45029pt.
  [56<./figuras/z_kinematics.png>] [57<./figuras/modulation_threshold.png>]
-<figuras/eeec_inclusive.png, id=1436, 473.3685pt x 377.61075pt>
+<figuras/eeec_inclusive.png, id=1435, 473.3685pt x 377.61075pt>
 File: figuras/eeec_inclusive.png Graphic file (type png)
 <use figuras/eeec_inclusive.png>
 Package luatex.def Info: figuras/eeec_inclusive.png  used on input line 926.
 (luatex.def)             Requested size: 223.07211pt x 177.94954pt.
-<figuras/eeec_labels.png, id=1437, 467.04488pt x 377.61075pt>
+<figuras/eeec_labels.png, id=1436, 467.04488pt x 377.61075pt>
 File: figuras/eeec_labels.png Graphic file (type png)
 <use figuras/eeec_labels.png>
 Package luatex.def Info: figuras/eeec_labels.png  used on input line 930.
 (luatex.def)             Requested size: 223.07211pt x 180.358pt.
  [58<./figuras/eeec_inclusive.png><./figuras/eeec_labels.png>]
-<figuras/eeec_threshold.png, id=1453, 505.89pt x 346.896pt>
+<figuras/eeec_threshold.png, id=1452, 505.89pt x 346.896pt>
 File: figuras/eeec_threshold.png Graphic file (type png)
 <use figuras/eeec_threshold.png>
 Package luatex.def Info: figuras/eeec_threshold.png  used on input line 991.
@@ -1609,15 +1609,15 @@ Here is how much of LuaTeX's memory you used:
  125342,1977958 words of node,token memory allocated
  1957 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 273 attribute, 109 glue_spec, 137 attribute_list, 4 write, 54 pdf_action nodes
-   avail lists: 1:4,2:3933,3:1540,4:162,5:352,6:128,7:12594,8:89,9:1060,10:31,11:796,12:2
+   avail lists: 1:5,2:3933,3:1539,4:159,5:352,6:132,7:12594,8:88,9:1060,10:31,11:798,12:2
  60721 multiletter control sequences out of 65536+600000
  103 fonts using 20975823 bytes
  88i,13n,105p,1492b,3009s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </System/Library/Fonts/Supplemental/Arial Italic.ttf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></System/Library/Fonts/Supplemental/Arial.ttf></System/Library/Fonts/Supplemental/Arial Bold.ttf></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (86 pages, 2578235 bytes).
+Output written on main.pdf (86 pages, 2578265 bytes).
 
-PDF statistics: 1747 PDF objects out of 2073 (max. 8388607)
- 1556 compressed objects within 16 object streams
+PDF statistics: 1746 PDF objects out of 2073 (max. 8388607)
+ 1555 compressed objects within 16 object streams
  283 named destinations out of 1000 (max. 1048576)
  600 words of extra memory for PDF output out of 10000 (max. 100000000)
 
