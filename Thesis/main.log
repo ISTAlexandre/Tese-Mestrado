@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  27 OCT 2026 17:40
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.15)  29 OCT 2026 22:27
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/alexmendonca/Desktop/pic2/Thesis/main.tex
@@ -1609,12 +1609,12 @@ Here is how much of LuaTeX's memory you used:
  125342,1977958 words of node,token memory allocated
  1957 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 273 attribute, 109 glue_spec, 137 attribute_list, 4 write, 54 pdf_action nodes
-   avail lists: 1:5,2:3933,3:1540,4:163,5:351,6:128,7:12594,8:89,9:1060,10:31,11:796,12:2
+   avail lists: 1:4,2:3933,3:1540,4:162,5:352,6:128,7:12594,8:89,9:1060,10:31,11:796,12:2
  60721 multiletter control sequences out of 65536+600000
  103 fonts using 20975823 bytes
  88i,13n,105p,1492b,3009s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </System/Library/Fonts/Supplemental/Arial Italic.ttf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></System/Library/Fonts/Supplemental/Arial.ttf></System/Library/Fonts/Supplemental/Arial Bold.ttf></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (86 pages, 2578229 bytes).
+Output written on main.pdf (86 pages, 2578235 bytes).
 
 PDF statistics: 1747 PDF objects out of 2073 (max. 8388607)
  1556 compressed objects within 16 object streams

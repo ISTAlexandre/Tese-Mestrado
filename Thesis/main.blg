@@ -1,19 +1,19 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'main.blg'
-[32] biber-darwin:342> INFO - === Tue Oct 27, 2026, 17:39:52
+[32] biber-darwin:342> INFO - === Thu Oct 29, 2026, 22:27:29
 [40] Biber.pm:421> INFO - Reading 'main.bcf'
 [84] Biber.pm:1002> INFO - Found 40 citekeys in bib section 0
 [91] Biber.pm:4487> INFO - Processing section 0
-[96] Biber.pm:4678> INFO - Looking for bibtex file 'referencias.bib' for section 0
-[97] bibtex.pm:1713> INFO - LaTeX decoding ...
+[97] Biber.pm:4678> INFO - Looking for bibtex file 'referencias.bib' for section 0
+[98] bibtex.pm:1713> INFO - LaTeX decoding ...
 [117] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
-[250] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[250] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[250] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[250] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[265] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[274] bbl.pm:779> INFO - Output to main.bbl
-[274] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/l_/9rhztf8x7nvc70y6dvv1m8800000gn/T/biber_tmp_3_fd/f1acd60b6c57e7ae00f56d747b2cd459_1098.utf8, line 185, warning: undefined macro "Sept"
-[274] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/l_/9rhztf8x7nvc70y6dvv1m8800000gn/T/biber_tmp_3_fd/f1acd60b6c57e7ae00f56d747b2cd459_1098.utf8, line 330, warning: undefined macro "June"
-[274] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/l_/9rhztf8x7nvc70y6dvv1m8800000gn/T/biber_tmp_3_fd/f1acd60b6c57e7ae00f56d747b2cd459_1098.utf8, line 445, warning: undefined macro "Sept"
-[274] Biber.pm:134> INFO - WARNINGS: 3
+[248] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[248] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[249] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[249] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[263] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[272] bbl.pm:779> INFO - Output to main.bbl
+[272] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/l_/9rhztf8x7nvc70y6dvv1m8800000gn/T/biber_tmp_fQ7p/f1acd60b6c57e7ae00f56d747b2cd459_34425.utf8, line 185, warning: undefined macro "Sept"
+[272] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/l_/9rhztf8x7nvc70y6dvv1m8800000gn/T/biber_tmp_fQ7p/f1acd60b6c57e7ae00f56d747b2cd459_34425.utf8, line 330, warning: undefined macro "June"
+[272] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/l_/9rhztf8x7nvc70y6dvv1m8800000gn/T/biber_tmp_fQ7p/f1acd60b6c57e7ae00f56d747b2cd459_34425.utf8, line 445, warning: undefined macro "Sept"
+[272] Biber.pm:134> INFO - WARNINGS: 3
