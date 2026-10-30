@@ -50,7 +50,7 @@
 \contentsline {subsection}{\numberline {3.6.1}Statistical uncertainty}{37}{subsection.3.6.1}%
 \contentsline {subsection}{\numberline {3.6.2}Modelling of the purity}{38}{subsection.3.6.2}%
 \contentsline {subsection}{\numberline {3.6.3}Detector effects}{39}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Trigger and analysis choices}{40}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.4}Trigger and analysis choices}{39}{subsection.3.6.4}%
 \contentsline {chapter}{\numberline {4}Results and Discussion}{41}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Event selection and jet kinematics}{41}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Lund jet planes}{43}{section.4.2}%

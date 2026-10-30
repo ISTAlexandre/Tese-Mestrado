@@ -21,7 +21,7 @@ computation of the energy correlator and the flavour selection outside it, with
 public tools. The simulation describes the collision data kinematics, and the primary and secondary Lund jet planes
 show the structure expected from the emission pattern of QCD and from the
 boundaries set by the grooming condition and by the jet radius. The momentum fractions 
-distribution of the two selected splittings agree between data and simulation as well, 
+distributions of the two selected splittings agree between data and simulation as well, 
 with mean values of $0.270$ and $0.283$ in data
 against $0.268$ and $0.283$ in simulation.
 
@@ -35,8 +35,8 @@ expected. This non-spin component is largest for asymmetric splittings and
 dominates the inclusive modulation, in line with the small difference between
 the \textsc{Pythia}~8 predictions with and without spin correlations reported by
 CMS. The three-point energy correlator also shows a modulation that the simulation describes
-well in data, $+0.0200 \pm 0.0012$ against $+0.0186 \pm 0.0001$, but has a positive sign 
-and almost independent of the channel, in contradiction with the theory prediction.
+well in data, $+0.0200 \pm 0.0012$ against $+0.0186 \pm 0.0001$, but it has a positive sign 
+and is almost independent of the channel, in contradiction with the theory prediction.
 In the configuration used here,
 it is therefore not a channel-selective probe of the spin correlations.
 
@@ -56,7 +56,7 @@ the threshold, from $-0.122$ at $0.30$ to $-0.266$ at $0.60$ in simulation. The 
 follows the simulation within one standard deviation up to a threshold of
 $0.50$, beyond which their statistical precision is insufficient. However,
 a modulation of a pure $g \to q\bar{q}$ sample could not be established. The modulation of each
-labelled class changes with the threshold, making the selected samples not behaving 
+labelled class changes with the threshold, so the selected samples do not behave
 as mixtures of classes with fixed modulations,
 and a linear extrapolation to a purity of one is not justified. The most reasonable
 quantity is the difference between the $g \to q\bar{q}$ class and the background,
@@ -101,13 +101,13 @@ the selection discussed in Section~\ref{sec:disc-selection}.
 The flavour selection procedure could also be improved in two directions.
 Although $\dpsi$ is not an input of the classifier, the shift that the selection induces in every
 class shows that its score is correlated with $\dpsi$ through other features. Training another
-classifier but instead explicitly decorrelated from $\dpsi$, using, for instance, a penalty
+classifier explicitly decorrelated from $\dpsi$, using, for instance, a penalty
 on the distance correlation between its score and
 $\dpsi$~\cite{Kasieczka:2020disco} or with an adversarial network~\cite{Louppe:2017pivot}, 
 would limit this shift, possibly at the cost of
-some discriminating power. Another and a more simple solution would be training the network
+some discriminating power. Another and a simpler solution would be training the network
 on a sample without spin correlations, as done by CMS. This would also ensure that any
-residual correlation would not be originated from spin. The dependence of the purity on the definition of the channel label
+residual correlation would not originate from spin. The dependence of the purity on the definition of the channel label
 should also be studied, by comparing the matching of the two branches of the
 second splitting used here with alternatives such as the matching of subjets 2 and
 3 used by CMS. A second generator would finally test how much the composition and

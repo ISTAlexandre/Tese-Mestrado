@@ -39,7 +39,7 @@ Section~\ref{sec:systematic} are not represented in the figures.
 
 The number of events and jets, of collision and simulation data, remaining after the selection of
 Table~\ref{tab:selection} is shown in Table \ref{tab:jetcounts}. Of all the selected jets,
-only those with primary and the secondary declustering contain a splitting satisfying $z > 0.1$ yield a valid
+only those whose primary and the secondary declusterings both contain a splitting satisfying $z > 0.1$ yield a valid
 value of $\dpsi$. These jets define the sample on which all subsequent results are
 based.
 
@@ -69,7 +69,7 @@ originate from an interval of $600 < \hat{p}_{\mathrm{T}} < 800$~GeV
 and $800 < \hat{p}_{\mathrm{T}} < 1000$~GeV. 
 This difference is the one discussed in
 Section \ref{sec:sys-purity}, and it should be kept in mind when comparing the
-other distributions. Now, comparing the two simulated distribution it is worth noting that 
+other distributions. Now, comparing the two simulated distributions it is worth noting that 
 the $800 < \hat{p}_{\mathrm{T}} < 1000$~GeV distribution extends further above the selection threshold.
 Although the flavour selection is trained, calibrated and 
 applied on jets with partly different distributions, the measurement is still possible since 
@@ -108,7 +108,7 @@ samples reproduce the shape of the data very closely.
   \label{fig:nconst}
 \end{figure}
 
-The very small difference between the samples represent well the pattern from their 
+The very small difference between the samples represents well the pattern from their 
 transverse momenta. The sample with $600 < \hat{p}_{\mathrm{T}} < 800$~GeV,
 whose jets are the softest, is slightly shifted towards lower number of
 constituents while the sample with $800 < \hat{p}_{\mathrm{T}} < 1000$~GeV lies closest to the
@@ -151,13 +151,13 @@ fixed momentum, the emissions should occupy a diagonal band of width $\ln 5$ in 
 at fixed angle. However, in practice, the momentum of a parent varies along the
 declustering sequence and from jet to jet, which broadens the band and smooths its
 edges. The left side of the plane is bounded by the radius of the jets, because the jet's 
-widest splittings seperate two subjets whose axes lie within the jet, so that their
+widest splittings separate two subjets whose axes lie within the jet, so that their
 separation rarely exceeds $R = 0.8$, corresponding to $\ln(1/\dR) \approx 0.2$.
 
-In primary Lund plane, the density along the band is approximately 
+In the primary Lund plane, the density along the band is approximately 
 uniform at large angles and large transverse momenta, at about $0.2$ emissions per jet and per
 unit area which is the expected behaviour in the perturbative region from Section \ref{sec:lund-uniform}.
-In addition, towards smaller angles the density raises, reaching its maximum 
+In addition, towards smaller angles the density rises, reaching its maximum 
 around $\ln(1/\dR) \approx 4.5$ and $\ln \kt \approx 0$, that
 is for $\kt$ of order $1$~GeV, and then falling at lower transverse momenta. 
 This maximum lies where $\kt$ approaches the scale of hadronisation, and marks the
@@ -256,13 +256,13 @@ about $1.5$ standard deviations, and the simulation describes the shape of the
 distribution in data within about $5\%$ in almost every bin, the few larger
 deviations being compatible with statistical fluctuations. However, the shape is not
 of a pure $\cos 2\dpsi$ modulation since the distribution is nearly flat close to 
-$\dpsi = 0$ and $\pi$, and its central maximum is narrower than of a single harmonic modulation, 
+$\dpsi = 0$ and $\pi$, and its central maximum is narrower than that of a single harmonic modulation, 
 which may indicate the presence of higher harmonics in addition to the
 $\cos 2\dpsi$ term.
 
 This inclusive result is dominated by splittings that are unmatched or belong to channels
 other than $g \to q\bar{q}$, as shown in Table~\ref{tab:composition}. Therefore, this modulation
-is a superposition of all contributions of different channels and it is diluted according to it.
+is a superposition of all contributions of different channels and it is diluted accordingly.
 Thus, this distribution serves as baseline for evaluating the impact of the flavour selection 
 in Section~\ref{sec:res-performance}, while the significance of its magnitude is examined in Section~\ref{sec:res-modulation}.
 
@@ -271,7 +271,7 @@ in Section~\ref{sec:res-performance}, while the significance of its magnitude is
 
 The composition of the simulated training sample in the channels defined by the
 IFN labelling of Section~\ref{sec:genlevel} is given in
-Table~\ref{tab:composition} while for the simulated calibration sample is given by
+Table~\ref{tab:composition} while the of the simulated calibration sample is given by
 the following Table~\ref{tab:cos2-labels}. The composition obtained also agrees closely with 
 the one obtained in the
 CMS measurement with \textsc{Pythia}~8, the same flavour definition and the same
@@ -286,7 +286,7 @@ together with the value predicted at second
 order in the collinear limit for the corresponding channel~\cite{Karlberg_2021}.
 This prediction was computed on electron-positron collisions without hadronisation
 or detector effects, and, in this work, it serves only as a reference point for the sign 
-and the order of magnitude of each contribution
+and the order of magnitude of each contribution.
 
 \begin{table}[htbp]
   \centering
@@ -443,9 +443,9 @@ alternative approaches.
 \subsection{Two-stage selection}
 \label{sec:res-twostage}
 
-The first stage network separates matched from unmatched splittings performing it with an area
+The first stage network separates matched from unmatched splittings with an area
 under the ROC curve of $0.840$, as shown in Figure~\ref{fig:roc-stage1}. This network 
-performance is sufficient in order to remove the majority number of unmatched secondary
+performance is sufficient in order to remove the majority of unmatched secondary
 splittings before the flavour of the second splitting is examined. In Figure~\ref{fig:confusion},
 the confusion matrix of the first stage classifier, obtained from the test subset, is shown.
 Since unmatched splittings form the bulk of the data sample, a classifier trained on this imbalance
@@ -483,13 +483,13 @@ $0.8$, rather than the assignment to the most probable class on which the matrix
 \end{figure}
 
 The performance of the second stage is evaluated on the population 
-on which it was trained which are the splittings labelled as $g \to q\bar{q}$, $q \to qg$ or $g \to gg$.
+on which it was trained, namely splittings labelled as $g \to q\bar{q}$, $q \to qg$ or $g \to gg$.
 The distribution of its score for the $g \to q\bar{q}$ class and for the other two
 classes together is shown in Figure~\ref{fig:score-stage2}. Both distributions
 peak at about $0.3$, and the background is concentrated in the range between $0.2$ and $0.4$.
 The main and most important difference between these two distributions is that the 
 $g \to q\bar{q}$ class has a long tail extending to scores of about $0.65$, in which it dominates.
-These scores are although confined between $0.15$ and $0.7$, which reflects the strong overlap
+These scores are, however, confined between $0.15$ and $0.7$, which reflects the strong overlap
 of the channels in the space of the input features and the use of the focal loss,
 which does not push the outputs towards the extreme values.
 
@@ -595,7 +595,7 @@ second-stage score. The second selection replaces the second stage by the
 three-class network after the same requirement on the matched score. The third
 applies a threshold on the output of the four-class network alone.
 Thus the purity of each selection, including the unmatched splittings among the selected jets,
-are shown in Figure~\ref{fig:purity-full} as a function of its efficiency, and its
+is shown in Figure~\ref{fig:purity-full} as a function of its efficiency, and its
 value at different efficiencies is given in Table~\ref{tab:purity-full}.
 
 \begin{figure}[htbp]
@@ -686,7 +686,7 @@ The mean value $\langle \cos 2\dpsi \rangle$ of the jets selected in the simulat
 calibration sample is shown in Figure~\ref{fig:modulation-components}, as a function
 of the threshold on the $g \to q\bar{q}$ score along with the obtained purity of the selection.
 At the lowest measured threshold, the modulation of the selected jets is $-0.122 \pm 0.001$,
-which is already stronger than measurement done on the inclusive sample of
+which is already stronger than the measurement on the inclusive sample of
 Section~\ref{sec:res-inclusive}, $-0.083$, just by applying the matched score threshold.
 As the threshold increases, the modulation becomes steadily more
 negative and reaches $-0.266 \pm 0.016$ at $0.60$ while the purity goes from 
@@ -753,7 +753,7 @@ the selection is no longer the same for all channels.
 \subsection{Kinematics of the selected splittings}
 \label{sec:res-mod-z}
 
-The selection acts on the kinematics of each splittings as well as on their
+The selection acts on the kinematics of each splitting as well as on their
 flavour. The splitting function of equation~\eqref{eq:Pgq} favours symmetric
 $g \to q\bar{q}$ splittings, in contrast with those of $g \to gg$ and $q \to qg$,
 which are enhanced when one of the two products is soft. The distribution of the
@@ -783,7 +783,7 @@ The dependence of the modulation on $z_2$ is shown in the right plot. For the ba
 the modulation is most negative for asymmetric
 splittings, $-0.19$ at $z_2 \approx 0.12$, and weakens to about $-0.12$ for
 symmetric ones. These channels should carry no or a positive spin correlation, 
-thus these reveals a component of the modulation that is not of spin
+which reveals a component of the modulation that is not of spin
 origin and is strongest for asymmetric splittings. For the jets labelled
 $g \to q\bar{q}$ the modulation is instead nearly independent of $z_2$, at about
 $-0.23$ over most of the range, whereas at leading order in the collinear limit
@@ -820,7 +820,7 @@ the collision data is much smaller. At a threshold of $0.30$ it contains $2\,607
 times fewer than the $286\,380$ simulated ones, and only $162$, $50$ and $16$ jets
 remain at $0.50$, $0.55$ and $0.60$. Therefore, the statistical uncertainty
 of the data dominates the comparison at every threshold. Nevertheless,
-the fraction of jets at low threshold are very similar between the two samples, by at most about $15\%$, 
+the fractions of jets at low thresholds are very similar between the two samples, differing by at most about $15\%$, 
 which shows that the score distributions of data and simulation are close.
 
 \begin{figure}[htbp]
@@ -837,7 +837,7 @@ which shows that the score distributions of data and simulation are close.
   \label{fig:modulation-data}
 \end{figure}
 
-The quantitive comparison is restricted to thresholds up to $0.50$ since, in this range,
+The quantitative comparison is restricted to thresholds up to $0.50$ since, in this range,
 the data sample contains more than $150$ jets, and its statistical
 uncertainty is at most about half of the difference of $0.097$ between the two
 reference values. With thresholds above this value the uncertainty becomes comparable to this difference,
@@ -846,7 +846,7 @@ splittings from one dominated by background.
 
 Then, at thresholds below $0.5$, the mean values agree within less than one standard deviation, from
 $-0.128 \pm 0.014$ in data and $-0.122 \pm 0.001$ in simulation at $0.30$ to
-$-0.229 \pm 0.054$ and $-0.201 \pm 0.005$ at $0.50$. Thus, the modulation in data strenghtens
+$-0.229 \pm 0.054$ and $-0.201 \pm 0.005$ at $0.50$. Thus, the modulation in data strengthens
 with the threshold, just like in simulation. Since the selected samples are
 grouped together, the jets selected at $0.50$ are also part of the sample at $0.30$, and the
 uncertainty of the change between the two thresholds is approximately
@@ -869,7 +869,7 @@ size of the statistical fluctuations at these thresholds, and a deviation of thi
 kind in the last of several correlated points is not evidence of a disagreement
 with simulation.
 
-Within the precision of the data, it is possible to say that it describes both
+Within the precision of the data, it is possible to say that the simulation describes both
 the response of the selection and the modulation of the selected jets. However this
 agreement does not establish the presence of spin correlation in data, since 
 part of the strengthening of the modulation in simulation is common to all
@@ -940,7 +940,7 @@ magnitude.
   \label{fig:eeec-distributions}
 \end{figure}
 
-The right panel of Figure \ref{fig:eeec-distributions} shows the seperation by channel label,
+The right panel of Figure \ref{fig:eeec-distributions} shows the separation by channel label,
 and demonstrates almost no dependence on the channel. All channels demonstrate a positive 
 modulation of close size. The mean value is $+0.0125 \pm 0.0006$ for the
 jets labelled $g \to q\bar{q}$, $+0.0136 \pm 0.0004$ for $q \to qg$ and
@@ -948,7 +948,7 @@ $+0.0161 \pm 0.0002$ for $g \to gg$, and the distributions of the three classes
 differ from that of all jets by at most about $3\%$ in every bin. The jets of
 the $g \to q\bar{q}$ channel have the weakest positive modulation and 
 they differ from the other classes by less than $0.004$. In comparison with the
-$\dpsi$ modulation, the same label has a much negative modulation, as shown in Section~\ref{sec:res-labelling}.
+$\dpsi$ modulation, the same label has a much more negative modulation, as shown in Section~\ref{sec:res-labelling}.
 This main difference between the observables happens because of how they are built. The channel
 label corresponds to the second splitting of the Lund declustering, while the three-point energy
 correlator sums over every triplet inside a fixed angular window, most of which do not
@@ -968,7 +968,7 @@ $\psi = 0$ and $\psi = \pm\pi$ depends on which of the two is taken as
 $a$, here the one stored first. A term of this kind does not have the period $\pi$
 of the spin correlation and does not contribute to $\langle \cos 2\psi \rangle$.
 
-The three-point energy correlator of the jets selected by the flavour selection procedure are shown
+The three-point energy correlator of the jets selected by the flavour selection procedure is shown
 in Figure \ref{fig:eeec-threshold} as a function of the threshold. After passing the first 
 selection stage and the requirement of having a matched score above $0.8$, 
 the jets labelled $g \to q\bar{q}$ and the
@@ -1000,7 +1000,7 @@ uncertainty of the data exceeds the whole variation of the simulation.
   \label{fig:eeec-threshold}
 \end{figure}
 
-Thus, the three-point energy correlator shows a modulation that the simulation follows the
+Thus, the three-point energy correlator shows a modulation in which the simulation follows the
 collision data, although with a positive sign, nearly insensitive to the channel
 labelling of the Lund declustering, and only weakly affected by a flavour selection
 built on the declustering. It does not reproduce the strong negative modulation
@@ -1031,17 +1031,17 @@ the analysis that follow from these comparisons.
 
 In simulation, the jets labelled as $g \to q\bar{q}$ revealed the most negative modulation,
 $\langle \cos 2\dpsi \rangle = -0.167 \pm 0.002$, but with half the magnitude of the collinear prediction of, $-0.31$. 
-A weaker modulation is, although, expected 
+A weaker modulation is, however, expected 
 for several reasons. The IFN label is a flavour proxy and does not
 coincide splitting by splitting with the vertex of the parton shower.
-The observable was built from reconstructed, after hadronisation and detector effects.
+The observable was built from reconstructed particles, after hadronisation and detector effects.
 The prediction also refers to quark-initiated jets in electron-positron collisions. This
 work is done in proton-proton collisions and a large fraction of the jets are initiated by gluons,
-which the intermediate gluon is produced in a
+for which the intermediate gluon is produced in a
 $g \to gg$ splitting with a different degree of polarisation, so no prediction
 specific to proton--proton collisions is available for $\dpsi$.
 
-A larger deviation appears on the classes which little or no spin correlation is expected.
+A larger deviation appears on the classes for which little or no spin correlation is expected.
 The jets, with labels $g \to gg$ and $q \to qg$, have mean values of
 $-0.077$ and $-0.091$, where the predictions are $+0.025$ and zero, and the
 unmatched jets have $-0.059$. For all jets together, the inclusive value of
@@ -1072,10 +1072,10 @@ $g \to q\bar{q}$ splitting of a linearly polarised gluon is proportional to
 $1 - 2z(1-z) - 2z(1-z)\cos 2\phi$, so that its analysing power,
 $2z(1-z)/[1 - 2z(1-z)]$, grows from $0.22$ at $z_2 = 0.1$ to $1$ at $z_2 = 1/2$.
 The difference computed instead grows from about $0.08$ below $z_2 = 0.2$ to about
-$0.10$ above $z_2 = 0.3$. This may be either the non-spin
-component does not cancel completely in the difference, or the spin correlation
-is strongly diluted at reconstruction level because of the smearing of $z_2$,
-the cases where the reconstructed splitting does not correspond to the
+$0.10$ above $z_2 = 0.3$. This may be either because the non-spin
+component does not cancel completely in the difference, or because the spin correlation
+is strongly diluted at reconstruction level by the smearing of $z_2$,
+by the cases where the reconstructed splitting does not correspond to the
 generator-level one, and by those in which
 the label does not correspond to the channel of the shower. 
 The two effects cannot be separated without a reference in
@@ -1089,9 +1089,9 @@ channel, $+0.013$ for $g \to gg$ and $-0.004$ for all jets together. The result
 obtained here in this work is positive, $+0.0186 \pm 0.0001$ in simulation and
 $+0.0200 \pm 0.0012$ in data, and it depends little on the channel label. The jets
 labelled $g \to q\bar{q}$, with $+0.0125 \pm 0.0006$, differ from those labelled
-$g \to gg$ by only $0.004$. The weak dependence on the label follows may come from 
+$g \to gg$ by only $0.004$. The weak dependence on the label may come from 
 the construction of the correlator, which sums over all triplets inside a fixed window
-and thus not tied to the second splitting of the declustering, as
+and is thus not tied to the second splitting of the declustering, as
 discussed in Section~\ref{sec:res-eeec}. The positive sign is not explained here, but
 it may reflect the larger fraction of gluon-initiated jets at a hadron collider,
 whose $g \to gg$ splittings contribute positively, the transposition of the
@@ -1139,7 +1139,7 @@ before any selection cannot be attributed to such splittings.
 The difference between the two classes stays close to $0.13$ from a threshold of
 $0.30$ up to $0.50$, and decreases to $0.076 \pm 0.049$ at $0.60$. According to the
 first explanation, the common shift cancels in this difference, and, according to the second one,
-decrease at the highest thresholds would reflect the growing fraction of genuine
+the decrease at the highest thresholds would reflect the growing fraction of genuine
 $g \to q\bar{q}$ splittings among the jets labelled as background, although it is
 not significant within the statistical uncertainties. Unfortunately, the two explanations
 cannot be separated with the samples available in this work. They would differ only on
@@ -1186,7 +1186,7 @@ obtained here, from $0.38$-$0.40$ at a threshold of $0.45$ to $0.44$-$0.49$ at
 $0.50$, although the two analyses define the purity with different matching
 criteria.
 
-Nevertheless the two analysis differ in several aspects. CMS reconstructs jets
+Nevertheless the two analyses differ in several aspects. CMS reconstructs jets
 using the PUPPI algorithm for pileup mitigation, while the jets in this work 
 are corrected with charged-hadron subtraction, and it applies the requirements on
 the constituents and on the second subjet discussed in
@@ -1239,7 +1239,7 @@ most important is the absence of a simulation without spin correlations. The sim
 used here includes the approximate treatment of the correlations of
 \textsc{Pythia}~8, and the CMS measurement shows that the spin-induced part of the
 modulation is small compared with the non-spin component. Without a reference using 
-the same selection, but with
+the same selection, but in which
 the correlations are turned off, the two components cannot be separated, and neither can the two
 explanations of the effect of the selection discussed in
 Section \ref{sec:disc-selection}.

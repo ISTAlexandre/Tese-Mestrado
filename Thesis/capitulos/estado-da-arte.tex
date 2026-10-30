@@ -42,7 +42,7 @@ $\alpha_s$ becomes large and colour-charged particles cannot be isolated. A
 quark or gluon produced in a hard scattering does not propagate freely to a detector,
 because as it separates from other colour charges, the energy stored in the colour field
 between them grows with distance until it becomes energetically favourable to create
-a new quark-antiquark pairs from the vacuum. The original parton is thereby
+a new quark-antiquark pair from the vacuum. The original parton is thereby
 dressed into a spray of colour-neutral hadrons. This is why the strongly interacting
 final state reaches the detector not as partons but as the collimated sprays introduced
 in Chapter \ref{cap:introducao}, and why any comparison between a perturbative
@@ -69,7 +69,7 @@ emissions are enhanced when the gluon is radiated close to the direction of its 
 This is known as the collinear divergence. The factor $dE/E$ diverges as $E \to 0$
 meaning that emissions are enhanced when the gluon is soft. This is known
 as the soft divergence. Together they mean that a hard parton radiates predominantly
-softly and at small angles, and that number of such emissions is,
+softly and at small angles, and that the number of such emissions is,
 in a precise logarithmic sense, large.
 
 The collinear structure is described more completely by the 
@@ -142,7 +142,7 @@ be usable in perturbative QCD, and three algorithms, used in this work and built
 A jet is built using two components. A jet algorithm establishes which inputs,
 from detector-level energy deposits, reconstructed particles, or, in a
 calculation, partons, are grouped together into a jet. A recombination scheme
-picks up those grouped inputs and specifies how their momenta is combined 
+picks up those grouped inputs and specifies how their momenta are combined 
 in order to compute the momentum of the jet. Across this work, the inputs are
 the particle-flow candidates, described in Chapter \ref{cap:metodos},
 and momenta are combined in the
@@ -163,17 +163,17 @@ The emission probability of equation \eqref{eq:soft-collinear}
 diverges in both the soft and the collinear limits. In any IRC-safe observable
 these divergent real emissions cancel against equally divergent virtual corrections,
 leaving a finite result. Opposingly, in an IRC-unsafe observable, that cancellation
-is ruined and a fixed-order perturbative prediction returns infinity rather than an
+is ruined and a fixed-order perturbative prediction returns infinity rather than a
 finite number. An IRC-unsafe jet definition is therefore not merely inconvenient but it also cannot
 be compared with perturbative QCD at all. Since the purpose of measuring jets is to
 confront the theory with data, IRC safety is a precondition and not a refinement.
 
-In the historical development of jet algorithms this criteria has been conclusive.
+In the historical development of jet algorithms this criterion has been conclusive.
 The first definitions that appeared were cone algorithms, which grouped particles
 falling within a fixed angular radius of a candidate axis. These algorithms were
 simple and seed-based and were not IRC safe because a soft particle could seed a new
-candidate cone, or a collinear splitting could change which particles acted as seeds, thus
-either these flaws could alter the resulting jets. A lot of effort was put in order to
+candidate cone, or a collinear splitting could change which particles acted as seeds, and
+either of these flaws could alter the resulting jets. A lot of effort was put in order to
 fix them and eventually producing seedless variants that restored collinear safety but made them very slow.
 Alternatively, another family of algorithms, the sequential recombination algorithms,
 are IRC safe by construction and this work uses them.
@@ -184,7 +184,7 @@ a seed-based cone algorithm applied to an event with two hard particles whose
 separation is slightly greater than the cone radius, so that each seeds its own
 jet. By adding a single soft particle between them, it can seed a third cone 
 that overlaps both, merging the two hard particles into one jet where before
-there were only two, which, again, it is an infrared-unsafe change,
+there were only two, which, again, is an infrared-unsafe change,
 since an arbitrarily soft emission has altered the hard jets.
 A collinear splitting produces the collinear-unsafe failure.
 Replacing one hard seed by two collinear particles, each
@@ -219,7 +219,7 @@ finds the smallest of all the distances. If it is a $d_{ij}$, the inputs $i$ and
 $j$ are recombined into a single input. If it is a $d_{iB}$, the input $i$ is
 declared a final jet and removed. This procedure repeats until no inputs remain.
 The returned jets are IRC safe for any integer value of $p$, but the value
-of $p$ changes extremely how the clustering proceeds. The common choices $p=-1$,
+of $p$ changes drastically how the clustering proceeds. The common choices $p=-1$,
 $p=0$ and $p=+1$, give, respectively, the \antikt{}, Cambridge/Aachen and $\kt$
 algorithms, of which the first two are the tools this work relies on and are
 described in the following subsections.
@@ -273,8 +273,8 @@ without changing their shape.
 
 The region of the $(y,\phi)$ plane from which a jet gathers its inputs is a useful
 way to describe this stability. This area can be probed operationally by adding a 
-large number of infinitesimal soft particles to an event and record which jet each of these
-particles is assigned. For the majority of the algorithms, the resulting areas are irregular 
+large number of infinitesimal soft particles to an event and recording which jet each of these
+particles is assigned to. For the majority of the algorithms, the resulting areas are irregular 
 and fluctuate from jet to jet, because soft particles impact the clustering. However,
 for the \antikt{} algorithm, where soft particles are clustered last and cannot reshape the hard jets, the
 areas are close to the ideal value $\pi R^2$ and fluctuate little. A stable and expected
@@ -292,7 +292,7 @@ form that is simple to treat experimentally. This combination thus provides
 regular borders, which the other two generalised-$\kt$ algorithms do not.
 
 The importance of the \antikt{} is also a matter of history. When the LHC
-started taking data, an IRC safe jet definitions was needed, so that measurements
+started taking data, an IRC safe jet definition was needed, so that measurements
 could be compared with the increasingly precise perturbative calculations
 that became available. The algorithm was also required to be fast enough to run
 along the very large event samples which the LHC would produce. The \antikt{} algorithm,
@@ -360,7 +360,7 @@ This softer branch is taken as the emission and then, the declustering process, 
 the harder branch $a$, repeating the previous step of splitting it.
 Iterating along the hard branch until it
 can no longer be declustered traces out the primary sequence of the jet. This is 
-a ordered list of emissions, from the widest and earliest to the most collinear
+an ordered list of emissions, from the widest and earliest to the most collinear
 and latest.
 
 Every splitting in this sequence is characterised by a small set of kinematic variables.
@@ -414,10 +414,10 @@ of this work, kinematics alone are not enough. As foreseen in Chapter \ref{cap:i
 the goal is to explore the spin correlations of gluon splitting, and that requires
 distinguishing the channels of equations \eqref{eq:Pgg}, \eqref{eq:Pgq} and \eqref{eq:Pqq},
 which produce, respectively, a pair of gluons, a quark or antiquark with a gluon and a quark-antiquark pair.
-The channels differ not only in their rates but also their spin interference signal carries
-different signs and magnitudes. Evaluating this effect at its real strenght thus require
+The channels differ not only in their rates but also their spin interference signal, which carries
+different signs and magnitudes. Evaluating this effect at its real strength thus requires
 separating channels, and, in addition, that requires flavour assignment to the splittings
-inside a jet. This raises the obstacle of how can one assign flavour to a jet, or even
+inside a jet. This raises the obstacle of how one can assign flavour to a jet, or even
 to a branch inside one, in a way that remains theoretically well defined and experimentally robust.
 
 The most obvious procedure is to sum the flavour of a jet's constituents, by counting
@@ -429,26 +429,26 @@ a quark-antiquark pair that is soft or wide in angle or even both. This quark an
 antiquark can then be assigned to different jets, or even to different branches of
 the same jet, making each acquire a net flavour that the gluon never possessed.
 Because the splitting can be arbitrarily soft, 
-the missassignment occurs with a probability that diverges in the same manner as the
+the misassignment occurs with a probability that diverges in the same manner as the
 emission spectrum of equation \eqref{eq:soft-collinear}, and no virtual correction
 is assigned to cancel it. This is the same mechanism for kinematic observables,
 identified in Section \ref{sec:ircsafety} but now for the flavour. Here, this
-simple procedure is ruined by exactly soft and collinear radiation that 
+simple procedure is ruined by exactly the soft and collinear radiation that 
 QCD produces most abundantly, and a fixed order calculation of it fails to converge.
 Thus, flavour assigned sloppily is not a physical quantity and it cannot be compared with theory.
 
 Restoring IRC safety to jet flavour has been pursued for two decades.
 The first safe prescriptions achieved IRC safety by making the clustering
 distance itself depend on the flavour of the objects being combined \cite{Banfi_2006},
-which succeeded in supressing the divergence, but they costed the produced jets 
-to not have the kinematics of the fundamental algorithm. This means that a flavour
+which succeeded in suppressing the divergence, but at the cost of producing jets 
+that no longer had the kinematics of the fundamental algorithm. This means that a flavour
 aware jet and its equivalent \antikt{} or C/A jet were no longer the same object.
 For a measurement that requires both kinematics of a jet and the flavour of its structure,
 that cost is too high. In this work, the approach adopted was using the Interleaved Flavour Neutralisation (IFN)
 \cite{caola2023flavouredjetsexactantikt}, which was designed exactly to avoid that issue.
 IFN leaves the kinematics of the clustering entirely untouched and treats flavour as
 a separate layer that runs alongside the normal clustering sequence. The jets, which are returned
-by this algorithm, are the identical to the C/A jets of Section \ref{sec:ca}. This includes 
+by this algorithm, are identical to the C/A jets of Section \ref{sec:ca}. This includes 
 constituents and momenta. What IFN gives in addition is a flavour label for each, computed by
 a procedure that is stable against soft and collinear emissions.
 
@@ -460,7 +460,7 @@ Whenever it finds such a pair, the two flavours are neutralised against each oth
 so that the non-genuine flavour is cancelled at the moment it would otherwise be passed
 up the clustering tree and inherited by a jet. This makes the quark and antiquark born
 of the same soft or collinear gluon splitting reunite in flavour, even though their kinematics
-remain whatever the C/A algorithm placed them. The matching is ruled by a flavour distance that weighs how soft
+remain wherever the C/A algorithm placed them. The matching is ruled by a flavour distance that weighs how soft
 and how collinear a candidate pair is,
 \begin{equation}
   u_{ik} = \max(p_{\mathrm{T},i},p_{\mathrm{T},k})^{\alpha}\,
@@ -504,13 +504,13 @@ selection itself, is set out in Chapter \ref{cap:metodos}.
 \section{The Lund jet plane}
 \label{sec:lund}
 
-Described in Section \ref{sec:ca}, the declustering of the C/A history, links
+As described in Section \ref{sec:ca}, the declustering of the C/A history associates
 with every jet an ordered sequence of emissions, each carrying an
 angular separation $\dR$, a relative transverse momentum $k_t$ and a momentum 
 fraction $z$. This sequence, on its own, is just a list of numbers. Jets
 have different numbers of emissions and the raw variables reach many orders of magnitude.
-However, the Lund jet plane \cite{Dreyer:2018nbf} can represent this list into something
-clear, when mapping each emission to a single point in a two-dimensional 
+However, the Lund jet plane \cite{Dreyer:2018nbf} can turn this list into something
+clear by mapping each emission to a single point in a two-dimensional 
 plane whose coordinates are chosen so that the structure of QCD radiation is exposed 
 in its simple form.
 
@@ -536,7 +536,7 @@ Each primary emission is placed on the plane at the coordinates:
 
 the horizontal axis measures the inverse angle of the splitting and the vertical
 axis its hardness, both logarithmically. The choice of logarithmic axes is
-not cosmetic. Going back to Section \ref{sec:qcd} that the emission probability
+not cosmetic. Recall from Section \ref{sec:qcd} that the emission probability
 of a gluon emission carries the double structure $d\mathcal{P} \propto \alpha_s\, d\theta/\theta \; dE/E$,
 which is one factor for the collinear enhancement and one for the soft enhancement.
 When written in terms of Lund coordinates of equation \eqref{eq:lund-coords}, each
@@ -576,7 +576,7 @@ boundaries of the kinematically accessible region.
 The reachable area of the plane is delimited, and its interior can be divided into
 different regions with distinct physical source, sketched in
 Figure \ref{fig:lund-schematic}. The upper boundary is set by the kinematics of
-the jet. Every emission cannot be harder than the jet which contains it, so it
+the jet. No emission can be harder than the jet which contains it, so it
 caps $\ln\kt$ from above. Along the right of the plane, at large $\ln(1/\dR)$, lie the collinear emissions,
 those radiated at small angle to their emitter. Towards the bottom, at small
 $\ln\kt$, lie the soft emissions. The perturbative description of
@@ -584,14 +584,14 @@ Section \ref{sec:qcd} holds across the majority of this region, where $\kt$ is l
 enough for $\alpha_s$ to remain small, making the density there be the near-constant 
 value of equation \eqref{eq:lund-density}.
 
-The exceptional region in the lower-right corner, at both small angle and low transverse
+The exception is the region in the lower-right corner, at both small angle and low transverse
 momentum. In that region, $\kt$ falls to the scale of a few hundred~MeV, $\alpha_s$ grows
 large, and the perturbative description breaks down. This region is known as the 
 non-perturbative region and it is populated by hadronisation and by the soft, wide-angle
 contamination present inside the event. This way, one strong feature of the Lund jet plane
 is that these non-perturbative effects are confined to a restricted corner of the plane,
 clearly separated from the perturbative part and not mixed with the whole observable.
-A measurement can therefore restrict, by eye or by an specific cut, to the region where
+A measurement can therefore restrict, by eye or by a specific cut, to the region where
 theory is applicable.
 
 \begin{figure}[htbp]
@@ -606,7 +606,7 @@ theory is applicable.
 
 This clear separation motivates grooming methods. Grooming is the intentional removal of soft,
 wide-angle emissions that dominate non-perturbative regions of the Lund jet plane.
-The grooming method used in this work is Soft Drop \cite{Larkoski_2014}, which
+The grooming method used in this work is SoftDrop \cite{Larkoski_2014}, which
 walks through the declustering and, at each step, keeps the harder branch unless
 the softer one satisfies the following:
 
@@ -618,8 +618,8 @@ the softer one satisfies the following:
 in which case both branches are kept and the declustering procedure continues. The parameter
 $z_{\text{cut}}$ specifies how soft an emission must be to be discarded, and $\beta$
 manages the angular reach of the grooming. The choice $\beta = 0$, adopted here for
-the Soft Drop in this work, makes the condition purely one of momentum fraction , $z > z_{\text{cut}}$, independent of angle.
-In this condition, Soft Drop becomes a modified Mass-Drop Tagger \cite{Dasgupta_2013}.
+the SoftDrop in this work, makes the condition purely one of momentum fraction, $z > z_{\text{cut}}$, independent of angle.
+In this condition, SoftDrop becomes a modified Mass-Drop Tagger \cite{Dasgupta_2013}.
 Applying this grooming method becomes very visible on the Lund jet plane because it removes
 the emissions in the soft, low $\kt$ band, clearing the non-perturbative corner and 
 leaving a plane populated only by the harder splittings.
@@ -648,7 +648,7 @@ the primary Lund plane alone, retaining a single point for each primary splittin
 
 In the previous sections, the tools assembled describe a parton shower as a sequence of
 independent splittings, each blind to those before it. This description is incomplete since
-intermediate parton in a shower carry spin and their spin is correlated with the kinematics 
+intermediate partons in a shower carry spin and their spin is correlated with the kinematics 
 of the splitting that produces them. Furthermore, when that parton branches, that correlation
 is transmitted to the azimuthal orientation of its own decay products. So, successive
 splittings are therefore not independent, meaning that the plane of one branching is 
@@ -666,7 +666,7 @@ and sign of the modulation depend on the splitting channel, the property that
 makes flavour identification essential to the measurement. 
 Sections~\ref{sec:spin-dpsi} and~\ref{sec:spin-eeec} then introduce the two
 observables through which this work accesses the effect.
-These observables being the Lund declustering angle $\dpsi$, computed from 
+These observables are the Lund declustering angle $\dpsi$, computed from 
 the branching history of Section \ref{sec:lund}, and the three-point energy correlator, which reaches the same physics through the flow of
 energy within the jet.
 
@@ -690,7 +690,7 @@ of the orientation of that splitting, engraved in the direction of its linear po
 
 Afterward, that memory is read out by the second splitting. The probability that a linearly
 polarised gluon branches into a given final state depends on the azimuthal orientation
-of the second splitting plane in respect with the polarisation axis. Writing $\psi$ for the angle between the first
+of the second splitting plane with respect to the polarisation axis. Writing $\psi$ for the angle between the first
 and the second splitting planes, the differential rate acquires a dependence on $\psi$ through
 this alignment, and the two splittings become correlated in their relative azimuth.
 
@@ -715,8 +715,8 @@ section differential in $\psi$ therefore takes the form
 
 where $a_0$ is the spin-averaged rate, or, in other words, the result one would obtain by ignoring
 the polarisation of the intermediate gluon, and $a_2$ is the coefficient of the
-interference term \cite{Karlberg_2021}. The ratio $a_2/a_0$ measures the strength of the correlation where 
-it vanishes if the intermediate gluon carries no polarisation memory, and its
+interference term \cite{Karlberg_2021}. The ratio $a_2/a_0$ measures the strength of the correlation and 
+vanishes if the intermediate gluon carries no polarisation memory, and its
 magnitude sets the depth of the $\cos 2\psi$ modulation. Its sign determines the
 phase, whether the second splitting preferentially aligns with the first
 splitting plane, giving maxima at $\psi = 0, \pi$, or preferentially lies
@@ -744,8 +744,8 @@ universal. These parameters depend on the nature of the second splitting, or, in
 on the channel through which the polarised gluon decays. The two channels available are those
 of equations \eqref{eq:Pgg} and \eqref{eq:Pgq}. The gluon can split into a pair
 of gluons, $g \to gg$, or into a quark-antiquark pair, $g \to q\bar{q}$. Each of these
-channels read out the polarisation of the parent gluon, but each one of them do so with opposite
-sign and different strenght \cite{Karlberg_2021}.
+channels reads out the polarisation of the parent gluon, but each one of them does so with opposite
+sign and different strength \cite{Karlberg_2021}.
 
 The reason behind this difference comes from the spin of the produced particles.
 The angular distribution of a splitting depends on how the daughters' spins couple to the
@@ -827,18 +827,18 @@ the two splittings whose planes are to be compared. This construction was propos
 \cite{Karlberg_2021}, and the observable is the azimuthal angle 
 $\dpsi$ between the hardest primary and secondary branchings of a jet.
 
-The two splittings are selected as it follows. When declustering the primary Lund
-sequence of a jet, one selects the splitting which passes the Soft Drop condition
+The two splittings are selected as follows. When declustering the primary Lund
+sequence of a jet, one selects the splitting which passes the SoftDrop condition
 of equation \eqref{eq:softdrop} and has the largest relative transverse momentum
 $\kt$ among all the primary sequence. This splitting is then called the primary splitting. 
 Then, declustering the soft branch of this selected
 primary splitting, we build the secondary sequence generated by it. Thus, with the same
-procedure as in the primary sequence, one selects the splitting which passes the Soft Drop
+procedure as in the primary sequence, one selects the splitting which passes the SoftDrop
 condition of equation \eqref{eq:softdrop} and has the largest relative transverse momentum
 $\kt$ among all the secondary sequence. This splitting is called the secondary splitting.
 Each of the two chosen splittings defines a plane in momentum space. 
-The plane $\mathcal{P}_1$ spanned by the branches of the first,
-and $\mathcal{P}_2$ spanned by the branches of the second. With this, $\dpsi$ is the
+These are the plane $\mathcal{P}_1$, spanned by the branches of the first,
+and the plane $\mathcal{P}_2$ spanned by the branches of the second. With this, $\dpsi$ is the
 azimuthal angle between them, illustrated in Figure~\ref{fig:psi-definition}.
 
 By construction, $\dpsi$ is the realisation for jets of the abstract angle $\psi$
@@ -872,7 +872,7 @@ single channel.
 \label{sec:spin-eeec}
 
 Although the Lund observable described in the previous section gives a result for the
-collinear spin correlations of Section \ref{sec:spin-mechanism}, it is not the route
+collinear spin correlations of Section \ref{sec:spin-mechanism}, it is not the only route
 to do so. The $\cos 2\psi$ modulation can be accessed through the energy flow within a jet
 and without any reference to any clustering history, using the three-point energy correlator
 (EEEC) \Cite{Chen_2021}. Where $\dpsi$ reconstructs the two splitting planes by
