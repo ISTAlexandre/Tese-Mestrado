@@ -132,7 +132,7 @@
     Vogais: \ISTvogais\par}
     \vspace{0.7cm}
     {\bfseries\fontsize{14}{17}\selectfont \ISTdata\par}
-    \ifISTprovisorio\vspace{0.25cm}{\fontsize{12}{14}\selectfont (Documento Provisório)\par}\fi
+    
   \end{center}
   \vfill
   \end{titlepage}
